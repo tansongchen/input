@@ -1,0 +1,10 @@
+table {
+  margin: 0 auto !important;
+  width: fit-content !important;
+  align-self: center !important;
+}
+
+th,
+td {
+  padding: 4px 8px !important;
+}

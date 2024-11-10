@@ -5,6 +5,7 @@ import DefaultTheme from "vitepress/theme";
 import { NConfigProvider } from "naive-ui";
 import { setup } from "@css-render/vue3-ssr";
 import { useRoute } from "vitepress";
+import "./custom.css";
 
 const { Layout } = DefaultTheme;
 

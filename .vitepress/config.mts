@@ -4,15 +4,16 @@ const fileAndStyles: Record<string, string> = {};
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "众妙斋 · 输入方案集锦",
-  description: "输入方案集锦",
+  title: "众妙斋 · 冰雪输入法",
+  description: "冰雪输入法",
   appearance: "force-auto",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "冰雪四拼", link: "/snow" },
-      { text: "落萧双拼", link: "/leaf" },
-      { text: "C 形音", link: "/c" },
+      { text: "冰雪四拼", link: "/snow4" },
+      { text: "冰雪三拼", link: "/snow3" },
+      { text: "冰雪双拼", link: "/snow2" },
+      { text: "冰雪一拼", link: "/snow1" },
     ],
 
     sidebarMenuLabel: "目录",
@@ -35,6 +36,11 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/tansongchen/input" },
     ],
+
+    footer: {
+      message: "采用 VitePress 构建",
+      copyright: `© 2015 - ${new Date().getFullYear()} 谭淞宸`,
+    },
   },
   vite: {
     ssr: {

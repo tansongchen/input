@@ -24,12 +24,31 @@ export default defineConfig({
     sidebar: [
       {
         text: "冰雪四拼",
+        link: "/snow4/index",
         items: [
-          { text: "简介", link: "/snow/index" },
-          { text: "基本输入", link: "/snow/basic" },
-          { text: "高级功能", link: "/snow/advanced" },
-          { text: "评测数据", link: "/snow/evaluation" },
+          { text: "基本输入", link: "/snow4/basic" },
+          { text: "高级功能", link: "/snow4/advanced" },
+          { text: "评测数据", link: "/snow4/evaluation" },
         ],
+      },
+      {
+        text: "冰雪三拼",
+        link: "/snow3/index",
+        items: [
+          { text: "基本输入", link: "/snow3/basic" },
+          { text: "高级功能", link: "/snow3/advanced" },
+          { text: "评测数据", link: "/snow3/evaluation" },
+        ]
+      },
+      {
+        text: "冰雪双拼",
+        link: "/snow2/index",
+        items: []
+      },
+      {
+        text: "冰雪一拼",
+        link: "/snow1/index",
+        items: []
       },
     ],
 

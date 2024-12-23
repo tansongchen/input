@@ -1,12 +1,13 @@
 import { defineConfig } from "vitepress";
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const fileAndStyles: Record<string, string> = {};
+const wasmPath = 'node_modules/fcitx5-rime/dist/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "众妙斋 · 冰雪输入法",
-  description: "冰雪输入法",
-  appearance: "force-auto",
+  title: "众妙斋 · 冰雪拼音",
+  description: "冰雪拼音",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -38,17 +39,17 @@ export default defineConfig({
           { text: "基本输入", link: "/snow3/basic" },
           { text: "高级功能", link: "/snow3/advanced" },
           { text: "评测数据", link: "/snow3/evaluation" },
-        ]
+        ],
       },
       {
         text: "冰雪双拼",
         link: "/snow2/index",
-        items: []
+        items: [],
       },
       {
         text: "冰雪一拼",
         link: "/snow1/index",
-        items: []
+        items: [],
       },
     ],
 
@@ -63,8 +64,25 @@ export default defineConfig({
   },
   vite: {
     ssr: {
-      noExternal: ["naive-ui", "date-fns", "vueuc"],
+      noExternal: ["naive-ui", "date-fns", "vueuc", "fcitx5-rime"],
     },
+    optimizeDeps: {
+      exclude: ["fcitx5-rime"],
+    },
+    plugins: [
+      viteStaticCopy({
+        targets: [
+          "Fcitx5.js",
+          "Fcitx5.wasm",
+          "libFcitx5Config.so",
+          "libFcitx5Core.so",
+          "libFcitx5Utils.so",
+        ].map((file) => ({
+          src: wasmPath + file,
+          dest: "assets/chunks",
+        })),
+      }),
+    ],
   },
   postRender(context) {
     const styleRegex = /<css-render-style>((.|\s)+)<\/css-render-style>/;

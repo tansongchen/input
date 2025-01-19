@@ -7,18 +7,21 @@
     "dev": "vitepress dev --port 2024",
     "build": "npm run install-snow && vitepress build",
     "preview": "vitepress preview",
-    "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/latest/download/snow-build.zip -O public/snow-build.zip"
+    "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/latest/download/snow-build.zip -O public/snow-build.zip",
+    "export": "press-export-pdf export ."
   },
   "author": "Songchen Tan",
   "license": "ISC",
   "devDependencies": {
     "@css-render/vue3-ssr": "^0.15.14",
+    "markdown-it-mathjax3": "^4.3.2",
     "vite-plugin-static-copy": "^2.2.0",
-    "vitepress": "^1.3.2"
+    "vitepress": "^1.3.2",
+    "vitepress-export-pdf": "^1.0.0"
   },
   "dependencies": {
     "@datastructures-js/priority-queue": "^6.3.1",
-    "fcitx5-rime": "https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime-0.1.0.tgz",
+    "fcitx5-rime": "https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime.tgz",
     "lodash-es": "^4.17.21",
     "naive-ui": "^2.39.0",
     "supermemo": "^2.0.17",

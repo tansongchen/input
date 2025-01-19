@@ -36,7 +36,7 @@ features:
 
 ## 下载安装
 
-首先安装对应于您的平台的 [Rime 输入法前端](https://rime.im/download/)。然后点击[此链接](https://github.com/rimeinn/rime-snow-pinyin)下载冰雪拼音方案文件，解压缩之后放入您的用户文件夹。
+首先安装对应于您的平台的 [Rime 输入法前端](https://rime.im/download/)。然后点击 [GitHub 发布页面](https://github.com/rimeinn/rime-snow-pinyin/releases/latest)下载其中的 `snow.zip` 冰雪拼音方案文件，解压缩之后放入您的用户文件夹。
 
 各文件的作用如下：
 

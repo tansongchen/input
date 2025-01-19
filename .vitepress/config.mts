@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
-import { viteStaticCopy } from 'vite-plugin-static-copy';
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 const fileAndStyles: Record<string, string> = {};
-const wasmPath = 'node_modules/fcitx5-rime/dist/'
+const wasmPath = "node_modules/fcitx5-rime/dist/";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -27,9 +27,11 @@ export default defineConfig({
         text: "冰雪四拼",
         link: "/snow4/index",
         items: [
-          { text: "基本输入", link: "/snow4/basic" },
+          { text: "拼写规则", link: "/snow4/spelling" },
+          { text: "顶功编码", link: "/snow4/basic" },
           { text: "高级功能", link: "/snow4/advanced" },
           { text: "评测数据", link: "/snow4/evaluation" },
+          { text: "练习", link: "/snow4/practice" },
         ],
       },
       {
@@ -81,7 +83,7 @@ export default defineConfig({
           src: wasmPath + file,
           dest: "assets/chunks",
         })),
-      }),
+      }) as any,
     ],
   },
   postRender(context) {
@@ -102,5 +104,8 @@ export default defineConfig({
     if (style) {
       return code.replace(/<\/head>/, style + "</head>");
     }
+  },
+  markdown: {
+    math: true,
   },
 });

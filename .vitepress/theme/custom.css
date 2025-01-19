@@ -8,3 +8,18 @@ th,
 td {
   padding: 4px 8px !important;
 }
+
+img[alt^="rime"] {
+  height: 80px !important;
+}
+
+@media print {
+  .VPNav,
+  .VPLocalNav,
+  .VPSidebar,
+  .VPDocFooter,
+  .n-config-provider,
+  .interactive {
+    display: none !important;
+  }
+}

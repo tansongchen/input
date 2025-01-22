@@ -2,7 +2,7 @@
 import { MinPriorityQueue } from "@datastructures-js/priority-queue";
 import { supermemo, SuperMemoItem, SuperMemoGrade } from "supermemo";
 import { computed, onMounted, ref } from "vue";
-import { shuffle } from "lodash-es";
+import { isEqual, shuffle } from "lodash-es";
 import {
   NButton,
   NConfigProvider,
@@ -23,6 +23,7 @@ import { sync, theme } from "../src/utils";
 const props = defineProps<{
   name: string;
   data: [string, string][];
+  combo?: boolean;
 }>();
 
 interface Radical extends SuperMemoItem {
@@ -47,8 +48,6 @@ const queue = ref(
   MinPriorityQueue.fromArray<Radical>(makeCards(), (x) => x.due)
 );
 const hint = ref(false);
-const input = ref("");
-const inputRef = ref<HTMLElement | null>(null);
 const showModal = ref(false);
 const current = computed(() => queue.value.front());
 const length = computed(() => queue.value.size());
@@ -66,7 +65,6 @@ const next = () => {
 };
 
 const proceed = () => {
-  input.value = "";
   let grade: SuperMemoGrade;
   if (hint.value) {
     hint.value = false;
@@ -110,8 +108,11 @@ const discard = () => {
   next();
 };
 
-const process = (newInput: string) => {
+// 用于串击，状态为已经输入的字符串内容，比对输入的字符串和正确的编码
+const input = ref("");
+const processSerialInput = (newInput: string) => {
   if (current.value.key === newInput.toLowerCase()) {
+    input.value = "";
     proceed();
   } else if (current.value.key.length === newInput.length) {
     hint.value = true;
@@ -119,6 +120,28 @@ const process = (newInput: string) => {
   } else {
     input.value = newInput;
   }
+};
+
+// 用于并击，状态为已经输入的按键集合，比对输入的按键集合和正确的按键集合
+const pressedKeys = ref(new Set());
+const validKeysForCombo = new Set([..."qwertyuiopasdfghjkl;zxcvbnm,./"]);
+const handleKeyDown = (event: KeyboardEvent) => {
+  if (!validKeysForCombo.has(event.key.toLowerCase())) return;
+  pressedKeys.value.add(event.key.toLowerCase());
+};
+const handleKeyUp = (event: KeyboardEvent) => {
+  if (!validKeysForCombo.has(event.key.toLowerCase())) return;
+  // 松开第一个按键时进行判断
+  if (pressedKeys.value.size === 0) return;
+  // 目标按键集合
+  const targetKeys = new Set([...current.value.key.toLowerCase()]);
+  if (isEqual(pressedKeys.value, targetKeys)) {
+    proceed();
+  } else {
+    hint.value = true;
+  }
+  // 清空当前按键集合
+  pressedKeys.value.clear();
 };
 
 onMounted(() => {
@@ -130,7 +153,6 @@ onMounted(() => {
     );
   }
   next();
-  // inputRef.value?.focus();
   sync();
 });
 </script>
@@ -168,16 +190,16 @@ onMounted(() => {
             <n-a target="_blank" href="https://supermemo.guru/wiki/SuperMemo"
               >SuperMemo</n-a
             >
-            算法帮助用户快速且牢固地掌握声笔输入法的基本元素。
+            算法帮助用户快速且牢固地掌握输入方案的基本元素。
           </n-p>
           <n-p>
-            开始训练时，程序会将练习的内容和对应的编码制作成一张张的卡牌，顺序是随机的。卡牌的正面是练习的内容，背面是你需要输入的编码。在卡牌显示后，你要以最快的速度输入相应的编码。
+            训练时，程序会逐个显示需要练习的元素，顺序是随机的。在元素显示后，你要以最快的速度输入相应的编码。
           </n-p>
           <n-ul>
             <n-li>
               如果输入正确，则会自动显示下一张卡牌，且程序会根据你的响应时间来为你的记忆评级。程序会根据这个评级来安排该卡牌下次出现的时间，以便巩固你的记忆。
             </n-li>
-            <n-li>如果输入不正确，程序会提示你正确的按键是什么。</n-li>
+            <n-li>如果输入不正确，程序会提示你正确的编码是什么。</n-li>
           </n-ul>
           <n-p>
             程序在运行时自动将当前进度记录到浏览器的本地存储当中，再次打开时会从本地存储中加载进度。该进度无法跨平台同步，请尽量使用同一浏览器来练习。
@@ -211,10 +233,18 @@ onMounted(() => {
             <span v-if="hint">&nbsp;[{{ current?.key }}]</span>
           </div>
           <n-input
-            ref="inputRef"
+            v-if="!combo"
             :value="input"
-            @input="process"
+            @input="processSerialInput"
             placeholder="请输入对应的编码"
+            style="font-size: 16px"
+          />
+          <n-input
+            v-else
+            :value="Array.from(pressedKeys).join('')"
+            @keydown="handleKeyDown"
+            @keyup="handleKeyUp"
+            placeholder="请输入对应的并击组合"
             style="font-size: 16px"
           />
         </template>

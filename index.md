@@ -19,20 +19,20 @@ hero:
 
 features:
   - title: 冰雪四拼
-    details: 音码、主打词组、二码顶/三码顶/四码顶
+    details: 音码、主打词组、二三四码顶
     link: /snow4
   - title: 冰雪三拼
-    details: 音码、主打词组、三码顶/四码顶
+    details: 音码、主打词组、三四码顶
     link: /snow3
   - title: 冰雪双拼
-    details: 音形码、主打单字、二码顶
+    details: 音形码、字词均衡、二码顶
     link: /snow2
   - title: 冰雪一拼
-    details: 形音码、主打单字、四二顶
+    details: 音形码、字词均衡、一码顶、并击
     link: /snow1
 ---
 
-冰雪拼音是一系列创新性的中文输入方案的总称。它们使用先进的离散优化技术来设计，并采取独特的顶功和智能化技术来实现。这些输入方案充分利用汉字的字音和字形两方面信息对汉字编码，不仅使得编码优雅、高效，还能通过学习用户的语言习惯来个性化输入体验。
+冰雪拼音是一系列以普通话拼音为基础的中文输入方案。它们充分利用汉字的字音信息来实现自然优雅的编码；它们使用先进的离散优化技术和顶功技术来设计，使得编码十分高效；它们配备了智能算法，通过学习用户的语言习惯来个性化输入体验。
 
 ## 下载安装
 
@@ -42,25 +42,28 @@ features:
 
 ### 通用文件
 
-- `snow_pinyin.schema.yaml`: 全拼方案文件，用于反查
-- `snow_pinyin.dict.yaml`: 词库文件（一字词）
-- `snow_pinyin.{base,ext,tencent}.dict.yaml`: 词库文件（多字词）
-- `snow_pinyin.symbols.yaml`: 特殊符号
+- `snow_pinyin.schema.yaml`: 全拼方案文件及通用配置
+- `snow_pinyin.{|base|ext|tencent}.dict.yaml`: 词库文件
 - `snow_stroke.schema.yaml`: 笔画方案文件，用于反查（依赖于 [Rime 五笔画](http://github.com/rime/rime-stroke)，如果您的 Rime 前端不预装五笔画请先安装）
 - `lua/snow/*`: 用于实现方案逻辑的 lua 脚本
 
-### 冰雪四拼
+### [冰雪四拼](/snow4/)
 
 - `snow_sipin.schema.yaml`: 四拼方案文件
 - `snow_sipin.fixed.txt`: 四拼固顶词
 
-### 冰雪三拼
+### [冰雪三拼](/snow3/)
 
-- `snow_sanpin_xkjd.schema.yaml`: 三拼键道方案文件
-- `snow_sanpin_xkjd.fixed.txt`: 三拼键道固顶词
-- `snow_sanpin_zrm.schema.yaml`: 三拼自然码方案文件
-- `snow_sanpin_zrm.fixed.txt`: 三拼自然码固顶词
-- `snow_sanpin_flypy.schema.yaml`: 三拼小鹤方案文件
-- `snow_sanpin_flypy.fixed.txt`: 三拼小鹤固顶词
+- `snow_sanpin.schema.yaml`: 三拼方案文件
+- `snow_sanpin.fixed.txt`: 三拼固顶词
+
+### [冰雪双拼](/snow2/)
+
+敬请期待
+
+### [冰雪一拼](/snow1/)
+
+- `snow_yipin.schema.yaml`: 一拼方案文件
+- `snow_yipin.fixed.txt`: 一拼固顶词
 
 您可以点击各个方案以进一步了解并选择适合您的输入方案。

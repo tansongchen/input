@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev --port 2024",
-    "build": "npm run install-snow && vitepress build",
+    "build-only": "vitepress build",
+    "build": "npm run install-rime && npm run install-snow && vitepress build",
     "preview": "vitepress preview",
+    "install-rime": "wget https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime.tgz -O fcitx5-rime.tgz && npm add fcitx5-rime.tgz",
     "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/latest/download/snow-build.zip -O public/snow-build.zip",
     "export": "press-export-pdf export ."
   },
@@ -21,7 +23,6 @@
   },
   "dependencies": {
     "@datastructures-js/priority-queue": "^6.3.1",
-    "fcitx5-rime": "https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime.tgz",
     "lodash-es": "^4.17.21",
     "naive-ui": "^2.39.0",
     "supermemo": "^2.0.17",

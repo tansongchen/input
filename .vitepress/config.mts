@@ -38,9 +38,9 @@ export default defineConfig({
         text: "冰雪三拼",
         link: "/snow3/index",
         items: [
-          { text: "基本输入", link: "/snow3/basic" },
+          { text: "拼写规则", link: "/snow3/spelling" },
+          { text: "顶功编码", link: "/snow3/basic" },
           { text: "高级功能", link: "/snow3/advanced" },
-          { text: "评测数据", link: "/snow3/evaluation" },
         ],
       },
       {

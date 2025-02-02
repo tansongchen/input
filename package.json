@@ -9,7 +9,7 @@
     "build": "npm run install-rime && npm run install-snow && vitepress build",
     "preview": "vitepress preview",
     "install-rime": "wget https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime.tgz -O fcitx5-rime.tgz && npm add fcitx5-rime.tgz",
-    "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/latest/download/snow-build.zip -O public/snow-build.zip",
+    "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/download/v0.2.0-rc.1/snow-pinyin-build.zip -O public/snow-pinyin-build.zip",
     "export": "press-export-pdf export ."
   },
   "author": "Songchen Tan",

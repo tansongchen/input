@@ -2,7 +2,7 @@
 import { onMounted } from "vue";
 onMounted(() => {
   import("fcitx5-rime").then(({ loadZip }) => {
-    loadZip("/snow-build.zip");
+    loadZip("/snow-pinyin-build.zip");
   });
 });
 </script>

@@ -51,7 +51,7 @@ export default defineConfig({
       {
         text: "冰雪一拼",
         link: "/snow1/index",
-        items: [],
+        items: [{ text: "拼写规则", link: "/snow1/spelling" }],
       },
     ],
 

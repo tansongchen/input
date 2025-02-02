@@ -1,5 +1,5 @@
 <script setup>
-import Practice from './components/Practice.vue'
+import Practice from '../components/Practice.vue'
 
 const shengjie = `
 d	F
@@ -103,7 +103,7 @@ const yundiao = `
 `.trim().split('\n').map(x => x.split('\t'));
 </script>
 
-# 拼读并击
+# 拼写规则
 
 [拼读并击](https://github.com/zhanghaozhecn/rime-pindu-chord-type)是由张皓哲开发的一击一个带调音节的并击输入方案，相关介绍及下载详见上述链接。本页面提供了其声介和韵调元素的练习。
 

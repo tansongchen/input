@@ -15,6 +15,7 @@ export default defineConfig({
       { text: "冰雪三拼", link: "/snow3" },
       { text: "冰雪双拼", link: "/snow2" },
       { text: "冰雪一拼", link: "/snow1" },
+      { text: "其他", items: [{ text: "冰雪键道", link: "/snow-jiandao" }] },
     ],
 
     sidebarMenuLabel: "目录",
@@ -22,38 +23,41 @@ export default defineConfig({
     outline: {
       label: "大纲",
     },
-    sidebar: [
-      {
-        text: "冰雪四拼",
-        link: "/snow4/index",
-        items: [
-          { text: "拼写规则", link: "/snow4/spelling" },
-          { text: "顶功编码", link: "/snow4/basic" },
-          { text: "高级功能", link: "/snow4/advanced" },
-          { text: "评测数据", link: "/snow4/evaluation" },
-          { text: "练习", link: "/snow4/practice" },
-        ],
-      },
-      {
-        text: "冰雪三拼",
-        link: "/snow3/index",
-        items: [
-          { text: "拼写规则", link: "/snow3/spelling" },
-          { text: "顶功编码", link: "/snow3/basic" },
-          { text: "高级功能", link: "/snow3/advanced" },
-        ],
-      },
-      {
-        text: "冰雪双拼",
-        link: "/snow2/index",
-        items: [],
-      },
-      {
-        text: "冰雪一拼",
-        link: "/snow1/index",
-        items: [{ text: "拼写规则", link: "/snow1/spelling" }],
-      },
-    ],
+    sidebar: {
+      "/snow-jiandao": [{ text: "冰雪键道", link: "/snow-jiandao" }],
+      "/": [
+        {
+          text: "冰雪四拼",
+          link: "/snow4/index",
+          items: [
+            { text: "拼写规则", link: "/snow4/spelling" },
+            { text: "顶功编码", link: "/snow4/basic" },
+            { text: "高级功能", link: "/snow4/advanced" },
+            { text: "评测数据", link: "/snow4/evaluation" },
+            { text: "练习", link: "/snow4/practice" },
+          ],
+        },
+        {
+          text: "冰雪三拼",
+          link: "/snow3/index",
+          items: [
+            { text: "拼写规则", link: "/snow3/spelling" },
+            { text: "顶功编码", link: "/snow3/basic" },
+            { text: "高级功能", link: "/snow3/advanced" },
+          ],
+        },
+        {
+          text: "冰雪双拼",
+          link: "/snow2/index",
+          items: [],
+        },
+        {
+          text: "冰雪一拼",
+          link: "/snow1/index",
+          items: [{ text: "拼写规则", link: "/snow1/spelling" }],
+        },
+      ],
+    },
 
     socialLinks: [
       { icon: "github", link: "https://github.com/tansongchen/input" },

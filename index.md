@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 方案成果
-      link: /snow4
+      link: /snow
     - theme: alt
       text: 顶功集萃
       link: https://ding.tansongchen.com
@@ -36,34 +36,26 @@ features:
 
 ## 下载安装
 
-首先安装对应于您的平台的 [Rime 输入法前端](https://rime.im/download/)。然后点击 [GitHub 发布页面](https://github.com/rimeinn/rime-snow-pinyin/releases/latest)下载其中的 `snow.zip` 冰雪拼音方案文件，解压缩之后放入您的用户文件夹。
-
-各文件的作用如下：
+首先安装对应于您的平台的 [Rime 输入法前端](https://rime.im/download/)。然后点击 [GitHub 发布页面](https://github.com/rimeinn/rime-snow-pinyin/releases/latest)下载其中的冰雪拼音方案文件（`snow-pinyin.zip`），解压缩之后放入您的用户文件夹。各文件的作用如下：
 
 ### 通用文件
 
 - `snow_pinyin.schema.yaml`: 全拼方案文件及通用配置
-- `snow_pinyin.{|base|ext|tencent}.dict.yaml`: 词库文件
+- `snow_pinyin.*.dict.yaml`: 词库文件
 - `snow_stroke.schema.yaml`: 笔画方案文件，用于反查（依赖于 [Rime 五笔画](http://github.com/rime/rime-stroke)，如果您的 Rime 前端不预装五笔画请先安装）
 - `lua/snow/*`: 用于实现方案逻辑的 lua 脚本
 
-### [冰雪四拼](/snow4/)
+### 方案专用文件
+
+安装包中包含[冰雪四拼](/snow4/)、[冰雪三拼](/snow3/)和[冰雪一拼](/snow1/)三个方案，而[冰雪双拼](/snow2/)还在研发中。各个方案专用的文件如下：
 
 - `snow_sipin.schema.yaml`: 四拼方案文件
 - `snow_sipin.fixed.txt`: 四拼固顶词
-
-### [冰雪三拼](/snow3/)
-
 - `snow_sanpin.schema.yaml`: 三拼方案文件
 - `snow_sanpin.fixed.txt`: 三拼固顶词
-
-### [冰雪双拼](/snow2/)
-
-敬请期待
-
-### [冰雪一拼](/snow1/)
-
 - `snow_yipin.schema.yaml`: 一拼方案文件
 - `snow_yipin.fixed.txt`: 一拼固顶词
 
-您可以点击各个方案以进一步了解并选择适合您的输入方案。
+## 了解方案
+
+冰雪拼音包含上述 4 个互相有联系但又各不相同的方案。您可以阅读[冰雪奇缘](/snow)来概览各个方案，了解它们的设计理念及优缺点。您还可以点击上述各个方案的链接以进一步了解并选择适合您的输入方案。

@@ -11,6 +11,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
+      { text: "冰雪奇缘", link: "/snow" },
       { text: "冰雪四拼", link: "/snow4" },
       { text: "冰雪三拼", link: "/snow3" },
       { text: "冰雪双拼", link: "/snow2" },
@@ -26,6 +27,7 @@ export default defineConfig({
     sidebar: {
       "/snow-jiandao": [{ text: "冰雪键道", link: "/snow-jiandao" }],
       "/": [
+        { text: "冰雪奇缘", link: "/snow" },
         {
           text: "冰雪四拼",
           link: "/snow4/index",

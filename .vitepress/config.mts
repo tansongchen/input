@@ -12,11 +12,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "冰雪奇缘", link: "/snow" },
-      { text: "冰雪四拼", link: "/snow4" },
-      { text: "冰雪三拼", link: "/snow3" },
-      { text: "冰雪双拼", link: "/snow2" },
-      { text: "冰雪一拼", link: "/snow1" },
-      { text: "其他", items: [{ text: "冰雪键道", link: "/snow-jiandao" }] },
+      { text: "冰雪四拼", link: "/snow4/" },
+      { text: "冰雪三拼", link: "/snow3/" },
+      { text: "冰雪双拼", link: "/snow2/" },
+      { text: "冰雪一拼", link: "/snow1/" },
+      { text: "其他", items: [{ text: "冰雪键道", link: "/snow-jiandao/" }] },
     ],
 
     sidebarMenuLabel: "目录",
@@ -30,7 +30,7 @@ export default defineConfig({
         { text: "冰雪奇缘", link: "/snow" },
         {
           text: "冰雪四拼",
-          link: "/snow4/index",
+          link: "/snow4/",
           items: [
             { text: "拼写规则", link: "/snow4/spelling" },
             { text: "顶功编码", link: "/snow4/basic" },
@@ -41,7 +41,7 @@ export default defineConfig({
         },
         {
           text: "冰雪三拼",
-          link: "/snow3/index",
+          link: "/snow3/",
           items: [
             { text: "拼写规则", link: "/snow3/spelling" },
             { text: "顶功编码", link: "/snow3/basic" },
@@ -50,12 +50,12 @@ export default defineConfig({
         },
         {
           text: "冰雪双拼",
-          link: "/snow2/index",
+          link: "/snow2/",
           items: [],
         },
         {
           text: "冰雪一拼",
-          link: "/snow1/index",
+          link: "/snow1/",
           items: [{ text: "拼写规则", link: "/snow1/spelling" }],
         },
       ],

@@ -20,16 +20,16 @@ hero:
 features:
   - title: 冰雪四拼
     details: 音码、主打词组、二三四码顶
-    link: /snow4
+    link: /snow4/
   - title: 冰雪三拼
     details: 音码、主打词组、三四码顶
-    link: /snow3
+    link: /snow3/
   - title: 冰雪双拼
     details: 音形码、字词均衡、二码顶
-    link: /snow2
+    link: /snow2/
   - title: 冰雪一拼
     details: 音形码、字词均衡、一码顶、并击
-    link: /snow1
+    link: /snow1/
 ---
 
 冰雪拼音是一系列以普通话拼音为基础的中文输入方案。它们充分利用汉字的字音信息来实现自然优雅的编码；它们使用先进的离散优化技术和顶功技术来设计，使得编码十分高效；它们配备了智能算法，通过学习用户的语言习惯来个性化输入体验。
@@ -43,7 +43,7 @@ features:
 - `snow_pinyin.schema.yaml`: 全拼方案文件及通用配置
 - `snow_pinyin.*.dict.yaml`: 词库文件
 - `snow_stroke.schema.yaml`: 笔画方案文件，用于反查（依赖于 [Rime 五笔画](http://github.com/rime/rime-stroke)，如果您的 Rime 前端不预装五笔画请先安装）
-- `lua/snow/*`: 用于实现方案逻辑的 lua 脚本
+- `lua/snow/*`: 用于实现方案逻辑的 Lua 脚本
 
 ### 方案专用文件
 

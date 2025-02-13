@@ -123,23 +123,37 @@ const lingshengmu = Object.entries({
 
 有些韵母用一个编码表示，有些韵母用两个编码表示。如下表：
 
-| 韵母          | 编码 | 韵母       | 编码 |
-| ------------- | ---- | ---------- | ---- |
-| a, ü          | a    | /          | aa   |
-| o, io, uo, üe | o    | /          | oa   |
-| e, ie         | e    | m          | ea   |
-| i, ua, er     | i    | /          | ia   |
-| u, ia         | u    | /          | ua   |
-| an, ün        | ao   | ang        | ae   |
-| üan           | oo   | ong, iong  | oe   |
-| en            | eo   | eng, ng    | ee   |
-| in, uan       | io   | ing, uang  | ie   |
-| uen, ian      | uo   | ueng, iang | ue   |
-| ai            | ai   | ao         | au   |
-| /             | oi   | ou, iou    | ou   |
-| ei            | ei   | /          | eu   |
-| uai           | ii   | /          | iu   |
-| uei           | ui   | iao        | uu   |
+<div class="columns">
+
+| 韵母      | 编码 |
+| ------------- | -------- |
+| a, ü          | a        |
+| o, io, uo, üe | o        |
+| e, ie         | e        |
+| i, ua, er     | i        |
+| u, ia         | u        |
+| ai            | ai       |
+| ei            | ei       |
+| uai           | ii       |
+| uei           | ui       |
+| ao            | au       |
+| ou, iou       | ou       |
+| iao           | uu       |
+
+| 韵母   | 编码 |
+| ---------- | -------- |
+| an, ün     | ao       |
+| üan        | oo       |
+| en         | eo       |
+| in, uan    | io       |
+| uen, ian   | uo       |
+| ang        | ae       |
+| ong, iong  | oe       |
+| eng, ng    | ee       |
+| ing, uang  | ie       |
+| ueng, iang | ue       |
+| m          | ea       |
+</div>
 
 观察表格，很容易发现其规律：
 

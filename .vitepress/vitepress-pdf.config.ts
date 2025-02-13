@@ -12,11 +12,11 @@ const routes = [
 
 export default defineUserConfig({
   routePatterns: [
-    "!/index.html",
-    "!/README.html",
+    "!/*.html",
     "!/snow3/*",
     "!/snow2/*",
     "!/snow1/*",
+    "!/snow-jiandao/*",
   ],
   urlOrigin: "https://input.tansongchen.com",
   sorter: (a, b) => {

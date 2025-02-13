@@ -4,6 +4,18 @@ table {
   align-self: center !important;
 }
 
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.columns table {
+  margin: 0 !important;
+  align-self: flex-start !important;
+}
+
 th,
 td {
   padding: 4px 8px !important;

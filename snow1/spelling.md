@@ -105,7 +105,7 @@ const yundiao = `
 
 # 拼写规则
 
-[拼读并击](https://github.com/zhanghaozhecn/rime-pindu-chord-type)是由张皓哲开发的一击一个带调音节的并击输入方案，相关介绍及下载详见上述链接。本页面提供了其声介和韵调元素的练习。
+冰雪一拼中，一击可以打出一个带调音节。请首先参考[拼读并击](https://github.com/zhanghaozhecn/rime-pindu-chord-type)的页面学习如何将带调音节分解为声介和韵调，然后可以在本页面练习声介和韵调元素的并击键位组合。
 
 ## 声介练习
 

@@ -17,6 +17,7 @@ export default defineConfig({
       { text: "冰雪双拼", link: "/snow2/" },
       { text: "冰雪一拼", link: "/snow1/" },
       { text: "其他", items: [{ text: "冰雪键道", link: "/snow-jiandao/" }] },
+      { text: "工具", items: [{ text: "冰雪注音", link: "/pronunciation" }] },
     ],
 
     sidebarMenuLabel: "目录",

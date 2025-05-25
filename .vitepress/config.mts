@@ -26,7 +26,7 @@ export default defineConfig({
       label: "大纲",
     },
     sidebar: {
-      "/snow-jiandao": [{ text: "冰雪键道", link: "/snow-jiandao" }],
+      "/snow-jiandao/": [{ text: "冰雪键道", link: "/snow-jiandao/" }],
       "/": [
         { text: "冰雪奇缘", link: "/snow" },
         {

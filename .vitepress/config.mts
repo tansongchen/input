@@ -17,7 +17,13 @@ export default defineConfig({
       { text: "冰雪双拼", link: "/snow2/" },
       { text: "冰雪一拼", link: "/snow1/" },
       { text: "冰雪之道", link: "/philosophy" },
-      { text: "其他", items: [{ text: "冰雪键道", link: "/snow-jiandao/" }] },
+      {
+        text: "其他",
+        items: [
+          { text: "冰雪键道", link: "/snow-jiandao/" },
+          { text: "冰雪清韵", link: "/snow-qingyun/" },
+        ],
+      },
       { text: "工具", items: [{ text: "冰雪注音", link: "/pronunciation" }] },
     ],
 
@@ -28,6 +34,18 @@ export default defineConfig({
     },
     sidebar: {
       "/snow-jiandao/": [{ text: "冰雪键道", link: "/snow-jiandao/" }],
+      "/snow-qingyun/": [
+        {
+          text: "冰雪清韵",
+          link: "/snow-qingyun/",
+          items: [
+            { text: "拼写规则", link: "/snow-qingyun/spelling" },
+            { text: "前缀编码", link: "/snow-qingyun/basic" },
+            { text: "高级功能", link: "/snow-qingyun/advanced" },
+            { text: "评测数据", link: "/snow-qingyun/evaluation" },
+          ],
+        },
+      ],
       "/": [
         { text: "冰雪奇缘", link: "/snow" },
         {
@@ -62,8 +80,8 @@ export default defineConfig({
         },
         {
           text: "冰雪之道",
-          link: "/philosophy"
-        }
+          link: "/philosophy",
+        },
       ],
     },
 

@@ -1,4 +1,3 @@
-
 # 评测数据
 
 下列技术测试采用的词频为个人统计得到的社交媒体词频（语料来源：[GitHub 仓库](https://github.com/codemayq/chinese-chatbot-corpus)）经 jieba 默认词典分词得到的词频。

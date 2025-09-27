@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { viteStaticCopy } from "vite-plugin-static-copy";
+import yaml from "@modyfi/vite-plugin-yaml";
 
 const fileAndStyles: Record<string, string> = {};
 const wasmPath = "node_modules/fcitx5-rime/dist/";
@@ -114,6 +115,7 @@ export default defineConfig({
           dest: "assets/chunks",
         })),
       }) as any,
+      yaml(),
     ],
   },
   postRender(context) {

@@ -40,3 +40,13 @@ img[alt^="rime"] {
     display: none !important;
   }
 }
+
+@font-face {
+  font-family: 'ChaiPUA';
+  src: url('/ChaiPUA-0.2.7.ttf') format('truetype');
+  font-display: swap;
+}
+
+.songti-text {
+  font-family: 'ChaiPUA', 'SimSun', 'NSimSun', 'Songti SC', 'STSong', serif;
+}

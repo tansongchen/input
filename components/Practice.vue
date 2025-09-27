@@ -24,6 +24,7 @@ const props = defineProps<{
   name: string;
   data: [string, string][];
   combo?: boolean;
+  songti?: boolean;
 }>();
 
 interface Radical extends SuperMemoItem {
@@ -79,6 +80,7 @@ const proceed = () => {
       grade = 3;
     }
   }
+  if (!current.value) return;
   const updated = supermemo(current.value, grade);
   const radical: Radical = {
     ...current.value,
@@ -111,6 +113,7 @@ const discard = () => {
 // 用于串击，状态为已经输入的字符串内容，比对输入的字符串和正确的编码
 const input = ref("");
 const processSerialInput = (newInput: string) => {
+  if (!current.value) return;
   if (current.value.key === newInput.toLowerCase()) {
     input.value = "";
     proceed();
@@ -134,6 +137,7 @@ const handleKeyUp = (event: KeyboardEvent) => {
   // 松开第一个按键时进行判断
   if (pressedKeys.value.size === 0) return;
   // 目标按键集合
+  if (!current.value) return;
   const targetKeys = new Set([...current.value.key.toLowerCase()]);
   if (isEqual(pressedKeys.value, targetKeys)) {
     proceed();
@@ -172,6 +176,10 @@ onMounted(() => {
 .key {
   font-size: 16px;
   text-align: center;
+}
+
+.hint-text {
+  color: #c77272
 }
 </style>
 <template>
@@ -228,9 +236,9 @@ onMounted(() => {
       </n-space>
       <n-card>
         <template #header>
-          <div class="radical">
+          <div :class="{ 'songti-text': songti, 'radical': true }">
             <span>{{ current?.radical }}</span>
-            <span v-if="hint">&nbsp;[{{ current?.key }}]</span>
+            <span class="hint-text" v-if="hint">&nbsp;{{ current?.key }}</span>
           </div>
           <n-input
             v-if="!combo"

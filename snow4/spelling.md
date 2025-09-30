@@ -53,7 +53,7 @@ const shengyundiao = Object.entries({
   '上声 3': 'u',
   '去声 4': 'a',
   '轻声 5': 'o'
-})
+}).map(([front, back]) => ({ front, back }));
 
 const lingshengmu = Object.entries({
   // 韵母：开口呼
@@ -97,7 +97,7 @@ const lingshengmu = Object.entries({
   yuan: 'koo',
   yue: 'ko',
   yun: 'kao',
-})
+}).map(([front, back]) => ({ front, back }));
 </script>
 
 # 拼写规则

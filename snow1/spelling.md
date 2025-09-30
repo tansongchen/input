@@ -53,7 +53,7 @@ cu	ZG
 lü	AS
 nu	SE
 nü	XD
-`.trim().split('\n').map(x => x.split('\t'));
+`.trim().split('\n').map(x => x.split('\t')).map(([front, back]) => ({ front, back }));;
 
 const yundiao = `
 ˋ	J
@@ -100,7 +100,7 @@ const yundiao = `
 áo	U;
 ǎi	HI
 āi	HO
-`.trim().split('\n').map(x => x.split('\t'));
+`.trim().split('\n').map(x => x.split('\t')).map(([front, back]) => ({ front, back }));;
 </script>
 
 # 拼写规则

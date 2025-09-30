@@ -20,35 +20,43 @@ import {
 } from "naive-ui";
 import { sync, theme } from "../src/utils";
 
+interface Note {
+  front: string;
+  back: string;
+  hint?: string;
+}
+
 const props = defineProps<{
   name: string;
-  data: [string, string][];
+  data: Note[];
   combo?: boolean;
   songti?: boolean;
 }>();
 
-interface Radical extends SuperMemoItem {
-  radical: string;
-  key: string;
+interface Card extends SuperMemoItem {
+  front: string;
+  back: string;
+  hint?: string;
   due: number;
 }
 
 const makeCards = () => {
-  const radicals: Radical[] = props.data.map(([radical, key]) => ({
-    radical,
-    key,
+  const cards: Card[] = props.data.map((card) => ({
+    front: card.front,
+    back: card.back,
+    hint: card.hint,
     due: new Date().getTime(),
     interval: 1,
     repetition: 0,
     efactor: 2.5,
   }));
-  return shuffle(radicals);
+  return shuffle(cards);
 };
 
 const queue = ref(
-  MinPriorityQueue.fromArray<Radical>(makeCards(), (x) => x.due)
+  MinPriorityQueue.fromArray<Card>(makeCards(), (x) => x.due)
 );
-const hint = ref(false);
+const showAnswer = ref(false);
 const showModal = ref(false);
 const current = computed(() => queue.value.front());
 const length = computed(() => queue.value.size());
@@ -67,8 +75,8 @@ const next = () => {
 
 const proceed = () => {
   let grade: SuperMemoGrade;
-  if (hint.value) {
-    hint.value = false;
+  if (showAnswer.value) {
+    showAnswer.value = false;
     grade = 0;
   } else {
     const elapsed = performance.now() - startTime;
@@ -82,13 +90,13 @@ const proceed = () => {
   }
   if (!current.value) return;
   const updated = supermemo(current.value, grade);
-  const radical: Radical = {
+  const card: Card = {
     ...current.value,
     ...updated,
     due: current.value.due + updated.interval * 1000 * 60 * 60 * 24,
   };
   queue.value.dequeue();
-  queue.value.enqueue(radical);
+  queue.value.enqueue(card);
   localStorage.setItem(props.name, JSON.stringify(queue.value.toArray()));
   next();
 };
@@ -114,11 +122,11 @@ const discard = () => {
 const input = ref("");
 const processSerialInput = (newInput: string) => {
   if (!current.value) return;
-  if (current.value.key === newInput.toLowerCase()) {
+  if (current.value.back === newInput.toLowerCase()) {
     input.value = "";
     proceed();
-  } else if (current.value.key.length === newInput.length) {
-    hint.value = true;
+  } else if (current.value.back.length === newInput.length) {
+    showAnswer.value = true;
     input.value = "";
   } else {
     input.value = newInput;
@@ -138,11 +146,11 @@ const handleKeyUp = (event: KeyboardEvent) => {
   if (pressedKeys.value.size === 0) return;
   // 目标按键集合
   if (!current.value) return;
-  const targetKeys = new Set([...current.value.key.toLowerCase()]);
+  const targetKeys = new Set([...current.value.back.toLowerCase()]);
   if (isEqual(pressedKeys.value, targetKeys)) {
     proceed();
   } else {
-    hint.value = true;
+    showAnswer.value = true;
   }
   // 清空当前按键集合
   pressedKeys.value.clear();
@@ -151,7 +159,7 @@ const handleKeyUp = (event: KeyboardEvent) => {
 onMounted(() => {
   const json = localStorage.getItem(props.name);
   if (json) {
-    queue.value = MinPriorityQueue.fromArray<Radical>(
+    queue.value = MinPriorityQueue.fromArray<Card>(
       JSON.parse(json),
       (x) => x.due
     );
@@ -167,10 +175,18 @@ onMounted(() => {
   gap: 16px;
 }
 
-.radical {
+.front {
   font-size: 32px;
   text-align: center;
-  padding: 16px;
+  line-height: 1;
+  margin-block: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.front code {
+  font-size: 0.8em !important;
 }
 
 .key {
@@ -178,8 +194,11 @@ onMounted(() => {
   text-align: center;
 }
 
-.hint-text {
-  color: #c77272
+.hint {
+  text-align: center;
+  color: gray;
+  margin-block: 16px;
+  font-weight: normal;
 }
 </style>
 <template>
@@ -236,9 +255,14 @@ onMounted(() => {
       </n-space>
       <n-card>
         <template #header>
-          <div :class="{ 'songti-text': songti, 'radical': true }">
-            <span>{{ current?.radical }}</span>
-            <span class="hint-text" v-if="hint">&nbsp;{{ current?.key }}</span>
+          <div class="front">
+            <span :class="{ 'songti-text': songti }">{{
+              current?.front
+            }}</span>
+            <code v-if="showAnswer">{{ current?.back }}</code>
+          </div>
+          <div v-if="current?.hint" class="hint">
+            {{ current.hint }}
           </div>
           <n-input
             v-if="!combo"

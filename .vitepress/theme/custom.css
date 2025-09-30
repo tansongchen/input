@@ -30,6 +30,10 @@ img[alt^="rime"] {
   overflow: hidden;
 }
 
+.vp-doc ol {
+  padding-left: 24px !important;
+}
+
 @media print {
   .VPNav,
   .VPLocalNav,

@@ -9,6 +9,7 @@ const 声韵 = Object.entries({
   zh: 'z',
   ch: 'c',
   sh: 's',
+  '零声母': 'v',
   // 韵母
   'i er': 'i',
   'u ü': 'u',
@@ -23,49 +24,6 @@ const 声韵 = Object.entries({
   'ang iang uang': ',',
   'en in uen ün n m': '.',
   'eng ing ueng ong iong ng': '/'
-}).map(([front, back]) => ({ front, back }));
-
-const 零声母音节 = Object.entries({
-  // 韵母：开口呼
-  a: 'va',
-  ai: 'vi',
-  ao: 'vo',
-  an: 'v;',
-  ang: 'v,',
-  e: 've',
-  ei: 've',
-  en: 'v.',
-  eng: 'v/',
-  er: 'vi',
-  o: 'vo',
-  ou: 'va',
-  // 韵母：合口呼
-  wu: 'wu',
-  wa: 'wa',
-  wai: 'wi',
-  wan: 'w;',
-  wang: 'w,',
-  wo: 'wo',
-  wei: 'we',
-  wen: 'w.',
-  weng: 'w/',
-  // 韵母：齐齿呼
-  yi: 'yi',
-  ya: 'ya',
-  yao: 'yo',
-  yan: 'y;',
-  yang: 'y,',
-  ye: 'ye',
-  yin: 'y.',
-  ying: 'y/',
-  yo: 'yo',
-  yong: 'y/',
-  you: 'ya',
-  // 韵母：撮口呼
-  yu: 'yu',
-  yuan: 'y;',
-  yue: 'ye',
-  yun: 'y.',
 }).map(([front, back]) => ({ front, back }));
 
 const 主根 = roots.filter(x => !("读音" in x)).map(x => ({ front: x.字根, back: x.编码 }));
@@ -117,50 +75,29 @@ span.hold {
 - 「八 ba」可以分解为声母 b 和韵母 a，因此它作为词语的音码编码就是 `ba`；
 - 「八 ba」同时也是一个字根，这个字根的形码编码也是 `ba`。
 
-注意，有些音节在用汉语拼音拼写时作了一些变形，本方案中，在分解为声母和韵母时要首先把这些音节还原为原始的形式：
+下面我们首先介绍声母和韵母编码，然后据此导出字根的编码。
 
-- 声母 j, q, x 后面接 u 时要还原为原始形式 ü，例如「娟 juan」分解为 j + üan；
-- 韵母 iu, ui, un 还原为原始形式 iou, uei, uen，例如「秋 qiu」分解为 q + iou，「归 gui」分解为 g + uei，「魂 hun」分解为 h + uen；
+## 声母和韵母
 
-下面我们来依次对声母和韵母编码。
+声母的编码与汉语拼音中基本相同，区别仅仅在于 zh, ch, sh 这三个声母分别合并到了声码 `z`, `c`, `s`（即不分平翘舌）。另外，对于以字母 a, o, e 开始的零声母音节，使用 `v` 表示零声母。
 
-## 声母
+韵母首先按照[《中华通韵》](https://sou-yun.cn/mqr.aspx)中的韵部归并为 15 组，然后安排在 `aeiou;,./` 九个键上。其对应关系如下表：
 
-声母的编码与汉语拼音中基本相同，区别仅仅在于 zh, ch, sh 这三个声母分别合并到了声码 `z`, `c`, `s`（即不分平翘舌）。
-
-## 韵母
-
-韵母首先按照《中华通韵》中的韵部归并，然后安排在 `aeiou;,./` 九个键上。其对应关系如下表：
-
-| 韵母                          | 编码 |
-| ----------------------------- | ---- |
-| a, ia, ua, ou, iou            | `a`  |
-| o, io, uo, ao, iao            | `o`  |
-| e, ie, üe, ei, uei            | `e`  |
-| i, er, ai, uai                | `i`  |
-| u, ü                          | `u`  |
-| an, ian, uan, üan             | `;`  |
-| ang, iang, uang               | `,`  |
-| en, in, uen, ün, n, m         | `.`  |
-| eng, ing, ueng, ong, iong, ng | `/`  |
+| 韵部          | 韵母                    | 编码 |
+| ------------- | ----------------------- | ---- |
+| 一啊/十欧     | a, ia, ua, ou, iou (iu) | `a`  |
+| 二喔/九熬     | o, uo, ao, iao          | `o`  |
+| 三鹅/八欸     | e, ie, üe, ei, uei (ui) | `e`  |
+| 四衣/七哀     | i, er, ai, uai          | `i`  |
+| 五乌/六迂     | u, ü                    | `u`  |
+| 十一安        | an, ian, uan, üan       | `;`  |
+| 十二恩        | en, in, uen (un), ün    | `.`  |
+| 十三昂        | ang, iang, uang         | `,`  |
+| 十四英/十五雍 | eng, ing, ong, iong     | `/`  |
 
 请您在下面的小游戏中练习声母和韵母的拼写：
 
 <Practice :data="声韵" name="冰雪清韵-声韵" />
-
-## 零声母音节
-
-汉语拼音中除了 b, p, m, f, d, t, n, l, g, k, h, j, q, x, zh, ch, sh, r, z, c, s 这 21 个声母之外，还有若干音节没有声母，这些音节称为零声母音节。在汉语拼音的拼写中，凡是以 a, e, o, w, y 这几个字母开头的音节都属于零声母音节，如「安 an」、「弯 wan」、「烟 yan」、「冤 yuan」等（y 和 w 按汉语拼音的规定并不是声母，而是韵母自成音节时变形的产物），它们只有韵母的成分而没有声母。纯鼻音音节如「嗯 ng」「呒 m」等也算零声母音节。
-
-本方案中零声母音节的拼写是其对应原始韵母的编码在前面加上一个引导键，并分为三种情况：
-
-- a, ai, an, ang, ao, e, ei, en, eng, er, o, ou, m, n, ng：引导键为 `v`。例如要输入「安 an」，需要先打 `v` 然后输入 an 的编码，因此最终编码为 `v;`；
-- wa, wai, wan, wang, wei, wen, weng, wo, wu：这些音节是由韵母 ua, uai, uan, uang, uei, uen, ueng, uo, u 在自成音节时变形得来的；引导键为 `w`。例如要输入「弯 wan」，需要先打 `w` 然后输入 uan 的编码，因此最终编码为 `w;`；
-- ya, yan, yang, yao, ye, yi, yin, ying, yong, you, yu, yuan, yue, yun：这些音节是由韵母 ia, ian, iang, iao, ie, i, in, ing, iong, iou, ü, üan, üe, ün 在自成音节时变形得来的；引导键为 `y`。例如要输入「烟 yan」，需要先打 `y` 然后输入 ian 的编码，因此最终编码为 `y;`。
-
-请您在下面的小游戏中练习零声母音节的拼写：
-
-<Practice :data="零声母音节" name="冰雪清韵-零声母音节" />
 
 ## 字根
 
@@ -271,3 +208,10 @@ patch:
 ![rime](https://images.tansongchen.com/1759465478.png)
 
 ![rime](https://images.tansongchen.com/1759465439.png)
+
+## 附录：边缘音节的处理
+
+有少量处于汉语拼音语音体系边缘位置的音节未包含在本节开头关于声母和韵母的说明中。其输入方式如下：
+
+- 纯鼻音韵母构成的音节如「嗯 ng」「呒 m」「哼 hng」「噷 hm」等，分析为零声母（以及声母 h）加上鼻音韵母 ng 和 m，其中 ng 归并到 eng，m 归并到 en。这几个字最终编码分别为 `v/`, `v.`, `h/`, `h.`；
+- 只以零声母形式出现的韵母 io（即「哟 `yo`」）和韵母 ueng（即「翁 `weng`」），分别归并到 o 和 eng。这几个字最终编码分别为 `yo` 和 `w/`。

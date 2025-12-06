@@ -125,7 +125,7 @@ const processSerialInput = (newInput: string) => {
   if (current.value.back === newInput.toLowerCase()) {
     input.value = "";
     proceed();
-  } else if (current.value.back.length === newInput.length) {
+  } else if (!current.value.back.startsWith(newInput)) {
     showAnswer.value = true;
     input.value = "";
   } else {
@@ -227,6 +227,7 @@ onMounted(() => {
               如果输入正确，则会自动显示下一张卡牌，且程序会根据你的响应时间来为你的记忆评级。程序会根据这个评级来安排该卡牌下次出现的时间，以便巩固你的记忆。
             </n-li>
             <n-li>如果输入不正确，程序会提示你正确的编码是什么。</n-li>
+            <n-li>您也可以按下空格键让程序立即显示正确的编码。</n-li>
           </n-ul>
           <n-p>
             程序在运行时自动将当前进度记录到浏览器的本地存储当中，再次打开时会从本地存储中加载进度。该进度无法跨平台同步，请尽量使用同一浏览器来练习。

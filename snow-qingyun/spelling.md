@@ -1,5 +1,6 @@
 <script setup>
 import Practice from '../components/Practice.vue'
+import PUAViewer from '../components/PUAViewer.vue'
 import roots from './roots.yaml'
 import analysis_tygf from './analysis-tygf.yaml'
 import analysis_extra from './analysis-extra.yaml'
@@ -34,18 +35,31 @@ const 副根 = roots.filter(x => "读音" in x).map(x => ({
 }));
 
 const 字根映射 = new Map();
+const PUA = [];
 for (const { 字根, 编码 } of roots) {
     for (const 字符 of [...字根]) {
+        if (字符.codePointAt(0) >= 0xe000 && 字符.codePointAt(0) <= 0xf9ff) {
+          PUA.push(字符);
+        }
         字根映射.set(字符, 编码);
     }
 }
+
+PUA.sort();
 
 function convert(analysis) {
   const result = [];
   for (const { 部件, 拆分 } of analysis) {
       const key = `${部件} → ${拆分}`;
-      const value = [...拆分].map((y, i) => i + 1 === 拆分.length ? 字根映射.get(y) : 字根映射.get(y)?.[0]).join("");
-      result.push({ front: key, back: value });
+      const 拆分列表 = [...拆分];
+      const value = [];
+      if (拆分列表.length >= 4) {
+        [拆分列表[0], 拆分列表[1], 拆分列表[2], 拆分列表.at(-1)].forEach(x => value.push(字根映射.get(x)[0]));
+      } else {
+        拆分列表.forEach(x => value.push(字根映射.get(x)[0]));
+        value.push(字根映射.get(拆分列表.at(-1))[1]);
+      }
+      result.push({ front: key, back: value.join("") });
   }
   return result;
 }
@@ -174,9 +188,9 @@ span.hold {
 
 拆分方式筛选，是指在多种可行的拆分方式中唯一确定最优拆分方式的标准。在冰雪清韵中，需要注意的原则依次是：结构完整、字根最少、能连不交、能散不连、向前取大。关于这些规则的具体解释，可以参考[宇浩系列输入法的拆分教程](https://shurufa.app/learn/division.html)。
 
-一般来说，汉字可以先分为一些视觉上连接紧密的成分（这些成分称为部件），然后再将部件拆分为字根。前者比较简单，而后者则比较难，因此对于拆分的学习也就主要是部件拆分的学习。在 CJK 基本集内共有 784 个部件，其中一部分已经选为字根，只需要理解并掌握剩下 529 个部件的拆分就不会遇到任何难拆的字。特别地，如果只要求输入《通用规范汉字表》中的汉字，则只需要理解并掌握其中 404 个部件的拆分，而其余 125 个则属于大字集的拆分。在用户输入以简体文本为主的情况下，可以先练习下面的第一部分，等有需要时再练习第二部分。
+一般来说，汉字可以先分为一些视觉上连接紧密的成分（这些成分称为部件），然后再将部件拆分为字根。前者比较简单，而后者则比较难，因此对于拆分的学习也就主要是部件拆分的学习。在 CJK 基本集内共有 784 个部件，其中一部分已经选为字根，只需要理解并掌握剩下 530 个部件的拆分就不会遇到任何难拆的字。特别地，如果只要求输入《通用规范汉字表》中的汉字，则只需要理解并掌握其中 405 个部件的拆分，而其余 125 个则属于大字集的拆分。在用户输入以简体文本为主的情况下，可以先练习下面的第一部分，等有需要时再练习第二部分。
 
-请您在下面的小游戏中练习部件的拆分，练习时请输入各个字根的声码和最后一个字根的韵码：
+请您在下面的小游戏中练习部件的拆分，练习时请输入第一、二、三、末字根的声码，如小于四字根则补末字根的韵码：
 
 ### 通用规范汉字部件拆分
 

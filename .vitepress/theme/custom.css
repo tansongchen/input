@@ -47,7 +47,7 @@ img[alt^="rime"] {
 
 @font-face {
   font-family: 'ChaiPUA';
-  src: url('/ChaiPUA-0.2.7.ttf') format('truetype');
+  src: url('/ChaiPUA-0.2.7-snow.ttf') format('truetype');
   font-display: swap;
 }
 

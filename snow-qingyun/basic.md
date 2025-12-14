@@ -99,24 +99,43 @@
 
 ## 方案码用户词典
 
-用户可以利用方案码用户词典来对方案码固态词典中的条目进一步自定义。其操作方式如下：
+用户可以利用方案码用户词典来对方案码固态词典中的条目进一步自定义。与音节码用户词典不同的是，音节码用户词典存储在 `snow_pinyin.userdb` 文件夹中、并同步到 `snow_pinyin.userdb.txt` 中；方案码用户词典存储在 `snow_qingyun.userdb` 文件夹中、并同步到 `snow_qingyun.userdb.txt` 中。也就是说，用户同样可以利用 Rime 的同步机制来在多个设备之间同步方案码用户词典。其操作方式如下：
 
 ### 固定和取消固定
 
-在有编码且选中了一个未固定的词时，`Control+;` 可以固定该候选至当前位置；在有编码且选中了一个已固定的词时，`Control+;` 可以取消固定该候选。
+在有编码且选中了一个未固定的词时，`Control+;` 可以固定该候选至当前位置。例如，当 `bma` 的第一候选词为「编码」时，按下 `Control+;`，该词出现「📌」标志，表示已经固定到第一位：
+![rime](https://images.tansongchen.com/1765501239.png)
+
+在有编码且选中了一个已固定的词时，`Control+;` 可以取消固定该候选。例如，当 `xsi` 的第一候选词为「现实」且被固定时（这是内置的固顶词），按下 `Control+;`，该词「📌」标志消失，表示不再被固定到第一位：
+![rime](https://images.tansongchen.com/1765501476.png)
 
 ### 自由加词
 
-在有编码时，按下 `Control+'` 之后候选框消失，以任意方式输入想加的词，再按一下 `Control+'` 即完成自由加词。例如按下 `dna` → `Control+'` → 输入「脱氧核糖核酸」→ `Control+'` ，则在编码 `dna` 的候选上出现「脱氧核糖核酸」
+在有编码时，按下 `Control+'` 之后候选框消失，以任意方式输入想加的词，再按一下 `Control+'` 即将词加到该编码第一个可用的候选位置上。例如，按下 `cctv` → `Control+'` → 输入「中国中央电视台」→ `Control+'`，则「中国中央电视台」添加为 `cctv` 的第一候选词。
+![rime](https://images.tansongchen.com/1765501883.png)
+再例如，按下 `dna` → `Control+'` → 输入「脱氧核糖核酸」→ `Control+'`，此时 `dna` 已经有固定的第一候选词为「半」，则「脱氧核糖核酸」添加为 `dna` 的第二候选词。
+![rime](https://images.tansongchen.com/1765501746.png)
 
 ### 前移和后移
 
-在有编码且选中了一个已固定的词时，按 `Control+[` 将已经固定的候选前移，`Control+]` 将已经固定的词后移。如果前移和后移的过程中遇到其他已经固定的词，则会交换位置。
-
-![](https://images.tansongchen.com/1765423318.png)
-
-这里 `fnr.` 对应「员」和「呗」两个候选，但「员」已经有了 `fr_` 编码，所以可以在编码为 `fnr.` 时按 `Control+]` 把「员」往后移一位。
+在有编码且选中了一个已固定的词时，按 `Control+[` 将已经固定的候选前移，`Control+]` 将已经固定的词后移。如果前移和后移的过程中遇到其他已经固定的词，则会交换位置。例如，这里 `fmje` 对应「吧」和「邑」两个候选，
+![rime](https://images.tansongchen.com/1765500571.png)
+但「吧」已经有了 `fa` 编码，所以可以在编码为 `fmje` 时按 `Control+]` 把「吧」往后移一位。结果如下：
+![rime](https://images.tansongchen.com/1765500649.png)　
 
 ### 重置
 
 在有编码时，按下 `Control+\` 将当前编码上所有的自定义取消。
+
+---
+
+用户可以使用 `snow_qingyun.custom.yaml` 定制上述几种操作的快捷键：
+
+```yaml
+patch:
+  translator/fix_key: "Control+semicolon" # 固定和取消固定
+  translator/add_key: "Control+apostrophe" # 自由加词
+  translator/up_key: "Control+bracketleft" # 前移
+  translator/down_key: "Control+bracketright" # 后移
+  translator/reset_key: "Control+backslash" # 重置
+```

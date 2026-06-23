@@ -48,6 +48,16 @@ export default defineConfig({
 					],
 				},
 			],
+			"/snow-feihua/": [
+				{
+					text: "冰雪飞花",
+					link: "/snow-feihua/",
+					items: [
+						{ text: "拼写规则", link: "/snow-feihua/spelling" },
+						{ text: "前缀编码", link: "/snow-feihua/basic" },
+					],
+				},
+			],
 			"/": [
 				{ text: "冰雪奇缘", link: "/snow" },
 				{

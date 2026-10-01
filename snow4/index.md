@@ -25,7 +25,7 @@ import Input from '../components/Input.vue'
 
 > 充满希望的跋涉比到达目的地更能给人乐趣。
 >
-> ymxs;bveaaebiddaemdd_gneegreolqaa.
+> ymxs;bveaaebiddaemdd_gneeger_lqaa.
 
 <ClientOnly>
   <Input />

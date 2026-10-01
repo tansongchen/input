@@ -1,3 +1,7 @@
+html {
+  font-size: 16px !important;
+}
+
 table {
   margin: 0 auto !important;
   width: fit-content !important;

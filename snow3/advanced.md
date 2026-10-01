@@ -1,33 +1,37 @@
+---
+heng: v
+---
+
 # 高级功能
-
-## 造词
-
-TODO
-
-## 略码
-
-参考[冰雪四拼](../snow4/advanced.md#略码)
 
 ## 以词定字
 
-参考[冰雪四拼](../snow4/advanced.md#以词定字)
-
-## 辅助码
-
-TODO
+<!--@include: ../components/advanced.md#word-to-char-->
 
 ## 反查
 
-TODO
+<!--@include: ../components/advanced.md#reverse-lookup-->
 
 ## 重复上屏
 
-TODO
+<!--@include: ../components/advanced.md#repeat-->
 
 ## 符号
 
-TODO
+<!--@include: ../components/advanced.md#symbols-->
 
 ## Lua 脚本
 
-TODO
+<!--@include: ../components/advanced.md#lua-->
+
+## 略码
+
+<!--@include: ../components/advanced.md#abbreviation-->
+
+## 辅助码
+
+<!--@include: ../components/advanced.md#auxiliary-->
+
+## 附录：非成字部首的读音
+
+<!--@include: ../components/advanced.md#radical-reading-->

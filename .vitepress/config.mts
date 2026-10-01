@@ -9,23 +9,19 @@ const wasmPath = "node_modules/fcitx5-rime/dist/";
 export default defineConfig({
 	title: "众妙斋 · 冰雪拼音",
 	description: "冰雪拼音",
+	srcExclude: ["components/**"],
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
+			{ text: "冰雪之道", link: "/philosophy" },
 			{ text: "冰雪奇缘", link: "/snow" },
 			{ text: "冰雪四拼", link: "/snow4/" },
 			{ text: "冰雪三拼", link: "/snow3/" },
-			{ text: "冰雪双拼", link: "/snow2/" },
+			{ text: "冰雪二拼", link: "/snow2/" },
 			{ text: "冰雪一拼", link: "/snow1/" },
-			{ text: "冰雪之道", link: "/philosophy" },
-			{
-				text: "其他",
-				items: [
-					{ text: "冰雪键道", link: "/snow-jiandao/" },
-					{ text: "冰雪清韵", link: "/snow-qingyun/" },
-					{ text: "冰雪飞花", link: "/snow-feihua/" },
-				],
-			},
+			{ text: "冰雪键道", link: "/snow-jiandao/" },
+			{ text: "冰雪清韵", link: "/snow-qingyun/" },
+			{ text: "冰雪飞花", link: "/snow-feihua/" },
 			{ text: "工具", items: [{ text: "冰雪注音", link: "/pronunciation" }] },
 		],
 
@@ -35,31 +31,13 @@ export default defineConfig({
 			label: "大纲",
 		},
 		sidebar: {
-			"/snow-jiandao/": [{ text: "冰雪键道", link: "/snow-jiandao/" }],
-			"/snow-qingyun/": [
-				{
-					text: "冰雪清韵",
-					link: "/snow-qingyun/",
-					items: [
-						{ text: "拼写规则", link: "/snow-qingyun/spelling" },
-						{ text: "前缀编码", link: "/snow-qingyun/basic" },
-						{ text: "高级功能", link: "/snow-qingyun/advanced" },
-						{ text: "评测数据", link: "/snow-qingyun/evaluation" },
-					],
-				},
-			],
-			"/snow-feihua/": [
-				{
-					text: "冰雪飞花",
-					link: "/snow-feihua/",
-					items: [
-						{ text: "拼写规则", link: "/snow-feihua/spelling" },
-						{ text: "前缀编码", link: "/snow-feihua/basic" },
-					],
-				},
-			],
 			"/": [
-				{ text: "冰雪奇缘", link: "/snow" },
+				{
+					text: "冰雪之道",
+					link: "/philosophy",
+					items: [],
+				},
+				{ text: "冰雪奇缘", link: "/snow", items: [] },
 				{
 					text: "冰雪四拼",
 					link: "/snow4/",
@@ -68,7 +46,7 @@ export default defineConfig({
 						{ text: "顶功编码", link: "/snow4/basic" },
 						{ text: "高级功能", link: "/snow4/advanced" },
 						{ text: "评测数据", link: "/snow4/evaluation" },
-						{ text: "练习", link: "/snow4/practice" },
+						{ text: "练习指南", link: "/snow4/practice" },
 					],
 				},
 				{
@@ -81,18 +59,44 @@ export default defineConfig({
 					],
 				},
 				{
-					text: "冰雪双拼",
+					text: "冰雪二拼",
 					link: "/snow2/",
 					items: [],
 				},
 				{
 					text: "冰雪一拼",
 					link: "/snow1/",
-					items: [{ text: "拼写规则", link: "/snow1/spelling" }],
+					items: [
+						{ text: "拼写规则", link: "/snow1/spelling" },
+						{ text: "顶功编码", link: "/snow1/basic" },
+						{ text: "高级功能", link: "/snow1/advanced" },
+					],
 				},
 				{
-					text: "冰雪之道",
-					link: "/philosophy",
+					text: "冰雪键道",
+					link: "/snow-jiandao/",
+					items: [
+						{ text: "顶功编码", link: "/snow-jiandao/basic" },
+						{ text: "高级功能", link: "/snow-jiandao/advanced" },
+					],
+				},
+				{
+					text: "冰雪飞花",
+					link: "/snow-feihua/",
+					items: [
+						{ text: "拼写规则", link: "/snow-feihua/spelling" },
+						{ text: "前缀编码", link: "/snow-feihua/basic" },
+					],
+				},
+				{
+					text: "冰雪清韵",
+					link: "/snow-qingyun/",
+					items: [
+						{ text: "拼写规则", link: "/snow-qingyun/spelling" },
+						{ text: "前缀编码", link: "/snow-qingyun/basic" },
+						{ text: "高级功能", link: "/snow-qingyun/advanced" },
+						{ text: "评测数据", link: "/snow-qingyun/evaluation" },
+					],
 				},
 			],
 		},

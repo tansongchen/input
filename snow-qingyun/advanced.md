@@ -7,25 +7,9 @@
 此时可以按 `Control+u` 打开 Unicode 注解，候选框中将显示汉字的 Unicode 编码和所属的 Unicode 区块，根据这些信息就可以找出所需的汉字。在这个例子中，两个「行」分别属于「中日韩统一表意文字基本区」（用 `CJK` 表示）和「康熙部首」（用 `部首` 表示）。
 ![rime](https://images.tansongchen.com/1765506210.png)
 
-## 英数混输造词
-
-在科技与流行文化中，经常出现混有英文、数字的词语的情况。为了让这些词也能够自动造词，本方案给 10 个阿拉伯数字、26 个大写英文字母、26 个小写英文字母也指定了相应的音节码。
-
-- 阿拉伯数字编码为 1 `yi`, 2 `vi`, 3 `s;`, 4 `si`, 5 `wu`, 6 `la`, 7 `qi`, 8 `ba`, 9 `ja`, 0 `l/`，阿拉伯数字固定在二码的次选，中文数字固定在二码的三选；
-- 英文字母的音节码规定为
-    - 辅音字母加后缀 `.`，例如 b 的音节码是 `b.`
-    - 元音字母加前缀 `m`，例如 a 的音节码是 `ma`
-    - 所有大写字母固定在二码的次选，所有小写字母固定在二码的三选
-
-使用这些候选，就可以轻易造出如「5G通信」「哆啦A梦」这样的词：
-
-![rime](https://images.tansongchen.com/1761423046.png)
-
-![rime](https://images.tansongchen.com/1761421813.png)
-
 ## 以词定字
 
-请参考[冰雪四拼](../snow4/advanced.md#以词定字)的教程。
+<!--@include: ../components/advanced.md#word-to-char-->
 
 ## 反查
 
@@ -35,28 +19,16 @@
 
 除此之外，还提供拼音（即全拼）反查和笔画反查：
 
-### 拼音反查
-
-拼音反查需要用 <code>&#96;</code> 键引导。例如，输入 <code>&#96;zhe</code>，可以查询到「这」的编码：
-
-![rime](https://images.tansongchen.com/1761357261.png)
-
-### 笔画反查
-
-笔画反查依赖于 Rime 自带的「五笔画 / stroke」方案。笔画反查需要用 <code>&#96;</code> 键引导，并用 `e`, `i`, `u`, `o`, `a` 来输入横竖撇点折。例如，输入 <code>&#96;eiuoa</code> 可以查询到「札」的编码：
-
-![rime](https://images.tansongchen.com/1761358611.png)
+<!--@include: ../components/advanced.md#reverse-lookup-->
 
 ## 重复上屏
 
-若已经输入过一些内容，可以用 <code>&#96;</code> 键来调出上屏历史，然后选择上屏。例如，使用 `cfu` 输入「重复」之后，「重复」就出现在 <code>&#96;</code> 的首选：
-
-![rime](https://images.tansongchen.com/1761358830.png)
+<!--@include: ../components/advanced.md#repeat-->
 
 ## 符号
 
-（建设中）
+<!--@include: ../components/advanced.md#symbols-->
 
 ## Lua 脚本
 
-（建设中）
+<!--@include: ../components/advanced.md#lua-->

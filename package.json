@@ -26,6 +26,7 @@
   "dependencies": {
     "@datastructures-js/priority-queue": "^6.3.1",
     "@pinyin-pro/data": "^1.2.0",
+    "@types/node": "^26.6.3",
     "@vicons/fa": "^0.13.0",
     "lodash-es": "^4.17.21",
     "naive-ui": "^2.39.0",

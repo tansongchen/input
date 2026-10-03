@@ -1,9 +1,31 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { onMounted, onUnmounted } from "vue";
+
+interface FcitxWindow extends Window {
+  fcitx?: {
+    disable(): void;
+  };
+}
+
+let active = false;
+
+const disableFcitx = () => {
+  (window as FcitxWindow).fcitx?.disable();
+};
+
 onMounted(() => {
-  import("fcitx5-rime").then(({ loadZip }) => {
-    loadZip("/snow-pinyin-build.zip");
+  active = true;
+  void import("fcitx5-rime").then(async ({ loadZip }) => {
+    if (!active) return;
+
+    await loadZip("/snow-pinyin-build.zip");
+    if (!active) disableFcitx();
   });
+});
+
+onUnmounted(() => {
+  active = false;
+  disableFcitx();
 });
 </script>
 <template>

@@ -1,14 +1,31 @@
 <script setup lang="ts">
+// biome-ignore lint/style/useVueMultiWordComponentNames: xxx
+import { range } from "lodash-es";
+import simulation from "../src/simulation.json";
 import type { 候选框状态 } from "../src/utils";
-defineProps<候选框状态>();
+
+const { input } = defineProps<{ input: string }>();
+const defaultStatus: 候选框状态 = {
+	commit: "",
+	buffer: "",
+	prompt: "",
+	unused: "",
+	candidates: [],
+	selectedIndex: 0
+};
+const status = (simulation as Record<string, 候选框状态>)[input] ?? defaultStatus;
+// biome-ignore lint/correctness/noUnusedVariables: vue
+const { commit, buffer, prompt, unused, candidates, selectedIndex } = status;
+const labelsAlt = ["_", "2", "3", "8", "9", "0"];
+// biome-ignore lint/correctness/noUnusedVariables: vue
+const labels = /sipin|sanpin/.test(input)
+	? labelsAlt
+	: range(6).map((x) => `${x + 1}`);
 </script>
 
 <template>
   <div class="candidate-view">
-    <div
-      v-if="buffer || prompt || unused"
-      class="preedit"
-    >
+    <div class="preedit">
       <span class="buffer">{{ buffer }}</span>
       <span class="prompt">{{ prompt }}</span>
       <span class="cursor"></span>
@@ -20,7 +37,7 @@ defineProps<候选框状态>();
         :key="index"
         :class="{ selected: index === selectedIndex }"
       >
-        <span class="label">{{ index + 1 }}.</span>
+        <span class="label">{{ labels[index] }}.</span>
         <span class="text">{{ candidate.text }}</span>
         <span v-if="candidate.comment.trim()" class="comment">
           {{ candidate.comment.trim() }}
@@ -36,8 +53,8 @@ defineProps<候选框状态>();
   flex-direction: column;
   gap: 4px;
   max-width: 100%;
-  margin-block: 8px;
-  padding: 6px 8px;
+  margin-block: 4px;
+  padding: 4px;
   font-size: 1rem;
   line-height: 1.5;
   background-color: var(--vp-c-bg-soft);
@@ -76,7 +93,7 @@ defineProps<候选框状态>();
   flex-wrap: wrap;
   gap: 2px;
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   list-style: none;
 }
 
@@ -91,7 +108,7 @@ defineProps<候选框状态>();
 }
 
 .candidates li.selected {
-  color: var(--vp-c-white);
+  color: var(--vp-c-neutral-inverse);
   background-color: var(--vp-c-brand-1);
 }
 

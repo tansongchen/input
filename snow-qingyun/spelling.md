@@ -1,4 +1,5 @@
 <script setup>
+import Window from '../components/Window.vue'
 import Practice from '../components/Practice.vue'
 import PUAViewer from '../components/PUAViewer.vue'
 import roots from './roots.yaml'
@@ -219,9 +220,8 @@ patch:
 
 重新部署后，您就可以用上面的拼写规则来输入任意长度的词语，或包含任意数量字根的单字：
 
-![rime](https://images.tansongchen.com/1759465478.png)
-
-![rime](https://images.tansongchen.com/1759465439.png)
+<Window input="qingyun:set option !popping:h;y/siy/b/xep.y." />
+<Window input="qingyun:set option !popping:ririri" />
 
 ## 单字模式
 

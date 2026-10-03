@@ -1,6 +1,7 @@
 import yaml from "@modyfi/vite-plugin-yaml";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { defineConfig } from "vitepress";
+import { 模拟插件 } from "../src/simulator";
 
 const fileAndStyles: Record<string, string> = {};
 const wasmPath = "node_modules/fcitx5-rime/dist/";
@@ -129,8 +130,9 @@ export default defineConfig({
 					src: wasmPath + file,
 					dest: "assets/chunks",
 				})),
-			}) as any,
+			}),
 			yaml(),
+			模拟插件(),
 		],
 	},
 	postRender(context) {
@@ -149,7 +151,7 @@ export default defineConfig({
 		if (!html) return;
 		const style = fileAndStyles[`/${html}`];
 		if (style) {
-			return code.replace(/<\/head>/, style + "</head>");
+			return code.replace(/<\/head>/, `${style}</head>`);
 		}
 	},
 	markdown: {

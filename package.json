@@ -6,10 +6,11 @@
   "scripts": {
     "start": "vitepress dev --port 2024",
     "build-only": "vitepress build",
-    "build": "bun run install-rime && bun run install-snow && vitepress build",
+    "simulate": "bun run src/simulate.ts",
+    "build": "bun run install-rime && bun run install-snow && bun run simulate && vitepress build",
     "preview": "vitepress preview",
     "install-rime": "wget https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime.tgz -O fcitx5-rime.tgz && bun add ./fcitx5-rime.tgz",
-    "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/download/v0.2.0/snow-pinyin-build.zip -O public/snow-pinyin-build.zip",
+    "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/download/v0.3.9/snow-pinyin-build.zip -O public/snow-pinyin-build.zip",
     "export": "press-export-pdf export ."
   },
   "author": "Songchen Tan",

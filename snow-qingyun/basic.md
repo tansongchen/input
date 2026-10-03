@@ -2,6 +2,10 @@
 name: qingyun
 ---
 
+<script setup>
+import Window from '../components/Window.vue'
+</script>
+
 # 前缀编码
 
 上一节中您学习了冰雪清韵的拼写规则，能够输入词语中每个字的声母和韵母来检索词语，或者输入单字中每个字的声码和韵码来检索单字。本节中我们将声母韵母以及声码韵码重新组合成前缀码的格式，以进一步提高输入效率。
@@ -73,14 +77,14 @@ name: qingyun
 
 下图中展示了输入 ppjgkvnagnpabw_ 再空格即造好「梦泽闲客」，下一次可以用 mzxk 输入。注意，在缓冲模式下前缀码的上屏规则仍然有效，以韵码结束或长度大于等于 4 的编码不需要空格。
 
-![rime](https://images.tansongchen.com/1761361333.png)
-![rime](https://images.tansongchen.com/1761361366.png)
-![rime](https://images.tansongchen.com/1761361390.png)
-![rime](https://images.tansongchen.com/1761361415.png)
+<Window input="qingyun:{Control+j}ppjg" />
+<Window input="qingyun:{Control+j}ppjgkvna" />
+<Window input="qingyun:{Control+j}ppjgkvnagnpa" />
+<Window input="qingyun:{Control+j}ppjgkvnagnpabw" />
 
 造词结果如下：
 
-![rime](https://images.tansongchen.com/1761361491.png)
+<Window input="qingyun:{Control+j}ppjgkvnagnpabw  mzxk" />
 
 ### 英数混输造词
 
@@ -94,9 +98,8 @@ name: qingyun
 
 <!--@include: ../components/basic.md#alnum-2-->
 
-![rime](https://images.tansongchen.com/1761423046.png)
-
-![rime](https://images.tansongchen.com/1761421813.png)
+<Window input="qingyun:{Control+j}wu2g.2lg lwo  wgtx" />
+<Window input="qingyun:{Control+j}fjggfnlkma2ppjg  dlmm" />
 
 ## 方案码固态词典
 

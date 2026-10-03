@@ -8,6 +8,8 @@ export interface 候选 {
 }
 
 export interface 候选框状态 {
+  /** 已经上屏（送往应用程序）的文字 */
+  commit: string;
   buffer: string;
   prompt: string;
   unused: string;
@@ -18,10 +20,10 @@ export interface 候选框状态 {
 export const theme = ref(darkTheme);
 
 export const sync = () => {
-	theme.value = document.documentElement.className.split(" ").includes("dark")
-		? darkTheme
-		: lightTheme;
-	setTimeout(sync, 100);
+  theme.value = document.documentElement.className.split(" ").includes("dark")
+    ? darkTheme
+    : lightTheme;
+  setTimeout(sync, 100);
 };
 
 const breakpoint = useBreakpoint();

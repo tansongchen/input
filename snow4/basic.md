@@ -2,6 +2,10 @@
 name: sipin
 ---
 
+<script setup>
+import Window from '../components/Window.vue'
+</script>
+
 # 顶功编码
 
 上一节中您通过学习冰雪四拼的拼写规则来缩短了带调拼音的拼写长度。不过，这样每个字仍然需要三四键，而且输入结束后需要空格上屏。更重要的是，整句拼音输入的形式不利于精准把控输入的内容，因为在整句中间出现音字转换错误的时候，通常很难修改；另一方面，输入平台一般只会机械地记录用户输入的每一句话，而用户不太可能再次输入完全相同的一句话，因此输入平台并没有很高效地学习用户的输入习惯。
@@ -50,25 +54,28 @@ name: sipin
 
 #### 选择法
 
-本方案的造词方式与一般的拼音输入法完全相同，用户应该会感到很熟悉。输入词的编码时，候选中会首先显示与输入编码音节数量相等的候选词，然后排在后面的是较短的候选词。此时可以直接通过数字键来选择短词，从而把长词拆解成短词并依次确认，最终上屏；上屏后，用户词典中就会出现这些短词连接起来所对应的长词。例如，下面两张图展示了造词「四拼」的过程：当输入到 `spioi` 五码时，发现候选中只有三个二字词且不包含「四拼」，说明「四拼」不存在于词库中，此时直接选择「四」然后再选择「拼」即完成了造词。
+本方案的造词方式与一般的拼音输入法完全相同，用户应该会感到很熟悉。输入词的编码时，候选中会首先显示与输入编码音节数量相等的候选词，然后排在后面的是较短的候选词。此时可以直接通过数字键来选择短词，从而把长词拆解成短词并依次确认，最终上屏；上屏后，用户词典中就会出现这些短词连接起来所对应的长词。例如，下面两张图展示了造词「冰四」的过程：当输入到 `bsiaie` 六码时，发现候选中只有一个二字词且不包含「冰四」，说明「冰四」不存在于词库中，此时直接选择「冰」然后再选择「四」即完成了造词。
 
-![rime](https://images.tansongchen.com/1739415490.png)
-![rime](https://images.tansongchen.com/1739414985.png)
+<Window input="sipin:bsiaie" />
+<Window input="sipin:bsiaie8" />
 
 #### 定位法
 
 不过，如果想要的短词不在第一页，那翻页寻找就比较麻烦了。因此，本方案还提供了另一种方式来快速完成长词的拆解，那就是定位补码的方式。定位的快捷键是：1, 4, 5, 6 和 7。其中，1, 4, 5, 6 会分别把光标移到第一个、第二个、第三个或者第四个音节处，而 7 则会返回最后一个音节的末尾。完成定位之后，可以追加补码来筛选字词，然后确认这一片段对应的字词；对各个片段依次定位并确认之后，即完成造词。下面我们举几个例子：
 
 - 想打「谱方法」这个三字词，输入到 `pffau` 时可以确定词库里没有这个词，此时直接按 1 定位到第一个音节后面，输入 `uu` 补全「谱」的音节码，确认「谱」之后再确认「方法」，即完成造词：
-    ![rime](https://images.tansongchen.com/1739417092.png)
-    ![rime](https://images.tansongchen.com/1739417127.png)
-    ![rime](https://images.tansongchen.com/1739417150.png)
+
+    <Window input="sipin:pffau" />
+    <Window input="sipin:pffau1uu{Down}" />
+    <Window input="sipin:pffau1uu2{Down}" />
 - 想打「微分代数」这个四字词，输入到 `sfdvua` 时可以确定词库里没有这个词，此时直接按 4 定位到第二个音节后面，补码确认「微分」之后再补码确认「代数」，即完成造词：
-    ![rime](https://images.tansongchen.com/1739417521.png)
-    ![rime](https://images.tansongchen.com/1739417553.png)
+
+    <Window input="sipin:sfdvua" />
+    <Window input="sipin:sfdvua4eoui3ai" />
 - 想打「态叠加原理」这个五字词，输入到 `tdjkL` 时可以确定词库里没有这个词，此时直接按 5 定位到第三个音节后面，补码确认「态叠加」之后再补码确认「原理」，即完成造词：
-    ![rime](https://images.tansongchen.com/1739417752.png)
-    ![rime](https://images.tansongchen.com/1739417797.png)
+
+    <Window input="sipin:tdjkL" />
+    <Window input="sipin:tdjkL5ui2i" />
 
 以此类推，掌握这几个快捷键之后，就可以对几乎所有可能的组词方式（1+1, 1+2, 2+1, 1+1+1, 2+2, 2+3, 3+2, ...）快速地拆解完成造词。
 
@@ -76,7 +83,7 @@ name: sipin
 
 若词库里没有任何词可以匹配用户输入的编码，则输入引擎会用组句功能来用短词自动生成一个与用户输入的音节数量相同长度的词。由于这个功能的存在，使得本方案常常能出现以下奇特的效果：明明词库里没有用户想打的词，但输入引擎准确「猜」出来了用户想要打的词，此时本方案类似于一个整句输入方案。例如，想输入「密度矩阵」，输入到 `mdjweoia` 时词库里没有任何词能匹配这个编码，但是词库里有「密度」和「矩阵」且两者频率都不低，因此通过组合的方式正好「猜」出来了用户想要的词「密度矩阵」。
 
-![rime](https://images.tansongchen.com/1739418353.png)
+<Window input="sipin:jweoa mdjweoia" />
 
 概率法对于 2+2 形式的四字词成功率尤其高，这是因为用户尝试打这个复合词之前通常已经打过了相应的二字词，因此在用户词典里两个二字词的频率较高，所以四字词组合出来多半是这个结果。由于汉语的特点，大多数专业术语都以 2+2 的四字复合词的形式出现，因此使用本方案输入专业文本时体验是极好的。
 
@@ -95,9 +102,8 @@ name: sipin
 
 <!--@include: ../components/basic.md#alnum-2-->
 
-![rime](https://images.tansongchen.com/1738506447.png)
-
-![rime](https://images.tansongchen.com/1738506427.png)
+<Window input="sipin:ggtxio1ue21oo  ggtx" />
+<Window input="sipin:{Control+j}doi la sea mee  dlsm" />
 
 学习完构词规则、动态码长和自动造词的特性后，下面再介绍几个进一步引入的优化特性，以更好地服务于顶功输入：
 
@@ -152,10 +158,11 @@ patch:
 
 这样的好处是不仅固顶词不会冲突，其他动态调频的常规词也不会再冲突了。例如，您正在输入「二零二四」和「二零二五」两个词，若仅仅启用无理音节码而不强制使用，则虽然 `rlrg` 可以唯一地得到「二零二五」这个词，但是 `rlrs` 仍然会同时出现「二零二四」和「二零二五」的候选。而若强制使用无理音节码，则可以完全分离这两个词：
 
-![rime](https://images.tansongchen.com/1739414501.png)
-
-![rime](https://images.tansongchen.com/1739414519.png)
+<Window input="sipin:rlrs{Down}{Down}" />
+<Window input="sipin:rlrg" />
 
 ## 方案码用户词典
+
+<Window input="sipin:sfdvua4e 1" />
 
 <!--@include: ../components/basic.md#schema-userdb-->

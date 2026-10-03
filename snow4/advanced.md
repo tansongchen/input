@@ -1,3 +1,7 @@
+<script setup>
+import Window from '../components/Window.vue'
+</script>
+
 # 高级功能
 
 ## 以词定字

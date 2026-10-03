@@ -2,6 +2,10 @@
 name: jiandao
 ---
 
+<script setup>
+import Window from '../components/Window.vue'
+</script>
+
 # 顶功编码
 
 ## 音节码固态词典
@@ -9,12 +13,12 @@ name: jiandao
 ### 构词规则的差异
 
 冰雪键道的五字及以上词构词规则与星空键道有所不同。在星空键道中，五字及以上词的打法为第一、二、三和末字的声母加上前两个字的笔画；但在冰雪拼音体系内，由于无法采用这样的逻辑来查询词典，因此改为用前四个字的声母加上前两个字的笔画。例如，「三下五除二」的编码为 `sxwjvv`：
-![rime](https://images.tansongchen.com/1741308360.png)
+<Window input="jiandao:sxwjvv"/>
 在有些情况下，使用这种方式输入可能会导致重码较为显著。例如，「科学发展观」的编码为 `kxfquo`，与「科学发展」相同；「中华人民共和国」的编码为 `fhrmii`，与「中华人民」相同：
-![rime](https://images.tansongchen.com/1741308074.png)
-![rime](https://images.tansongchen.com/1741308132.png)
+<Window input="jiandao:kxfq"/>
+<Window input="jiandao:fhrm"/>
 因此，本方案还提供了另一种方法来重码更低地输入多字词，即先输入前四个字的声母，然后用大写字母继续输入其余的声母，这样既不影响顶功，又增加了多字词的信息量。例如，输入 `kxfqG`，「科学发展观」就出现在首选：
-![rime](https://images.tansongchen.com/1741308650.png)
+<Window input="jiandao:kxfqG"/>
 
 由于冰雪键道是动态调频的，因此用户在实际使用中可以结合上述两种方法：对于没打过或重码较多的词，宜使用大写字母补全后续的声母以尽快筛选；对于已经打过或重码较少的词，宜用常规方法通过补充笔画将其提升到首选，这样可以避免输入大写字母。
 
@@ -23,19 +27,20 @@ name: jiandao
 ### 动态调频与动态码长
 
 冰雪键道采用动态调频策略，用户打过的词会出现在候选中更靠前的位置。由于键道可以通过追加形码来进一步区分词语，因此本策略使得码长在输入中也可以动态变化，这个特性称为动态码长。例如，用户第一次想打「史诗」时，输入 `ekek` 的时候整个第一页都没有想要的词，需要输入到 `ekekio` 才能将「史诗」提到首选。但输入过一次「史诗」之后，下一次只需要 `ekek` 就能输入「史诗」：
-![rime](https://images.tansongchen.com/1741309030.png)
-![rime](https://images.tansongchen.com/1741309436.png)
+<Window input="jiandao:ekek"/>
+<Window input="jiandao:ekekioekek"/>
 
 ### 自动造词
 
 <!--@include: ../components/basic.md#buffer-->
 
 为了部分地解决这个问题，对于「一字加一字得到二字词」这种比较常见的情况提供了另一种造词方式，即定位补码造词。例如，想打「星猫」一词时已经按词的编码输入了 `xgmz`，发现候选中没有「星猫」这个词；此时不必清空，而是可以补充「星」的形码 `oi` 将其提到首选：
-![rime](https://images.tansongchen.com/1741310776.png)
+<Window input="jiandao:xgmz"/>
+<Window input="jiandao:xgmzoi"/>
 空格确认后，再补充「猫」的形码 `ua`：
-![rime](https://images.tansongchen.com/1741310816.png)
+<Window input="jiandao:xgmzoi ua"/>
 再次空格后，「星猫」上屏，同时也造好了词「星猫」。
-![rime](https://images.tansongchen.com/1741311080.png)
+<Window input="jiandao:xgmzoi ua  xgmz"/>
 
 这种造词方式的优点是可以复用已有的编码。
 

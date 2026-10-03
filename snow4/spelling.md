@@ -1,5 +1,6 @@
 <script setup>
 import Practice from '../components/Practice.vue'
+import Window from '../components/Window.vue'
 
 const shengyundiao = Object.entries({
   // 声母
@@ -246,7 +247,7 @@ patch:
 
 重新部署后，您就可以用上面的拼写规则来输入任意长度的句子：
 
-![](https://images.tansongchen.com/1737279173.png)
+<Window input="sipin:set option !popping:hioifieeviufoeabieixoupioifioi" />
 
 与其他拼音输入法稍有不同的一点是，本方案用空格上屏第一个候选项，但是使用 2, 3, 8, 9, 0 这些数字键来上屏第二个至第六个候选项，这主要是因为 1, 4, 5, 6, 7 这些数字键相比来说不那么容易击打。在使用冰雪四拼整句输入时，也请您一并熟悉这一特点。
 

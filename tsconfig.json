@@ -3,6 +3,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["node"],
+    "resolveJsonModule": true,
   },
   "include": [
     "components/*.vue",

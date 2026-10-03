@@ -6,21 +6,22 @@ import type { 候选框状态 } from "../src/utils";
 
 const { input } = defineProps<{ input: string }>();
 const defaultStatus: 候选框状态 = {
-	commit: "",
-	buffer: "",
-	prompt: "",
-	unused: "",
-	candidates: [],
-	selectedIndex: 0
+  commit: "",
+  buffer: "",
+  prompt: "",
+  unused: "",
+  candidates: [],
+  selectedIndex: 0,
 };
-const status = (simulation as Record<string, 候选框状态>)[input] ?? defaultStatus;
+const status =
+  (simulation as Record<string, 候选框状态>)[input] ?? defaultStatus;
 // biome-ignore lint/correctness/noUnusedVariables: vue
 const { commit, buffer, prompt, unused, candidates, selectedIndex } = status;
 const labelsAlt = ["_", "2", "3", "8", "9", "0"];
 // biome-ignore lint/correctness/noUnusedVariables: vue
 const labels = /sipin|sanpin/.test(input)
-	? labelsAlt
-	: range(6).map((x) => `${x + 1}`);
+  ? labelsAlt
+  : range(6).map((x) => `${x + 1}`);
 </script>
 
 <template>

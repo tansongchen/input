@@ -50,11 +50,11 @@ img[alt^="rime"] {
 }
 
 @font-face {
-  font-family: 'ChaiPUA';
-  src: url('/ChaiPUA-0.2.7-snow.ttf') format('truetype');
+  font-family: "ChaiPUA";
+  src: url("/ChaiPUA-0.2.7-snow.ttf") format("truetype");
   font-display: swap;
 }
 
 .songti-text {
-  font-family: 'ChaiPUA', 'SimSun', 'NSimSun', 'Songti SC', 'STSong', serif;
+  font-family: "ChaiPUA", "SimSun", "NSimSun", "Songti SC", "STSong", serif;
 }

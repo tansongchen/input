@@ -53,9 +53,7 @@ const makeCards = () => {
   return shuffle(cards);
 };
 
-const queue = ref(
-  MinPriorityQueue.fromArray<Card>(makeCards(), (x) => x.due)
-);
+const queue = ref(MinPriorityQueue.fromArray<Card>(makeCards(), (x) => x.due));
 const showAnswer = ref(false);
 const showModal = ref(false);
 const current = computed(() => queue.value.front());
@@ -161,7 +159,7 @@ onMounted(() => {
   if (json) {
     queue.value = MinPriorityQueue.fromArray<Card>(
       JSON.parse(json),
-      (x) => x.due
+      (x) => x.due,
     );
   }
   next();

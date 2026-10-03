@@ -42,7 +42,7 @@ const NaiveUIProvider = defineComponent({
           h(Layout, null, { default: this.$slots.default?.() }),
           import.meta.env.SSR ? [h(CssRenderStyle), h(VitepressPath)] : null,
         ],
-      }
+      },
     );
   },
 });
@@ -54,6 +54,13 @@ export default {
     if (import.meta.env.SSR) {
       const { collect } = setup(app);
       app.provide("css-render-collect", collect);
+    }
+    // 把方案变量暴露为全局属性，模板里可以直接写 {{ 方案 }} 而不是 {{ $frontmatter.方案 }}
+    const 全局属性 = app.config.globalProperties;
+    for (const 变量 of ["方案", "横"]) {
+      Object.defineProperty(全局属性, 变量, {
+        get: () => 全局属性.$frontmatter?.[变量],
+      });
     }
   },
 };

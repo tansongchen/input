@@ -4,5 +4,5 @@ import { 模拟 } from "./simulator";
 const 根目录 = process.cwd();
 
 console.log(
-	模拟("bsiaie", "snow_sipin", resolve(根目录, "../rime-snow-pinyin")),
+  模拟("snow_sipin", ["bsiaie"], resolve(根目录, "../rime-snow-pinyin")),
 );

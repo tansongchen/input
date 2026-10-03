@@ -9,6 +9,7 @@
         "@pinyin-pro/data": "^1.2.0",
         "@types/node": "^26.6.3",
         "@vicons/fa": "^0.13.0",
+        "fcitx5-rime": "./fcitx5-rime.tgz",
         "lodash-es": "^4.17.21",
         "naive-ui": "^2.39.0",
         "pinyin-pro": "^3.26.0",
@@ -493,6 +494,8 @@
     "fast-glob": ["fast-glob@3.3.3", "", { "dependencies": { "@nodelib/fs.stat": "^2.0.2", "@nodelib/fs.walk": "^1.2.3", "glob-parent": "^5.1.2", "merge2": "^1.3.0", "micromatch": "^4.0.8" } }, "sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg=="],
 
     "fastq": ["fastq@1.20.3", "", { "dependencies": { "reusify": "^1.0.4" } }, "sha512-XKv5nnLs6nLF71NgiKJLIZFLkPyIEuOselLG7ujZnGrRfQK8HpvY+WqKhAJUAdLomwVHErVS4LfxFlPq0/FTAw=="],
+
+    "fcitx5-rime": ["fcitx5-rime@./fcitx5-rime.tgz", {}, "sha512-r4P8PcfTvIlhrExj/XTErPZLGfi7dEL6B8sVh0eeKARWz2+EktzpsCJQ3VT31jM0sYnZauOUcRjiTovYIVTtVg=="],
 
     "fd-slicer": ["fd-slicer@1.1.0", "", { "dependencies": { "pend": "~1.2.0" } }, "sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g=="],
 

@@ -1044,7 +1044,7 @@ function resolve(
   word: string,
   simp_list: string[],
   ref_list: string[],
-  dict: Map<string, string[]>
+  dict: Map<string, string[]>,
 ) {
   let resolved = true;
   let chars = [...word];
@@ -1066,7 +1066,7 @@ function resolve(
 function fixDictEntry(
   word: string,
   pinyin_list: string[],
-  dict: Map<string, string[]>
+  dict: Map<string, string[]>,
 ) {
   let resolved = true;
   const updatedList = pinyin_list.map((syllable, i) => {
@@ -1104,7 +1104,7 @@ function processCompleteDict() {
     const [resolved, updated] = fixDictEntry(
       word,
       pinyin.split(" "),
-      new Map()
+      new Map(),
     );
     newDict[word] = [updated, value[1], value[2]];
     if (!resolved) {

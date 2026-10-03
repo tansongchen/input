@@ -1,7 +1,3 @@
----
-name: qingyun
----
-
 <script setup>
 import Window from '../components/Window.vue'
 </script>

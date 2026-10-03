@@ -1,7 +1,3 @@
----
-name: jiandao
----
-
 <script setup>
 import Window from '../components/Window.vue'
 </script>
@@ -10,7 +6,7 @@ import Window from '../components/Window.vue'
 
 ## 音节码固态词典
 
-### 构词规则的差异
+### 构词规则
 
 冰雪键道的五字及以上词构词规则与星空键道有所不同。在星空键道中，五字及以上词的打法为第一、二、三和末字的声母加上前两个字的笔画；但在冰雪拼音体系内，由于无法采用这样的逻辑来查询词典，因此改为用前四个字的声母加上前两个字的笔画。例如，「三下五除二」的编码为 `sxwjvv`：
 <Window input="jiandao:sxwjvv"/>
@@ -26,9 +22,7 @@ import Window from '../components/Window.vue'
 
 ### 动态调频与动态码长
 
-冰雪键道采用动态调频策略，用户打过的词会出现在候选中更靠前的位置。由于键道可以通过追加形码来进一步区分词语，因此本策略使得码长在输入中也可以动态变化，这个特性称为动态码长。例如，用户第一次想打「史诗」时，输入 `ekek` 的时候整个第一页都没有想要的词，需要输入到 `ekekio` 才能将「史诗」提到首选。但输入过一次「史诗」之后，下一次只需要 `ekek` 就能输入「史诗」：
-<Window input="jiandao:ekek"/>
-<Window input="jiandao:ekekioekek"/>
+<!--@include: ../components/basic.md#autolength-->
 
 ### 自动造词
 

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": false
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!build/**",
+      "!public/**",
+      "!bun.lock",
+      "!src/simulation.json",
+      "!**/*.md"
+    ]
+  }
+}

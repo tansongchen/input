@@ -1,5 +1,28 @@
 ## 音节码用户词典
 
+### 首选后置
+
+<!-- #region postpone -->
+
+在逐码输入的过程中，如果一个字词已经在首选出现过，那么在后续输入中它将不再位于首选，这可以充分利用编码空间，并且降低重码。例如，「冰雪」这个词打到第五码的时候成为首选：
+<Window input="sipin:bxoui" />
+那么它六码时就不会是首选：
+<Window input="sipin:bxouie" />
+
+<!-- #endregion postpone -->
+
+### 动态调频与动态码长
+
+<!-- #region autolength -->
+
+本方案采用动态调频策略，用户打过的词会出现在候选中更靠前的位置。由于可以通过追加编码来进一步区分词语，因此动态调频使得一个词的码长在输入中会发生动态变化，这个特性称为动态码长。例如，用户第一次想打「史诗」时，输入 `ekek` 的时候第一页没有该词，需要输入到 `ekekio` 时它才出现在首选。
+<Window input="jiandao:ekek"/>
+<Window input="jiandao:ekekio"/>
+但输入过一次之后，下一次只需要 `ekek` 就能输入该词：
+<Window input="jiandao:ekekioekek"/>
+
+<!-- #endregion autolength -->
+
 ### 缓冲造词
 
 <!-- #region buffer -->
@@ -36,7 +59,7 @@
 
 <!-- #region schema-userdb -->
 
-用户可以利用方案码用户词典来对方案码固态词典中的条目进一步自定义。与音节码用户词典不同的是，音节码用户词典存储在 `snow_pinyin.userdb` 文件夹中、并同步到 `snow_pinyin.userdb.txt` 中；方案码用户词典存储在 `snow_{{ $frontmatter.name }}.userdb` 文件夹中、并同步到 `snow_{{ $frontmatter.name }}.userdb.txt` 中。也就是说，用户同样可以利用 Rime 的同步机制来在多个设备之间同步方案码用户词典。其操作方式如下：
+用户可以利用方案码用户词典来对方案码固态词典中的条目进一步自定义。与音节码用户词典不同的是，音节码用户词典存储在 `snow_pinyin.userdb` 文件夹中、并同步到 `snow_pinyin.userdb.txt` 中；方案码用户词典存储在 `snow_{{ 方案 }}.userdb` 文件夹中、并同步到 `snow_{{ 方案 }}.userdb.txt` 中。也就是说，用户同样可以利用 Rime 的同步机制来在多个设备之间同步方案码用户词典。其操作方式如下：
 
 ### 固定和取消固定
 
@@ -69,7 +92,7 @@
 
 ---
 
-用户可以使用 `snow_{{ $frontmatter.name }}.custom.yaml` 定制上述几种操作的快捷键：
+用户可以使用 `snow_{{ 方案 }}.custom.yaml` 定制上述几种操作的快捷键：
 
 ```yaml
 patch:

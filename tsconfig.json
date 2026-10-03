@@ -3,14 +3,10 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["node"],
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
-  "include": [
-    "components/*.vue",
-    "**/*.md",
-    "src/**/*.ts",
-  ],
+  "include": ["components/*.vue", "**/*.md", "src/**/*.ts"],
   "vueCompilerOptions": {
-    "vitePressExtensions": [".md"],
-  },
+    "vitePressExtensions": [".md"]
+  }
 }

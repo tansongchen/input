@@ -11,7 +11,9 @@
     "preview": "vitepress preview",
     "install-rime": "wget https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime.tgz -O fcitx5-rime.tgz && bun add ./fcitx5-rime.tgz",
     "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/download/v0.3.9/snow-pinyin-build.zip -O public/snow-pinyin-build.zip",
-    "export": "press-export-pdf export ."
+    "export": "press-export-pdf export .",
+    "format": "biome format --write .",
+    "format:check": "biome format ."
   },
   "author": "Songchen Tan",
   "license": "ISC",
@@ -29,6 +31,7 @@
     "@pinyin-pro/data": "^1.2.0",
     "@types/node": "^26.6.3",
     "@vicons/fa": "^0.13.0",
+    "fcitx5-rime": "./fcitx5-rime.tgz",
     "lodash-es": "^4.17.21",
     "naive-ui": "^2.39.0",
     "pinyin-pro": "^3.26.0",

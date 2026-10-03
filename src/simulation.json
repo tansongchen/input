@@ -6,6 +6,64 @@
     "unused": "",
     "candidates": [
       {
+        "text": "事实",
+        "comment": "vo"
+      },
+      {
+        "text": "实施",
+        "comment": "oo"
+      },
+      {
+        "text": "试试",
+        "comment": "oo"
+      },
+      {
+        "text": "实时",
+        "comment": "oo"
+      },
+      {
+        "text": "适时",
+        "comment": "uo"
+      },
+      {
+        "text": "时时",
+        "comment": "oo"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:ekekio": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "ek ek 形 [io]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "史诗",
+        "comment": "io"
+      },
+      {
+        "text": "史实",
+        "comment": "io"
+      },
+      {
+        "text": "食",
+        "comment": "ioav"
+      },
+      {
+        "text": "铈",
+        "comment": "ioov"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:ekekioekek": {
+    "commit": "史诗",
+    "buffer": "",
+    "prompt": "ek ek",
+    "unused": "",
+    "candidates": [
+      {
         "text": "史诗",
         "comment": "io"
       },
@@ -28,39 +86,6 @@
       {
         "text": "适时",
         "comment": "uo"
-      }
-    ],
-    "selectedIndex": 0
-  },
-  "jiandao:ekekioekek": {
-    "commit": "史实",
-    "buffer": "",
-    "prompt": "ek ek",
-    "unused": "",
-    "candidates": [
-      {
-        "text": "史实",
-        "comment": "io"
-      },
-      {
-        "text": "史诗",
-        "comment": "io"
-      },
-      {
-        "text": "事实",
-        "comment": "vo"
-      },
-      {
-        "text": "实施",
-        "comment": "oo"
-      },
-      {
-        "text": "试试",
-        "comment": "oo"
-      },
-      {
-        "text": "实时",
-        "comment": "oo"
       }
     ],
     "selectedIndex": 0
@@ -250,10 +275,6 @@
     "unused": "",
     "candidates": [
       {
-        "text": "星猫",
-        "comment": "ou"
-      },
-      {
         "text": "形貌",
         "comment": "vu"
       },
@@ -272,6 +293,10 @@
       {
         "text": "西沟满族乡",
         "comment": "va"
+      },
+      {
+        "text": "行",
+        "comment": "uuvv"
       }
     ],
     "selectedIndex": 0
@@ -351,7 +376,7 @@
     "candidates": [
       {
         "text": "编码",
-        "comment": ""
+        "comment": "📌"
       },
       {
         "text": "宝马",
@@ -383,10 +408,6 @@
     "unused": "",
     "candidates": [
       {
-        "text": "中国中央电视台",
-        "comment": "📍"
-      },
-      {
         "text": "查处图案",
         "comment": ""
       },
@@ -405,6 +426,10 @@
       {
         "text": "常春藤",
         "comment": ""
+      },
+      {
+        "text": "尺寸图",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -416,12 +441,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "查处图案",
-        "comment": ""
-      },
-      {
         "text": "中国中央电视台",
         "comment": "📍"
+      },
+      {
+        "text": "查处图案",
+        "comment": ""
       },
       {
         "text": "村村通",
@@ -453,10 +478,6 @@
         "comment": "📌"
       },
       {
-        "text": "脱氧核糖核酸",
-        "comment": "📍"
-      },
-      {
         "text": "到那",
         "comment": ""
       },
@@ -470,6 +491,10 @@
       },
       {
         "text": "大牛",
+        "comment": ""
+      },
+      {
+        "text": "斗牛",
         "comment": ""
       }
     ],
@@ -486,12 +511,12 @@
         "comment": "📌"
       },
       {
-        "text": "到那",
-        "comment": ""
-      },
-      {
         "text": "脱氧核糖核酸",
         "comment": "📍"
+      },
+      {
+        "text": "到那",
+        "comment": ""
       },
       {
         "text": "但那",
@@ -581,6 +606,10 @@
     "unused": "",
     "candidates": [
       {
+        "text": "符合",
+        "comment": "📌"
+      },
+      {
         "text": "发挥",
         "comment": ""
       },
@@ -594,10 +623,6 @@
       },
       {
         "text": "峰会",
-        "comment": ""
-      },
-      {
-        "text": "符合",
         "comment": ""
       },
       {
@@ -615,7 +640,7 @@
     "candidates": [
       {
         "text": "发挥",
-        "comment": "📌"
+        "comment": ""
       },
       {
         "text": "返回",
@@ -647,12 +672,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "邑",
-        "comment": "📌"
-      },
-      {
         "text": "吧",
         "comment": "📌 fa"
+      },
+      {
+        "text": "邑",
+        "comment": "📌"
       },
       {
         "text": "⾢",
@@ -680,12 +705,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "吧",
-        "comment": "📌 fa"
-      },
-      {
         "text": "邑",
         "comment": "📌"
+      },
+      {
+        "text": "吧",
+        "comment": "📌 fa"
       },
       {
         "text": "⾢",
@@ -846,7 +871,7 @@
     "candidates": [
       {
         "text": "梦",
-        "comment": "📌 meng4 meng4"
+        "comment": "📌 meng4"
       },
       {
         "text": "品牌机构",
@@ -879,7 +904,7 @@
     "candidates": [
       {
         "text": "泽",
-        "comment": "📌 ze2 ze2"
+        "comment": "📌 ze2"
       },
       {
         "text": "看按钮",
@@ -895,7 +920,7 @@
       },
       {
         "text": "汉",
-        "comment": "han4 han4"
+        "comment": "han4"
       },
       {
         "text": "可按",
@@ -912,10 +937,10 @@
     "candidates": [
       {
         "text": "闲",
-        "comment": "📌 xian2 xian2"
+        "comment": "📌 xian2"
       },
       {
-        "text": "G哪怕",
+        "text": "个哪怕",
         "comment": ""
       },
       {
@@ -945,7 +970,7 @@
     "candidates": [
       {
         "text": "客",
-        "comment": "📍 ke4 ke4"
+        "comment": "📍 ke4"
       },
       {
         "text": "🈚️",
@@ -953,19 +978,19 @@
       },
       {
         "text": "敝",
-        "comment": "bi4 bi4"
+        "comment": "bi4"
       },
       {
         "text": "𠕸",
-        "comment": "sui3 sui3"
+        "comment": "sui3"
       },
       {
         "text": "㝘",
-        "comment": "yong2 yong2"
+        "comment": "yong2"
       },
       {
         "text": "㼰",
-        "comment": "pi2 pi2"
+        "comment": "pi2"
       }
     ],
     "selectedIndex": 0
@@ -1130,6 +1155,72 @@
       },
       {
         "text": "巳",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:bxoui": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "bi xou",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰雪",
+        "comment": ""
+      },
+      {
+        "text": "必修",
+        "comment": ""
+      },
+      {
+        "text": "病休",
+        "comment": ""
+      },
+      {
+        "text": "碧雪",
+        "comment": ""
+      },
+      {
+        "text": "比",
+        "comment": ""
+      },
+      {
+        "text": "并",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:bxouie": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "bie xou",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "病休",
+        "comment": ""
+      },
+      {
+        "text": "冰雪",
+        "comment": ""
+      },
+      {
+        "text": "并",
+        "comment": ""
+      },
+      {
+        "text": "病",
+        "comment": ""
+      },
+      {
+        "text": "冰",
+        "comment": ""
+      },
+      {
+        "text": "饼",
         "comment": ""
       }
     ],
@@ -1301,13 +1392,13 @@
     "selectedIndex": 0
   },
   "sipin:jweoa mdjweoia": {
-    "commit": "举着",
+    "commit": "矩阵",
     "buffer": "",
     "prompt": "mia d j weo",
     "unused": "",
     "candidates": [
       {
-        "text": "密度举着",
+        "text": "密度矩阵",
         "comment": ""
       },
       {

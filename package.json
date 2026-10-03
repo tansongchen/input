@@ -9,7 +9,7 @@
     "simulate": "bun run src/simulate.ts",
     "build": "bun run install-rime && bun run install-snow && bun run simulate && vitepress build",
     "preview": "vitepress preview",
-    "install-rime": "wget https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime.tgz -O fcitx5-rime.tgz && bun add ./fcitx5-rime.tgz",
+    "install-rime": "wget https://github.com/rimeinn/fcitx5-rime.js/releases/download/0.3.1/fcitx5-rime.tgz -O fcitx5-rime.tgz && bun add ./fcitx5-rime.tgz",
     "install-snow": "mkdir -p public && wget https://github.com/rimeinn/rime-snow-pinyin/releases/download/v0.3.9/snow-pinyin-build.zip -O public/snow-pinyin-build.zip",
     "export": "press-export-pdf export .",
     "format": "biome format --write .",

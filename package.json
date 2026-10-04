@@ -31,7 +31,6 @@
     "@pinyin-pro/data": "^1.2.0",
     "@types/node": "^26.6.3",
     "@vicons/fa": "^0.13.0",
-    "fcitx5-rime": "./fcitx5-rime.tgz",
     "lodash-es": "^4.17.21",
     "naive-ui": "^2.39.0",
     "pinyin-pro": "^3.26.0",

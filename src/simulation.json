@@ -1,4 +1,103 @@
 {
+  "jiandao:bgxh": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "bg xh",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰雪",
+        "comment": "ov"
+      },
+      {
+        "text": "白沟泄洪",
+        "comment": "ua"
+      },
+      {
+        "text": "包裹性好",
+        "comment": "uo"
+      },
+      {
+        "text": "不够喜欢",
+        "comment": "vu"
+      },
+      {
+        "text": "不过幸好",
+        "comment": "vv"
+      },
+      {
+        "text": "包裹性和支撑性",
+        "comment": "uo"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:bgxho": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "b g x h 形 [o]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "被关小黑屋",
+        "comment": "oo"
+      },
+      {
+        "text": "冰雪",
+        "comment": "ov"
+      },
+      {
+        "text": "并",
+        "comment": "ouvv"
+      },
+      {
+        "text": "病",
+        "comment": "ovvi"
+      },
+      {
+        "text": "冰",
+        "comment": "ova"
+      },
+      {
+        "text": "炳",
+        "comment": "ouvi"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:bmms{Control+semicolon}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "bm ms",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "编码",
+        "comment": "📌 av"
+      },
+      {
+        "text": "便骂",
+        "comment": "io"
+      },
+      {
+        "text": "避免磨损",
+        "comment": "au"
+      },
+      {
+        "text": "表面磨损",
+        "comment": "vv"
+      },
+      {
+        "text": "吡美莫司",
+        "comment": "oo"
+      },
+      {
+        "text": "变",
+        "comment": "ovao"
+      }
+    ],
+    "selectedIndex": 0
+  },
   "jiandao:ekek": {
     "commit": "",
     "buffer": "",
@@ -123,6 +222,36 @@
     ],
     "selectedIndex": 0
   },
+  "jiandao:gc": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "gc",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "刚才",
+        "comment": "📍 iv"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:gc{Control+apostrophe}ljhev {Control+apostrophe}gc": {
+    "commit": "垃圾回收",
+    "buffer": "",
+    "prompt": "gc",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "刚才",
+        "comment": "📍 iv"
+      },
+      {
+        "text": "垃圾回收",
+        "comment": "📍 vv"
+      }
+    ],
+    "selectedIndex": 0
+  },
   "jiandao:jmdzio2{Control+j}bgxhjmdz": {
     "commit": "键道",
     "buffer": "冰雪",
@@ -193,6 +322,138 @@
       {
         "text": "办学场地",
         "comment": "ao"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:jmdz{Control+semicolon}{Down}{Control+semicolon}{Up}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "jm dz",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "见到",
+        "comment": "📌 iv"
+      },
+      {
+        "text": "剪刀",
+        "comment": "📌 oa"
+      },
+      {
+        "text": "捡到",
+        "comment": "iv"
+      },
+      {
+        "text": "减到",
+        "comment": "ov"
+      },
+      {
+        "text": "尖刀",
+        "comment": "ia"
+      },
+      {
+        "text": "剑道",
+        "comment": "io"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:jmdz{Control+semicolon}{Down}{Control+semicolon}{Up}{Control+bracketright}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "jm dz",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "剪刀",
+        "comment": "📌 oa"
+      },
+      {
+        "text": "见到",
+        "comment": "📌 iv"
+      },
+      {
+        "text": "捡到",
+        "comment": "iv"
+      },
+      {
+        "text": "减到",
+        "comment": "ov"
+      },
+      {
+        "text": "尖刀",
+        "comment": "ia"
+      },
+      {
+        "text": "剑道",
+        "comment": "io"
+      }
+    ],
+    "selectedIndex": 1
+  },
+  "jiandao:kfc": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "k f c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "控制层",
+        "comment": "iua"
+      },
+      {
+        "text": "开封菜",
+        "comment": "vvi"
+      },
+      {
+        "text": "铠装层",
+        "comment": "ioa"
+      },
+      {
+        "text": "看翡翠",
+        "comment": "iia"
+      },
+      {
+        "text": "看福彩",
+        "comment": "iou"
+      },
+      {
+        "text": "康复操",
+        "comment": "oui"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc": {
+    "commit": "疯狂星期四",
+    "buffer": "",
+    "prompt": "kfc",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "疯狂星期四",
+        "comment": "📍 ou"
+      },
+      {
+        "text": "控制层",
+        "comment": "iua"
+      },
+      {
+        "text": "开封菜",
+        "comment": "vvi"
+      },
+      {
+        "text": "铠装层",
+        "comment": "ioa"
+      },
+      {
+        "text": "看翡翠",
+        "comment": "iia"
+      },
+      {
+        "text": "看福彩",
+        "comment": "iou"
       }
     ],
     "selectedIndex": 0
@@ -364,6 +625,138 @@
       {
         "text": "西沟满族乡",
         "comment": "va"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:ybck": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "yb ck",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "因此",
+        "comment": "ii"
+      },
+      {
+        "text": "印次",
+        "comment": "uo"
+      },
+      {
+        "text": "淫词",
+        "comment": "ao"
+      },
+      {
+        "text": "一般参考",
+        "comment": "vu"
+      },
+      {
+        "text": "一般存款",
+        "comment": "vu"
+      },
+      {
+        "text": "一般存款账户",
+        "comment": "vu"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:ybck{Control+semicolon}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "yb ck",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "因此",
+        "comment": "📌 ii"
+      },
+      {
+        "text": "印次",
+        "comment": "uo"
+      },
+      {
+        "text": "淫词",
+        "comment": "ao"
+      },
+      {
+        "text": "一般参考",
+        "comment": "vu"
+      },
+      {
+        "text": "一般存款",
+        "comment": "vu"
+      },
+      {
+        "text": "一般存款账户",
+        "comment": "vu"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:{Control+j}dlou lso xs2mr  dlxm": {
+    "commit": "哆啦A梦",
+    "buffer": "",
+    "prompt": "dl xm",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "多线",
+        "comment": "ua"
+      },
+      {
+        "text": "多嫌",
+        "comment": "ua"
+      },
+      {
+        "text": "电力项目",
+        "comment": "ia"
+      },
+      {
+        "text": "道路相目",
+        "comment": "oo"
+      },
+      {
+        "text": "丢了性命",
+        "comment": "ua"
+      },
+      {
+        "text": "独立选民",
+        "comment": "uo"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:{Control+j}wjv2ge2tyxb  wgtx": {
+    "commit": "5G通信",
+    "buffer": "",
+    "prompt": "w g t x",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "朝贡体系",
+        "comment": "uv"
+      },
+      {
+        "text": "传给他啊",
+        "comment": "ia"
+      },
+      {
+        "text": "网格体系",
+        "comment": "iv"
+      },
+      {
+        "text": "无感通行",
+        "comment": "vv"
+      },
+      {
+        "text": "五个体系",
+        "comment": "vi"
+      },
+      {
+        "text": "车刚停下",
+        "comment": "vi"
       }
     ],
     "selectedIndex": 0
@@ -731,6 +1124,72 @@
     ],
     "selectedIndex": 1
   },
+  "qingyun:kfc": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "k f c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "开发出",
+        "comment": ""
+      },
+      {
+        "text": "空腹吃",
+        "comment": ""
+      },
+      {
+        "text": "咖啡茶",
+        "comment": ""
+      },
+      {
+        "text": "矿粉厂",
+        "comment": ""
+      },
+      {
+        "text": "开封城",
+        "comment": ""
+      },
+      {
+        "text": "开发成",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "qingyun:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc": {
+    "commit": "疯狂星期四",
+    "buffer": "",
+    "prompt": "k f c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "疯狂星期四",
+        "comment": "📍"
+      },
+      {
+        "text": "开发出",
+        "comment": ""
+      },
+      {
+        "text": "空腹吃",
+        "comment": ""
+      },
+      {
+        "text": "咖啡茶",
+        "comment": ""
+      },
+      {
+        "text": "矿粉厂",
+        "comment": ""
+      },
+      {
+        "text": "开封城",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "qingyun:set option !popping:h;y/siy/b/xep.y.": {
     "commit": "",
     "buffer": "",
@@ -797,6 +1256,105 @@
     ],
     "selectedIndex": 0
   },
+  "qingyun:tp.": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "t p.",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "特聘",
+        "comment": ""
+      },
+      {
+        "text": "调频",
+        "comment": ""
+      },
+      {
+        "text": "脱贫",
+        "comment": ""
+      },
+      {
+        "text": "甜品",
+        "comment": ""
+      },
+      {
+        "text": "炭盆",
+        "comment": ""
+      },
+      {
+        "text": "台盆",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "qingyun:tp.O": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "to p.",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "调频",
+        "comment": ""
+      },
+      {
+        "text": "脱贫",
+        "comment": ""
+      },
+      {
+        "text": "跳频",
+        "comment": ""
+      },
+      {
+        "text": "朵",
+        "comment": "tpa"
+      },
+      {
+        "text": "凩",
+        "comment": ""
+      },
+      {
+        "text": "几",
+        "comment": "to"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "qingyun:tp.O tp.": {
+    "commit": "调频",
+    "buffer": "",
+    "prompt": "t p.",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "调频",
+        "comment": ""
+      },
+      {
+        "text": "特聘",
+        "comment": ""
+      },
+      {
+        "text": "脱贫",
+        "comment": ""
+      },
+      {
+        "text": "甜品",
+        "comment": ""
+      },
+      {
+        "text": "炭盆",
+        "comment": ""
+      },
+      {
+        "text": "台盆",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "qingyun:yi": {
     "commit": "",
     "buffer": "",
@@ -829,6 +1387,80 @@
       }
     ],
     "selectedIndex": 0
+  },
+  "qingyun:{Control+j}bxe? srfa2": {
+    "commit": "",
+    "buffer": "冰雪输入法",
+    "prompt": "",
+    "unused": "",
+    "candidates": [],
+    "selectedIndex": -1
+  },
+  "qingyun:{Control+j}bxe? srfa2 bxsrF": {
+    "commit": "冰雪输入法",
+    "buffer": "",
+    "prompt": "b x s r f",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰雪输入法",
+        "comment": ""
+      },
+      {
+        "text": "百姓收入",
+        "comment": ""
+      },
+      {
+        "text": "被性骚扰",
+        "comment": ""
+      },
+      {
+        "text": "本性使然",
+        "comment": ""
+      },
+      {
+        "text": "必须输入",
+        "comment": ""
+      },
+      {
+        "text": "不想杀人",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "qingyun:{Control+j}bxe? srfa{Down}": {
+    "commit": "",
+    "buffer": "冰雪",
+    "prompt": "s r fa",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "收入法",
+        "comment": ""
+      },
+      {
+        "text": "输入法",
+        "comment": ""
+      },
+      {
+        "text": "水热法",
+        "comment": ""
+      },
+      {
+        "text": "虽然法",
+        "comment": ""
+      },
+      {
+        "text": "虽然",
+        "comment": "sr;"
+      },
+      {
+        "text": "输入",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 1
   },
   "qingyun:{Control+j}fjggfnlkma2ppjg  dlmm": {
     "commit": "哆啦A梦",
@@ -1061,6 +1693,588 @@
     ],
     "selectedIndex": 0
   },
+  "sanpin:bgxh": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "bg xh",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰雪",
+        "comment": ""
+      },
+      {
+        "text": "白沟泄洪",
+        "comment": ""
+      },
+      {
+        "text": "包裹性好",
+        "comment": ""
+      },
+      {
+        "text": "不够喜欢",
+        "comment": ""
+      },
+      {
+        "text": "不过幸好",
+        "comment": ""
+      },
+      {
+        "text": "包裹性和支撑性",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:bgxhu": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "b g x h?u",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "包裹性好",
+        "comment": ""
+      },
+      {
+        "text": "冰雪",
+        "comment": ""
+      },
+      {
+        "text": "不过幸好",
+        "comment": ""
+      },
+      {
+        "text": "白沟泄洪",
+        "comment": ""
+      },
+      {
+        "text": "不够喜欢",
+        "comment": ""
+      },
+      {
+        "text": "并",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:bmms{Control+semicolon}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "bm ms",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "编码",
+        "comment": "📌"
+      },
+      {
+        "text": "便骂",
+        "comment": ""
+      },
+      {
+        "text": "避免磨损",
+        "comment": ""
+      },
+      {
+        "text": "表面磨损",
+        "comment": ""
+      },
+      {
+        "text": "吡美莫司",
+        "comment": ""
+      },
+      {
+        "text": "变",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:ekek": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "ek ek",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "事实",
+        "comment": ""
+      },
+      {
+        "text": "实施",
+        "comment": ""
+      },
+      {
+        "text": "试试",
+        "comment": ""
+      },
+      {
+        "text": "实时",
+        "comment": ""
+      },
+      {
+        "text": "适时",
+        "comment": ""
+      },
+      {
+        "text": "时时",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:ekekvu": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "eku ekv",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "史诗",
+        "comment": ""
+      },
+      {
+        "text": "爽快爽快",
+        "comment": ""
+      },
+      {
+        "text": "屎",
+        "comment": ""
+      },
+      {
+        "text": "使",
+        "comment": ""
+      },
+      {
+        "text": "史",
+        "comment": ""
+      },
+      {
+        "text": "始",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:ekekvuekek": {
+    "commit": "史诗",
+    "buffer": "",
+    "prompt": "ek ek",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "史诗",
+        "comment": ""
+      },
+      {
+        "text": "事实",
+        "comment": ""
+      },
+      {
+        "text": "实施",
+        "comment": ""
+      },
+      {
+        "text": "试试",
+        "comment": ""
+      },
+      {
+        "text": "实时",
+        "comment": ""
+      },
+      {
+        "text": "适时",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:gc": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "g c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "刚才",
+        "comment": "📌"
+      },
+      {
+        "text": "高层",
+        "comment": ""
+      },
+      {
+        "text": "歌词",
+        "comment": ""
+      },
+      {
+        "text": "干脆",
+        "comment": ""
+      },
+      {
+        "text": "过错",
+        "comment": ""
+      },
+      {
+        "text": "个词",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:gc{Control+apostrophe}ljhev {Control+apostrophe}gc": {
+    "commit": "垃圾回收",
+    "buffer": "",
+    "prompt": "g c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "刚才",
+        "comment": "📌"
+      },
+      {
+        "text": "垃圾回收",
+        "comment": "📍"
+      },
+      {
+        "text": "高层",
+        "comment": ""
+      },
+      {
+        "text": "歌词",
+        "comment": ""
+      },
+      {
+        "text": "干脆",
+        "comment": ""
+      },
+      {
+        "text": "过错",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}{Up}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "jm dz",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "见到",
+        "comment": "📌"
+      },
+      {
+        "text": "剪刀",
+        "comment": "📌"
+      },
+      {
+        "text": "捡到",
+        "comment": ""
+      },
+      {
+        "text": "减到",
+        "comment": ""
+      },
+      {
+        "text": "尖刀",
+        "comment": ""
+      },
+      {
+        "text": "剑道",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}{Up}{Control+bracketright}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "jm dz",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "剪刀",
+        "comment": "📌"
+      },
+      {
+        "text": "见到",
+        "comment": "📌"
+      },
+      {
+        "text": "捡到",
+        "comment": ""
+      },
+      {
+        "text": "减到",
+        "comment": ""
+      },
+      {
+        "text": "尖刀",
+        "comment": ""
+      },
+      {
+        "text": "剑道",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 1
+  },
+  "sanpin:kfc": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "k f c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "控制层",
+        "comment": ""
+      },
+      {
+        "text": "开封菜",
+        "comment": ""
+      },
+      {
+        "text": "铠装层",
+        "comment": ""
+      },
+      {
+        "text": "看翡翠",
+        "comment": ""
+      },
+      {
+        "text": "看福彩",
+        "comment": ""
+      },
+      {
+        "text": "康复操",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc": {
+    "commit": "疯狂星期四",
+    "buffer": "",
+    "prompt": "kfc",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "疯狂星期四",
+        "comment": "📍"
+      },
+      {
+        "text": "控制层",
+        "comment": ""
+      },
+      {
+        "text": "开封菜",
+        "comment": ""
+      },
+      {
+        "text": "铠装层",
+        "comment": ""
+      },
+      {
+        "text": "看翡翠",
+        "comment": ""
+      },
+      {
+        "text": "看福彩",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:ybck": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "yb ck",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "因此",
+        "comment": ""
+      },
+      {
+        "text": "印次",
+        "comment": ""
+      },
+      {
+        "text": "淫词",
+        "comment": ""
+      },
+      {
+        "text": "一般参考",
+        "comment": ""
+      },
+      {
+        "text": "一般存款",
+        "comment": ""
+      },
+      {
+        "text": "一般存款账户",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:ybck{Control+semicolon}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "yb ck",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "因此",
+        "comment": "📌"
+      },
+      {
+        "text": "印次",
+        "comment": ""
+      },
+      {
+        "text": "淫词",
+        "comment": ""
+      },
+      {
+        "text": "一般参考",
+        "comment": ""
+      },
+      {
+        "text": "一般存款",
+        "comment": ""
+      },
+      {
+        "text": "一般存款账户",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:{Control+j}bgxherf": {
+    "commit": "",
+    "buffer": "冰雪",
+    "prompt": "e r f",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "输入法",
+        "comment": "[630: eou]"
+      },
+      {
+        "text": "受让方",
+        "comment": ""
+      },
+      {
+        "text": "双人房",
+        "comment": ""
+      },
+      {
+        "text": "收入者",
+        "comment": ""
+      },
+      {
+        "text": "杀人犯",
+        "comment": ""
+      },
+      {
+        "text": "杀人者",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:{Control+j}bgxherf ": {
+    "commit": "",
+    "buffer": "冰雪输入法",
+    "prompt": "",
+    "unused": "",
+    "candidates": [],
+    "selectedIndex": -1
+  },
+  "sanpin:{Control+j}bgxherf  bxerF": {
+    "commit": "冰雪输入法",
+    "buffer": "",
+    "prompt": "b x e r f",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰雪输入法",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:{Control+j}dlvlsvikkamr  dlkm": {
+    "commit": "哆啦A梦",
+    "buffer": "",
+    "prompt": "dl km",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "夺眶",
+        "comment": ""
+      },
+      {
+        "text": "多",
+        "comment": ""
+      },
+      {
+        "text": "躲",
+        "comment": ""
+      },
+      {
+        "text": "哆",
+        "comment": ""
+      },
+      {
+        "text": "朵",
+        "comment": ""
+      },
+      {
+        "text": "剁",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:{Control+j}wjugjatyxb  wgtx": {
+    "commit": "五G通信",
+    "buffer": "",
+    "prompt": "w g t x",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "朝贡体系",
+        "comment": ""
+      },
+      {
+        "text": "传给他啊",
+        "comment": ""
+      },
+      {
+        "text": "网格体系",
+        "comment": ""
+      },
+      {
+        "text": "无感通行",
+        "comment": ""
+      },
+      {
+        "text": "五个体系",
+        "comment": ""
+      },
+      {
+        "text": "车刚停下",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sipin:azhe": {
     "commit": "",
     "buffer": "",
@@ -1090,6 +2304,39 @@
       {
         "text": "哲",
         "comment": "wee"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:bma{Control+semicolon}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "b ma",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "编码",
+        "comment": "📌"
+      },
+      {
+        "text": "帮忙",
+        "comment": ""
+      },
+      {
+        "text": "不满",
+        "comment": ""
+      },
+      {
+        "text": "宝马",
+        "comment": ""
+      },
+      {
+        "text": "饱满",
+        "comment": ""
+      },
+      {
+        "text": "白马",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -1259,6 +2506,72 @@
     ],
     "selectedIndex": 2
   },
+  "sipin:dna{Control+semicolon}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "d na",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "电脑",
+        "comment": "📌"
+      },
+      {
+        "text": "大脑",
+        "comment": ""
+      },
+      {
+        "text": "东南",
+        "comment": ""
+      },
+      {
+        "text": "到那",
+        "comment": ""
+      },
+      {
+        "text": "但那",
+        "comment": ""
+      },
+      {
+        "text": "都难",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:dna{Control+semicolon}{Control+apostrophe}tfhtHS {Control+apostrophe}dna": {
+    "commit": "脱氧核糖核酸",
+    "buffer": "",
+    "prompt": "d na",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "电脑",
+        "comment": "📌"
+      },
+      {
+        "text": "脱氧核糖核酸",
+        "comment": "📍"
+      },
+      {
+        "text": "大脑",
+        "comment": ""
+      },
+      {
+        "text": "东南",
+        "comment": ""
+      },
+      {
+        "text": "到那",
+        "comment": ""
+      },
+      {
+        "text": "但那",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sipin:fa1s": {
     "commit": "",
     "buffer": "",
@@ -1288,6 +2601,72 @@
       {
         "text": "繙",
         "comment": "sii 纟"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:fc": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "f c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "因此",
+        "comment": "📌"
+      },
+      {
+        "text": "一次",
+        "comment": ""
+      },
+      {
+        "text": "由此",
+        "comment": ""
+      },
+      {
+        "text": "英寸",
+        "comment": ""
+      },
+      {
+        "text": "页次",
+        "comment": ""
+      },
+      {
+        "text": "隐藏",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:fc{Control+semicolon}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "f c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "因此",
+        "comment": ""
+      },
+      {
+        "text": "一次",
+        "comment": ""
+      },
+      {
+        "text": "由此",
+        "comment": ""
+      },
+      {
+        "text": "英寸",
+        "comment": ""
+      },
+      {
+        "text": "页次",
+        "comment": ""
+      },
+      {
+        "text": "隐藏",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -1424,6 +2803,72 @@
     ],
     "selectedIndex": 0
   },
+  "sipin:kfc": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "k f c",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "可以从",
+        "comment": ""
+      },
+      {
+        "text": "渔业村",
+        "comment": ""
+      },
+      {
+        "text": "雨隐村",
+        "comment": ""
+      },
+      {
+        "text": "砍一次",
+        "comment": ""
+      },
+      {
+        "text": "看一次",
+        "comment": ""
+      },
+      {
+        "text": "可隐藏",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc": {
+    "commit": "疯狂星期四",
+    "buffer": "",
+    "prompt": "kfc",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "疯狂星期四",
+        "comment": "📍"
+      },
+      {
+        "text": "可以从",
+        "comment": ""
+      },
+      {
+        "text": "渔业村",
+        "comment": ""
+      },
+      {
+        "text": "雨隐村",
+        "comment": ""
+      },
+      {
+        "text": "砍一次",
+        "comment": ""
+      },
+      {
+        "text": "看一次",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sipin:kooeei{Down}{Down}{Down}": {
     "commit": "",
     "buffer": "",
@@ -1456,6 +2901,72 @@
       }
     ],
     "selectedIndex": 3
+  },
+  "sipin:kooe{Control+semicolon}{Down}{Control+semicolon}{Up}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "kooe",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "圆",
+        "comment": "📌 iaia~"
+      },
+      {
+        "text": "原",
+        "comment": "📌 euui~ euui~"
+      },
+      {
+        "text": "猿",
+        "comment": "uaue~"
+      },
+      {
+        "text": "元",
+        "comment": "eeua"
+      },
+      {
+        "text": "缘",
+        "comment": "aaea~"
+      },
+      {
+        "text": "袁",
+        "comment": "eiei~"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:kooe{Control+semicolon}{Down}{Control+semicolon}{Up}{Control+bracketright}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "kooe",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "原",
+        "comment": "📌 euui~ euui~"
+      },
+      {
+        "text": "圆",
+        "comment": "📌 iaia~"
+      },
+      {
+        "text": "猿",
+        "comment": "uaue~"
+      },
+      {
+        "text": "元",
+        "comment": "eeua"
+      },
+      {
+        "text": "缘",
+        "comment": "aaea~"
+      },
+      {
+        "text": "袁",
+        "comment": "eiei~"
+      }
+    ],
+    "selectedIndex": 1
   },
   "sipin:o123": {
     "commit": "",
@@ -1816,39 +3327,6 @@
     ],
     "selectedIndex": 0
   },
-  "sipin:sfdvua4e 1": {
-    "commit": "",
-    "buffer": "网页",
-    "prompt": "d",
-    "unused": "vua",
-    "candidates": [
-      {
-        "text": "都",
-        "comment": "📌"
-      },
-      {
-        "text": "的",
-        "comment": ""
-      },
-      {
-        "text": "对",
-        "comment": ""
-      },
-      {
-        "text": "到",
-        "comment": ""
-      },
-      {
-        "text": "多",
-        "comment": ""
-      },
-      {
-        "text": "打",
-        "comment": ""
-      }
-    ],
-    "selectedIndex": 0
-  },
   "sipin:sfdvua4eoui3ai": {
     "commit": "",
     "buffer": "微分",
@@ -1981,6 +3459,105 @@
     ],
     "selectedIndex": 0
   },
+  "sipin:vvi": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "v vi",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "事实",
+        "comment": ""
+      },
+      {
+        "text": "试试",
+        "comment": ""
+      },
+      {
+        "text": "实施",
+        "comment": ""
+      },
+      {
+        "text": "设施",
+        "comment": ""
+      },
+      {
+        "text": "上市",
+        "comment": ""
+      },
+      {
+        "text": "说是",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:vviii": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "vi vii",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "史诗",
+        "comment": ""
+      },
+      {
+        "text": "实施",
+        "comment": ""
+      },
+      {
+        "text": "石狮",
+        "comment": ""
+      },
+      {
+        "text": "刷刷",
+        "comment": ""
+      },
+      {
+        "text": "帅帅",
+        "comment": ""
+      },
+      {
+        "text": "耍帅",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:vviiivvi": {
+    "commit": "史诗",
+    "buffer": "",
+    "prompt": "v vi",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "史诗",
+        "comment": ""
+      },
+      {
+        "text": "试试",
+        "comment": ""
+      },
+      {
+        "text": "事实",
+        "comment": ""
+      },
+      {
+        "text": "实施",
+        "comment": ""
+      },
+      {
+        "text": "设施",
+        "comment": ""
+      },
+      {
+        "text": "上市",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sipin:wia1m": {
     "commit": "",
     "buffer": "",
@@ -2055,6 +3632,80 @@
     "candidates": [
       {
         "text": "重复",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:{Control+j}bxouivrf": {
+    "commit": "",
+    "buffer": "冰雪",
+    "prompt": "v r f",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "输入法",
+        "comment": ""
+      },
+      {
+        "text": "受让方",
+        "comment": ""
+      },
+      {
+        "text": "水溶液",
+        "comment": ""
+      },
+      {
+        "text": "双人房",
+        "comment": ""
+      },
+      {
+        "text": "杀人犯",
+        "comment": ""
+      },
+      {
+        "text": "十二分",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:{Control+j}bxouivrf ": {
+    "commit": "",
+    "buffer": "冰雪输入法",
+    "prompt": "",
+    "unused": "",
+    "candidates": [],
+    "selectedIndex": -1
+  },
+  "sipin:{Control+j}bxouivrf  bxvrF": {
+    "commit": "冰雪输入法",
+    "buffer": "",
+    "prompt": "b x v r f",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰雪输入法",
+        "comment": ""
+      },
+      {
+        "text": "别瞎说啊",
+        "comment": ""
+      },
+      {
+        "text": "百姓收入",
+        "comment": ""
+      },
+      {
+        "text": "抱新生儿",
+        "comment": ""
+      },
+      {
+        "text": "本性使然",
+        "comment": ""
+      },
+      {
+        "text": "必须输入",
         "comment": ""
       }
     ],

@@ -50,12 +50,12 @@ const labels = /sipin|sanpin/.test(input)
 
 <style scoped>
 .candidate-view {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   flex-direction: column;
   gap: 4px;
-  max-width: 100%;
   margin-block: 4px;
-  padding: 4px;
+  padding: 6px;
   font-size: 1rem;
   line-height: 1.5;
   background-color: var(--vp-c-bg-soft);

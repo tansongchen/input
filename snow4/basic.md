@@ -1,5 +1,51 @@
 <script setup>
 import Window from '../components/Window.vue'
+
+const 输入后置一 = "sipin:bxoui";
+const 输入后置二 = "sipin:bxouie";
+
+const 动态码长词 = "史诗";
+const 输入码长一 = "sipin:vvi";
+const 输入码长二 = "sipin:vviii";
+const 输入码长三 = "sipin:vviiivvi";
+
+const 输入选择造词一 = "sipin:bsiaie";
+const 输入选择造词二 = "sipin:bsiaie8";
+
+const 输入定位造词一 = "sipin:pffau";
+const 输入定位造词二 = "sipin:pffau1uu{Down}";
+const 输入定位造词三 = "sipin:pffau1uu2{Down}";
+const 输入定位造词四 = "sipin:sfdvua";
+const 输入定位造词五 = "sipin:sfdvua4eoui3ai";
+const 输入定位造词六 = "sipin:tdjkL";
+const 输入定位造词七 = "sipin:tdjkL5ui2i";
+
+const 输入组句造词 = "sipin:jweoa mdjweoia";
+
+const 输入缓冲造词一 = "sipin:{Control+j}bxouivrf";
+const 输入缓冲造词二 = "sipin:{Control+j}bxouivrf ";
+const 输入缓冲造词三 = "sipin:{Control+j}bxouivrf  bxvrF";
+
+const 输入英数一 = "sipin:ggtxio1ue21oo  ggtx";
+const 输入英数二 = "sipin:{Control+j}doi la sea mee  dlsm";
+
+const 输入固定 = "sipin:bma{Control+semicolon}";
+const 输入取消固定一 = "sipin:fc";
+const 输入取消固定二 = "sipin:fc{Control+semicolon}";
+
+const 加词编码 = "kfc";
+const 加词 = "疯狂星期四";
+const 输入加词一 = "sipin:kfc";
+const 输入加词二 = "sipin:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc";
+
+const 加词冲突编码 = "dna";
+const 加词冲突 = "脱氧核糖核酸";
+const 加词冲突候选 = "电脑";
+const 输入加词冲突一 = "sipin:dna{Control+semicolon}";
+const 输入加词冲突二 = "sipin:dna{Control+semicolon}{Control+apostrophe}tfhtHS {Control+apostrophe}dna";
+
+const 输入后移一 = "sipin:kooe{Control+semicolon}{Down}{Control+semicolon}{Up}";
+const 输入后移二 = "sipin:kooe{Control+semicolon}{Down}{Control+semicolon}{Up}{Control+bracketright}";
 </script>
 
 # 顶功编码
@@ -42,54 +88,31 @@ import Window from '../components/Window.vue'
 
 ## 音节码用户词典
 
-### 动态码长
+### 动态调频与动态码长
 
 <!--@include: ../components/basic.md#autolength-->
 
 ### 自动造词
 
-本方案词库中含有 180 万来自多个渠道的词汇，但是用户在自己的使用中仍然会遇到需要的词词库中没有的情况。这时就需要造词。
+#### 选择造词
 
-#### 选择法
+<!--@include: ../components/basic.md#encode-select-->
 
-本方案的造词方式与一般的拼音输入法完全相同，用户应该会感到很熟悉。输入词的编码时，候选中会首先显示与输入编码音节数量相等的候选词，然后排在后面的是较短的候选词。此时可以直接通过数字键来选择短词，从而把长词拆解成短词并依次确认，最终上屏；上屏后，用户词典中就会出现这些短词连接起来所对应的长词。例如，下面两张图展示了造词「冰四」的过程：当输入到 `bsiaie` 六码时，发现候选中只有一个二字词且不包含「冰四」，说明「冰四」不存在于词库中，此时直接选择「冰」然后再选择「四」即完成了造词。
+#### 定位造词
 
-<Window input="sipin:bsiaie" />
-<Window input="sipin:bsiaie8" />
+<!--@include: ../components/basic.md#encode-locate-->
 
-#### 定位法
+#### 组句造词
 
-不过，如果想要的短词不在第一页，那翻页寻找就比较麻烦了。因此，本方案还提供了另一种方式来快速完成长词的拆解，那就是定位补码的方式。定位的快捷键是：1, 4, 5, 6 和 7。其中，1, 4, 5, 6 会分别把光标移到第一个、第二个、第三个或者第四个音节处，而 7 则会返回最后一个音节的末尾。完成定位之后，可以追加补码来筛选字词，然后确认这一片段对应的字词；对各个片段依次定位并确认之后，即完成造词。下面我们举几个例子：
+<!--@include: ../components/basic.md#encode-sentence-->
 
-- 想打「谱方法」这个三字词，输入到 `pffau` 时可以确定词库里没有这个词，此时直接按 1 定位到第一个音节后面，输入 `uu` 补全「谱」的音节码，确认「谱」之后再确认「方法」，即完成造词：
+#### 缓冲造词
 
-    <Window input="sipin:pffau" />
-    <Window input="sipin:pffau1uu{Down}" />
-    <Window input="sipin:pffau1uu2{Down}" />
-- 想打「微分代数」这个四字词，输入到 `sfdvua` 时可以确定词库里没有这个词，此时直接按 4 定位到第二个音节后面，补码确认「微分」之后再补码确认「代数」，即完成造词：
-
-    <Window input="sipin:sfdvua" />
-    <Window input="sipin:sfdvua4eoui3ai" />
-- 想打「态叠加原理」这个五字词，输入到 `tdjkL` 时可以确定词库里没有这个词，此时直接按 5 定位到第三个音节后面，补码确认「态叠加」之后再补码确认「原理」，即完成造词：
-
-    <Window input="sipin:tdjkL" />
-    <Window input="sipin:tdjkL5ui2i" />
-
-以此类推，掌握这几个快捷键之后，就可以对几乎所有可能的组词方式（1+1, 1+2, 2+1, 1+1+1, 2+2, 2+3, 3+2, ...）快速地拆解完成造词。
-
-#### 概率法
-
-若词库里没有任何词可以匹配用户输入的编码，则输入引擎会用组句功能来用短词自动生成一个与用户输入的音节数量相同长度的词。由于这个功能的存在，使得本方案常常能出现以下奇特的效果：明明词库里没有用户想打的词，但输入引擎准确「猜」出来了用户想要打的词，此时本方案类似于一个整句输入方案。例如，想输入「密度矩阵」，输入到 `mdjweoia` 时词库里没有任何词能匹配这个编码，但是词库里有「密度」和「矩阵」且两者频率都不低，因此通过组合的方式正好「猜」出来了用户想要的词「密度矩阵」。
-
-<Window input="sipin:jweoa mdjweoia" />
-
-概率法对于 2+2 形式的四字词成功率尤其高，这是因为用户尝试打这个复合词之前通常已经打过了相应的二字词，因此在用户词典里两个二字词的频率较高，所以四字词组合出来多半是这个结果。由于汉语的特点，大多数专业术语都以 2+2 的四字复合词的形式出现，因此使用本方案输入专业文本时体验是极好的。
-
-用户应掌握上述三种造词的方式以及使用场景，通过逐步的使用来融会贯通，这样才能最大程度发挥本方案的造词功能。对于后两种方式，到底是发现候选中没有想要的词就去定位编码，还是多打几码尝试让组句功能组出想要的词，存在一定的权衡，用户需要找到最适合自己的方式并养成自己的习惯。推荐的用法是：四字或更长的复合词可以把编码打全让概率法碰碰运气，而其他情况及时定位会来得更快。
+<!--@include: ../components/basic.md#buffer-->
 
 ### 英数混输造词
 
-<!--@include: ../components/basic.md#alnum-->
+<!--@include: ../components/basic.md#alnum{,3}-->
 
 - 阿拉伯数字与相应中文数字（零～九）相同，中文数字固定在三码的首选，阿拉伯数字固定在三码的次选；
 - 英文字母的音节码规定为
@@ -98,23 +121,18 @@ import Window from '../components/Window.vue'
     - 除了 j, q, x, k 这些字母外，所有大写字母固定在三码的首选，所有小写字母固定在三码的次选
     - 对于 j, q, x, k 由于首选已经被 `*oo` 的高频字占据，因此所有大写字母固定在三码的次选，所有小写字母固定在三码的三选
 
-<!--@include: ../components/basic.md#alnum-2-->
-
-<Window input="sipin:ggtxio1ue21oo  ggtx" />
-<Window input="sipin:{Control+j}doi la sea mee  dlsm" />
-
-学习完构词规则、动态码长和自动造词的特性后，下面再介绍几个进一步引入的优化特性，以更好地服务于顶功输入：
+<!--@include: ../components/basic.md#alnum{3,}-->
 
 ## 方案码固态词典
 
-一般情况下，输入各种编码时候选的排序会随着用户的使用逐渐调整，以贴合用户的使用习惯。但是，如果高频词的排序常常变动，则难以熟练掌握。因此，本方案精心设计了一些固定候选词，这些词在输入对应编码时总是处于首位，可以直接顶屏或者（在不能顶屏的情况下）用空格上屏，并且这些都定义在 `snow_sipin.fixed.txt` 中，可以自由修改。
+<!--@include: ../components/basic.md#schema-static-->
 
 相比于声笔简整和声笔拼音，本方案设计的固定候选词更多，包括了 636 个单音节词和 510 个双音节词，而且进行了更加细致的优化。这使得在一般的连续性输入文本中固定候选词的总频率已经达到了 70% 以上，所以掌握固定候选词可以快速提高输入方案的熟练度。这些固定候选词的规律是：
 
-- 单音节词的一码（21 个）、二码（105 个）和三码（510 个）全部固顶；
-- 双音节词的二码（441 个）全部固顶，而三码和四码选取了一部分（69 个）固顶；
+- 单音节词的一码（21 个）、二码（105 个）和三码（510 个）全部固定；
+- 双音节词的二码（441 个）全部固定，而三码和四码选取了一部分（69 个）固定；
 
-为了减小固定候选词的记忆难度，本方案选取固定候选词的时候采取了语义优先的策略，也就是语义相关的词往往具有相同或相关的固顶码长，记住一个往往就记住了一大片。例如，
+为了减小固定候选词的记忆难度，本方案选取固定候选词的时候采取了语义优先的策略，也就是语义相关的词往往具有相同或相关的固定码长，记住一个往往就记住了一大片。例如，
 
 ```
 ...
@@ -141,9 +159,9 @@ nli	哪里
 
 为了解决这个问题，对「三」、「五」、「日」这三个字所在的音节增加了无理音节码：
 
-- `san1` 这个音节也可以用 `heu` 打出来，同时也是「三」的固顶码
-- `wu3` 这个音节也可以用 `gue` 打出来，同时也是「五」的固顶码
-- `ri4` 这个音节也可以用 `rii` 打出来，同时也是「日」的固顶码
+- `san1` 这个音节也可以用 `heu` 打出来，同时也是「三」的固定码
+- `wu3` 这个音节也可以用 `gue` 打出来，同时也是「五」的固定码
+- `ri4` 这个音节也可以用 `rii` 打出来，同时也是「日」的固定码
 
 记忆的时候，可以把它们当成是一周中的三天，用「周三 `wheu`」「周五 `wgue`」「周日 `wrii`」这三个固定候选词来辅助记忆。另外，虽然这些音节的其他字也能用无理码打出来，但是并不推荐这样做，因为会干扰常规音节码的键位；如果反过来当成是改变了这三个字的读音，会更容易适应。
 
@@ -154,13 +172,11 @@ patch:
   speller/force_special: true
 ```
 
-这样的好处是不仅固顶词不会冲突，其他动态调频的常规词也不会再冲突了。例如，您正在输入「二零二四」和「二零二五」两个词，若仅仅启用无理音节码而不强制使用，则虽然 `rlrg` 可以唯一地得到「二零二五」这个词，但是 `rlrs` 仍然会同时出现「二零二四」和「二零二五」的候选。而若强制使用无理音节码，则可以完全分离这两个词：
+这样的好处是不仅固定词不会冲突，其他动态调频的常规词也不会再冲突了。例如，您正在输入「二零二四」和「二零二五」两个词，若仅仅启用无理音节码而不强制使用，则虽然 `rlrg` 可以唯一地得到「二零二五」这个词，但是 `rlrs` 仍然会同时出现「二零二四」和「二零二五」的候选。而若强制使用无理音节码，则可以完全分离这两个词：
 
 <Window input="sipin:rlrs{Down}{Down}" />
 <Window input="sipin:rlrg" />
 
 ## 方案码用户词典
-
-<Window input="sipin:sfdvua4e 1" />
 
 <!--@include: ../components/basic.md#schema-userdb-->

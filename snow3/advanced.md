@@ -1,3 +1,27 @@
+<script setup>
+import Window from '../components/Window.vue'
+
+const 输入定字一 = "sipin:xxrr";
+const 输入定字二 = "sipin:csuiai{Down}{Down}";
+
+const 输入反查一 = "sipin:azhe";
+const 输入反查二 = "sipin:ueiuoa";
+
+const 输入重复 = "sipin:yfu i";
+
+const 输入符号 = "sipin:ia";
+
+const 输入脚本一 = "sipin:o123";
+const 输入脚本二 = "sipin:o1234*5678";
+
+const 输入辅助码一 = "sipin:kooeei{Down}{Down}{Down}";
+const 输入辅助码二 = "sipin:fiaooe{Down}{Down}{Down}{Down}{Down}";
+const 输入辅助码三 = "sipin:raueee";
+const 输入辅助码四 = "sipin:raue1v{Down}";
+const 输入辅助码五 = "sipin:wia1m";
+const 输入辅助码六 = "sipin:fa1s";
+</script>
+
 # 高级功能
 
 ## 以词定字

@@ -1,5 +1,35 @@
 <script setup>
 import Window from '../components/Window.vue'
+
+const 动态码长词 = "调频";
+const 输入码长一 = "qingyun:tp.";
+const 输入码长二 = "qingyun:tp.O";
+const 输入码长三 = "qingyun:tp.O tp.";
+
+const 输入缓冲造词一 = "qingyun:{Control+j}bxe? srfa{Down}";
+const 输入缓冲造词二 = "qingyun:{Control+j}bxe? srfa2";
+const 输入缓冲造词三 = "qingyun:{Control+j}bxe? srfa2 bxsrF";
+
+const 输入英数一 = "qingyun:{Control+j}wu2g.2lg lwo  wgtx";
+const 输入英数二 = "qingyun:{Control+j}fjggfnlkma2ppjg  dlmm";
+
+const 输入固定 = "qingyun:bma{Control+semicolon}";
+const 输入取消固定一 = "qingyun:fhe";
+const 输入取消固定二 = "qingyun:fhe{Control+semicolon}";
+
+const 加词编码 = "kfc";
+const 加词 = "疯狂星期四";
+const 输入加词一 = "qingyun:kfc";
+const 输入加词二 = "qingyun:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc";
+
+const 加词冲突编码 = "dna";
+const 加词冲突 = "脱氧核糖核酸";
+const 加词冲突候选 = "半";
+const 输入加词冲突一 = "qingyun:dna";
+const 输入加词冲突二 = "qingyun:dna{Control+apostrophe}tyhtHS {Control+apostrophe}dna";
+
+const 输入后移一 = "qingyun:fmje";
+const 输入后移二 = "qingyun:fmje{Control+bracketright}";
 </script>
 
 # 前缀编码
@@ -61,17 +91,23 @@ import Window from '../components/Window.vue'
 
 ## 音节码用户词典
 
-音节码用户词典承载了动态调频、动态码长和自动造词的功能。用户不断输入的过程中，输入平台会记录用户输入各个词的频率，然后根据一定的算法来调整词在候选中的位置。结果就是，用户常用的词排在前面，或在顶功模式下需要输入较少的编码；不常用的词就排在后面，或在顶功模式下需要输入较多的编码。这个特性称为动态调频和动态码长。
+### 动态调频与动态码长
 
-自动造词的功能请参阅[冰雪四拼](../snow4/basic.md#自动造词)中的介绍。在冰雪清韵中，我们不仅可以使用其中提到的选择法、定位法、概率法三种方法造词，还可以使用「形音替换法」这种独属于冰雪清韵的方法来造词。
+<!--@include: ../components/basic.md#autolength-->
 
-### 形音替换法
+### 自动造词
 
-在前三种方法中，造词时必须将词拆分为几个片段，然后使用拼音来输入每一个片段。在人名等场合下，这些片段的输入可能不是非常方便。由于我们已经掌握了低重的形码，这种情况下最适合的是使用形码输入每一个单字，然后让系统按拼音的规则造词；但形码输入不包含字音信息，因此需要特别注意多音字的问题。
+#### 缓冲造词
 
-「形音替换法」的原理如下：首先按 Control+j 进入缓冲模式，然后按形码输入各个单字，此时在候选中标注候选单字的拼音，而且如果该字为多音字就显示多项。选择相应的候选之后，空格结束缓冲模式，即完成造词，后续可用相应的拼音输入这个词。
+<!--@include: ../components/basic.md#buffer-->
 
-下图中展示了输入 ppjgkvnagnpabw_ 再空格即造好「梦泽闲客」，下一次可以用 mzxk 输入。注意，在缓冲模式下前缀码的上屏规则仍然有效，以韵码结束或长度大于等于 4 的编码不需要空格。
+#### 在缓冲造词中使用形音替换法
+
+在前面的缓冲造词法中必须使用拼音来输入每一个片段，不过在拼音重码较多的情况下，这些片段的输入可能不是很方便。为此我们可以使用「形音替换法」：在缓冲模式下，可以使用形码输入单字来参与造词，此时候选中会出现一项或多项，每一项分别对应单字的一个读音，您需要从中选取正确的读音参与造词。
+
+有三点需要注意：一是缓冲模式下形码和拼音可以混用，例如一个字用形码另一个字用拼音；二是无论缓冲模式下用的是形码还是拼音，造词一律使用拼音；三是在缓冲模式下前缀码的上屏规则仍然有效，以韵码结束或长度大于等于 4 的编码不需要空格。
+
+下图中展示了输入 ppjgkvnagnpabw_ 再空格即造好「梦泽闲客」，下一次可以用 `mzxk` 输入。
 
 <Window input="qingyun:{Control+j}ppjg" />
 <Window input="qingyun:{Control+j}ppjgkvna" />
@@ -82,9 +118,11 @@ import Window from '../components/Window.vue'
 
 <Window input="qingyun:{Control+j}ppjgkvnagnpabw  mzxk" />
 
+除以上方法外，本方案还可以像冰雪拼音系列中的其他方案一样使用选择造词、定位造词、组句造词这三种方法造词。您可以参考[冰雪四拼的相关文档](../snow4/basic.md#自动造词)来进一步了解。
+
 ### 英数混输造词
 
-<!--@include: ../components/basic.md#alnum-->
+<!--@include: ../components/basic.md#alnum{,3}-->
 
 - 阿拉伯数字编码为 1 `yi`, 2 `vi`, 3 `s;`, 4 `si`, 5 `wu`, 6 `la`, 7 `qi`, 8 `ba`, 9 `ja`, 0 `l/`，阿拉伯数字固定在二码的次选，中文数字固定在二码的三选；
 - 英文字母的音节码规定为
@@ -92,14 +130,13 @@ import Window from '../components/Window.vue'
     - 元音字母加前缀 `m`，例如 a 的音节码是 `ma`
     - 所有大写字母固定在二码的次选，所有小写字母固定在二码的三选
 
-<!--@include: ../components/basic.md#alnum-2-->
-
-<Window input="qingyun:{Control+j}wu2g.2lg lwo  wgtx" />
-<Window input="qingyun:{Control+j}fjggfnlkma2ppjg  dlmm" />
+<!--@include: ../components/basic.md#alnum{3,}-->
 
 ## 方案码固态词典
 
-在前面所介绍的前缀编码规则的基础上，我们一方面要定义一些便于提高输入速度的编码，另一方面要定义在特定编码上特定候选的排序。这些功能是通过方案码用户词典来实现的：
+<!--@include: ../components/basic.md#schema-static-->
+
+在前面所介绍的前缀编码规则的基础上，我们一方面要定义一些便于提高输入速度的编码，另一方面要定义在特定编码上特定候选的排序。这些功能是通过方案码固态词典来实现的：
 
 ### 单字
 

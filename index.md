@@ -75,25 +75,25 @@ features:
 
 - 冰雪四拼
   - `snow_sipin.schema.yaml`: 冰雪四拼方案文件
-  - `snow_sipin.fixed.txt`: 冰雪四拼固顶词
+  - `snow_sipin.fixed.txt`: 冰雪四拼固定词
   - `snow_bushou.{schema,dict}.yaml`: 用于冰雪四拼的部首辅助码
 - 冰雪三拼
   - `snow_sanpin.schema.yaml`: 冰雪三拼方案文件
-  - `snow_sanpin.fixed.txt`: 冰雪三拼固顶词
+  - `snow_sanpin.fixed.txt`: 冰雪三拼固定词
 - 冰雪一拼
   - `snow_yipin.schema.yaml`: 冰雪一拼方案文件
-  - `snow_yipin.fixed.txt`: 冰雪一拼固顶词
+  - `snow_yipin.fixed.txt`: 冰雪一拼固定词
   - `snow_xingpang.{schema,dict}.yaml`: 用于冰雪一拼的形旁辅助码
 - 冰雪键道
   - `snow_jiandao.schema.yaml`: 冰雪键道方案文件
-  - `snow_jiandao.fixed.txt`: 冰雪键道固顶词
+  - `snow_jiandao.fixed.txt`: 冰雪键道固定词
   - `snow_jiandao_jianpin.schema.yaml`: 用于生成冰雪键道三四字词的拼写运算
   - `snow_jiandao_chaifen.{schema,dict}.yaml`: 冰雪键道的拆分
   - `snow_jiandao_bihua.schema.yaml`: 按照键道笔画位置重新映射的笔画拼写运算
 - 冰雪清韵
   - `snow_qingyun.{schema,dict}.yaml`: 冰雪清韵方案文件
   - `snow_qingyun_xingma.schema.yaml`: 冰雪清韵形码部分的方案文件
-  - `snow_qingyun.fixed.txt`: 冰雪清韵固顶词
+  - `snow_qingyun.fixed.txt`: 冰雪清韵固定词
   - `snow_qingyun_chaifen.{schema,dict}.yaml`: 冰雪清韵的拆分
 
 此外，还有冰雪英拼（`snow_yingpin.{schema,dict}.yaml`）提供以顶功方式输入英文的体验、冰雪零拼（`snow_lingpin.schema.yaml`）用于手机上的键盘切换绑定中英文。

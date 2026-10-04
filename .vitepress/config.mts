@@ -8,7 +8,7 @@ const wasmPath = "node_modules/fcitx5-rime/dist/";
 
 // 各方案的变量，按目录注入到 frontmatter 中，供 components/ 下的公共片段引用
 const 方案变量: Record<string, Record<string, string>> = {
-  snow1: { 方案: "yipin", 横: "v" },
+  snow1: { 方案: "yipin", 横: "e" },
   snow3: { 方案: "sanpin", 横: "v" },
   snow4: { 方案: "sipin", 横: "e" },
   "snow-jiandao": { 方案: "jiandao", 横: "v" },

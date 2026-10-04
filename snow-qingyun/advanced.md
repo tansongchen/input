@@ -4,18 +4,16 @@ import Window from '../components/Window.vue'
 const 输入注解一 = "qingyun:dvme";
 const 输入注解二 = "qingyun:dvme{Control+u}";
 
-const 输入定字一 = "sipin:xxrr";
-const 输入定字二 = "sipin:csuiai{Down}{Down}";
+const 输入定字一 = "qingyun:xxrr";
+const 输入定字二 = "qingyun:cweI{Down}{Down}{Down}{Down}{Down}";
 
-const 输入反查一 = "sipin:azhe";
-const 输入反查二 = "sipin:ueiuoa";
+const 拼音反查键 = "`";
+const 笔画反查键 = "`";
+const 输入反查一 = "qingyun:`zhe";
+const 输入反查二 = "qingyun:`eiuoa";
 
-const 输入重复 = "sipin:yfu i";
-
-const 输入符号 = "sipin:ia";
-
-const 输入脚本一 = "sipin:o123";
-const 输入脚本二 = "sipin:o1234*5678";
+const 重复键 = "`";
+const 输入重复 = "qingyun:cfu? `";
 </script>
 
 # 高级功能
@@ -41,11 +39,3 @@ const 输入脚本二 = "sipin:o1234*5678";
 ## 重复上屏
 
 <!--@include: ../components/advanced.md#repeat-->
-
-## 符号
-
-<!--@include: ../components/advanced.md#symbols-->
-
-## Lua 脚本
-
-<!--@include: ../components/advanced.md#lua-->

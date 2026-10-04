@@ -1,4 +1,37 @@
 {
+  "jiandao:azhe": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "zhe",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "着",
+        "comment": "fz fz fe fl ouia 丶丿・丨乙"
+      },
+      {
+        "text": "这",
+        "comment": "fe qw ovoa 丶一・丶乙"
+      },
+      {
+        "text": "者",
+        "comment": "fe uooi 十・日"
+      },
+      {
+        "text": "折",
+        "comment": "ee fe fe iuuu 手・丿丿"
+      },
+      {
+        "text": "遮",
+        "comment": "fe ovoa 丶一・丶乙"
+      },
+      {
+        "text": "哲",
+        "comment": "fe iuo 手・口"
+      }
+    ],
+    "selectedIndex": 0
+  },
   "jiandao:bgxh": {
     "commit": "",
     "buffer": "",
@@ -97,6 +130,39 @@
       }
     ],
     "selectedIndex": 0
+  },
+  "jiandao:chww{Down}{Down}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "ch ww",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "才为",
+        "comment": "vo"
+      },
+      {
+        "text": "财位",
+        "comment": "ai"
+      },
+      {
+        "text": "采薇",
+        "comment": "ui"
+      },
+      {
+        "text": "财委",
+        "comment": "au"
+      },
+      {
+        "text": "策划威望",
+        "comment": "uv"
+      },
+      {
+        "text": "才",
+        "comment": "viu"
+      }
+    ],
+    "selectedIndex": 2
   },
   "jiandao:ekek": {
     "commit": "",
@@ -248,6 +314,39 @@
       {
         "text": "垃圾回收",
         "comment": "📍 vv"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:ia": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "ia",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "ā",
+        "comment": ""
+      },
+      {
+        "text": "á",
+        "comment": ""
+      },
+      {
+        "text": "ǎ",
+        "comment": ""
+      },
+      {
+        "text": "à",
+        "comment": ""
+      },
+      {
+        "text": "ȁ",
+        "comment": ""
+      },
+      {
+        "text": "â",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -508,6 +607,68 @@
     ],
     "selectedIndex": 0
   },
+  "jiandao:o123": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "o123",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "一百二十三",
+        "comment": " 小写"
+      },
+      {
+        "text": "壹佰贰拾叁",
+        "comment": " 大写"
+      },
+      {
+        "text": "壹佰貳拾參",
+        "comment": " 大寫"
+      },
+      {
+        "text": "123",
+        "comment": "表达式"
+      },
+      {
+        "text": "123",
+        "comment": "= 123 等式"
+      },
+      {
+        "text": "123.00",
+        "comment": "答案"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:o1234*5678": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "o1234*5678",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "1234*5678",
+        "comment": "表达式"
+      },
+      {
+        "text": "7006652",
+        "comment": "答案"
+      },
+      {
+        "text": "1234*5678",
+        "comment": "= 7006652 等式"
+      },
+      {
+        "text": "7006652.00",
+        "comment": "答案"
+      },
+      {
+        "text": "1234*5678",
+        "comment": "≈ 7006652.00 答案"
+      }
+    ],
+    "selectedIndex": 0
+  },
   "jiandao:sxwjvv": {
     "commit": "",
     "buffer": "",
@@ -525,6 +686,52 @@
       {
         "text": "三二五九年",
         "comment": "vv"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:uviuoa": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "一丨丿丶乙",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "札",
+        "comment": "zha2"
+      },
+      {
+        "text": "朰",
+        "comment": "mu4"
+      },
+      {
+        "text": "𣎷",
+        "comment": ""
+      },
+      {
+        "text": "𣎸",
+        "comment": "liao3"
+      },
+      {
+        "text": "𣎹",
+        "comment": "~a"
+      },
+      {
+        "text": "朻",
+        "comment": "jiu1"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:wyfj i": {
+    "commit": "重复",
+    "buffer": "",
+    "prompt": "i",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "重复",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -625,6 +832,39 @@
       {
         "text": "西沟满族乡",
         "comment": "va"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:xxrr": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "x x r r",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "熙熙攘攘",
+        "comment": "vv"
+      },
+      {
+        "text": "熙熙融融",
+        "comment": "vv"
+      },
+      {
+        "text": "喧嚣扰攘",
+        "comment": "oo"
+      },
+      {
+        "text": "细细软软",
+        "comment": "aa"
+      },
+      {
+        "text": "纤细柔弱",
+        "comment": "aa"
+      },
+      {
+        "text": "香香软软",
+        "comment": "uu"
       }
     ],
     "selectedIndex": 0
@@ -761,6 +1001,72 @@
     ],
     "selectedIndex": 0
   },
+  "qingyun:`eiuoa": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "一丨丿丶乙",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "札",
+        "comment": "pje"
+      },
+      {
+        "text": "朰",
+        "comment": ""
+      },
+      {
+        "text": "𣎷",
+        "comment": ""
+      },
+      {
+        "text": "𣎸",
+        "comment": "~a"
+      },
+      {
+        "text": "𣎹",
+        "comment": "~a"
+      },
+      {
+        "text": "朻",
+        "comment": "~i"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "qingyun:`zhe": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "zhe",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "着",
+        "comment": "de dknm"
+      },
+      {
+        "text": "这",
+        "comment": "w wyzi"
+      },
+      {
+        "text": "者",
+        "comment": "sqri"
+      },
+      {
+        "text": "折",
+        "comment": "ngxa"
+      },
+      {
+        "text": "遮",
+        "comment": "gckz"
+      },
+      {
+        "text": "哲",
+        "comment": "ngx ngxf"
+      }
+    ],
+    "selectedIndex": 0
+  },
   "qingyun:bma{Control+semicolon}": {
     "commit": "",
     "buffer": "",
@@ -859,6 +1165,56 @@
       }
     ],
     "selectedIndex": 0
+  },
+  "qingyun:cfu? `": {
+    "commit": "重复",
+    "buffer": "",
+    "prompt": "`",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "重复",
+        "comment": ""
+      },
+      {
+        "text": "·",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "qingyun:cweI{Down}{Down}{Down}{Down}{Down}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "ci we",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "此为",
+        "comment": ""
+      },
+      {
+        "text": "刺猬",
+        "comment": ""
+      },
+      {
+        "text": "才为",
+        "comment": ""
+      },
+      {
+        "text": "财位",
+        "comment": ""
+      },
+      {
+        "text": "此谓",
+        "comment": ""
+      },
+      {
+        "text": "采薇",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 5
   },
   "qingyun:dna": {
     "commit": "",
@@ -1355,6 +1711,39 @@
     ],
     "selectedIndex": 0
   },
+  "qingyun:xxrr": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "x x r r",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "熙熙攘攘",
+        "comment": ""
+      },
+      {
+        "text": "熙熙融融",
+        "comment": ""
+      },
+      {
+        "text": "喧嚣扰攘",
+        "comment": ""
+      },
+      {
+        "text": "细细软软",
+        "comment": ""
+      },
+      {
+        "text": "纤细柔弱",
+        "comment": ""
+      },
+      {
+        "text": "香香软软",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "qingyun:yi": {
     "commit": "",
     "buffer": "",
@@ -1693,6 +2082,39 @@
     ],
     "selectedIndex": 0
   },
+  "sanpin:azhe": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "zhe",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "着",
+        "comment": "qzv qzi qea fli"
+      },
+      {
+        "text": "这",
+        "comment": "qeo qwo"
+      },
+      {
+        "text": "者",
+        "comment": "qeu"
+      },
+      {
+        "text": "折",
+        "comment": "eei qev qei"
+      },
+      {
+        "text": "遮",
+        "comment": "qev"
+      },
+      {
+        "text": "哲",
+        "comment": "qei"
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sanpin:bgxh": {
     "commit": "",
     "buffer": "",
@@ -1791,6 +2213,39 @@
       }
     ],
     "selectedIndex": 0
+  },
+  "sanpin:chww{Down}{Down}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "ch ww",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "才为",
+        "comment": ""
+      },
+      {
+        "text": "财位",
+        "comment": ""
+      },
+      {
+        "text": "采薇",
+        "comment": ""
+      },
+      {
+        "text": "财委",
+        "comment": ""
+      },
+      {
+        "text": "才",
+        "comment": ""
+      },
+      {
+        "text": "猜",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 2
   },
   "sanpin:ekek": {
     "commit": "",
@@ -1957,6 +2412,39 @@
     ],
     "selectedIndex": 0
   },
+  "sanpin:ia": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "ia",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "ā",
+        "comment": ""
+      },
+      {
+        "text": "á",
+        "comment": ""
+      },
+      {
+        "text": "ǎ",
+        "comment": ""
+      },
+      {
+        "text": "à",
+        "comment": ""
+      },
+      {
+        "text": "ȁ",
+        "comment": ""
+      },
+      {
+        "text": "â",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}{Up}": {
     "commit": "",
     "buffer": "",
@@ -2089,6 +2577,209 @@
     ],
     "selectedIndex": 0
   },
+  "sanpin:o123": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "o123",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "一百二十三",
+        "comment": " 小写"
+      },
+      {
+        "text": "壹佰贰拾叁",
+        "comment": " 大写"
+      },
+      {
+        "text": "壹佰貳拾參",
+        "comment": " 大寫"
+      },
+      {
+        "text": "123",
+        "comment": "表达式"
+      },
+      {
+        "text": "123",
+        "comment": "= 123 等式"
+      },
+      {
+        "text": "123.00",
+        "comment": "答案"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:o1234*5678": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "o1234*5678",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "1234*5678",
+        "comment": "表达式"
+      },
+      {
+        "text": "7006652",
+        "comment": "答案"
+      },
+      {
+        "text": "1234*5678",
+        "comment": "= 7006652 等式"
+      },
+      {
+        "text": "7006652.00",
+        "comment": "答案"
+      },
+      {
+        "text": "1234*5678",
+        "comment": "≈ 7006652.00 答案"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:uviuoa": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "一丨丿丶乙",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "札",
+        "comment": "zha2"
+      },
+      {
+        "text": "朰",
+        "comment": "mu4"
+      },
+      {
+        "text": "𣎷",
+        "comment": ""
+      },
+      {
+        "text": "𣎸",
+        "comment": "liao3"
+      },
+      {
+        "text": "𣎹",
+        "comment": "~a"
+      },
+      {
+        "text": "朻",
+        "comment": "jiu1"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:wyfj i": {
+    "commit": "重复",
+    "buffer": "",
+    "prompt": "i",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "重复",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:xxrr": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "x x r r",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "熙熙攘攘",
+        "comment": ""
+      },
+      {
+        "text": "熙熙融融",
+        "comment": ""
+      },
+      {
+        "text": "喧嚣扰攘",
+        "comment": ""
+      },
+      {
+        "text": "细细软软",
+        "comment": ""
+      },
+      {
+        "text": "纤细柔弱",
+        "comment": ""
+      },
+      {
+        "text": "香香软软",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:xzi1e": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "xzi 部首 [e]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "嶅",
+        "comment": "efv 山"
+      },
+      {
+        "text": "摮",
+        "comment": "edu 手"
+      },
+      {
+        "text": "滶",
+        "comment": "ebu 水"
+      },
+      {
+        "text": "磝",
+        "comment": "eki 石"
+      },
+      {
+        "text": "磽",
+        "comment": "eki 石"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sanpin:xzivv": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "xzi 笔画 [一一]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "鳌",
+        "comment": "vvivua~ vvivau~"
+      },
+      {
+        "text": "獒",
+        "comment": "vvivau~ vivova~"
+      },
+      {
+        "text": "熬",
+        "comment": "vvivau~ vivova~"
+      },
+      {
+        "text": "敖",
+        "comment": "vvivau~ vivova~"
+      },
+      {
+        "text": "螯",
+        "comment": "vvivau~ vivova~"
+      },
+      {
+        "text": "璈",
+        "comment": "vvivvv~ vvivvi~"
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sanpin:ybck": {
     "commit": "",
     "buffer": "",
@@ -2154,6 +2845,39 @@
       }
     ],
     "selectedIndex": 0
+  },
+  "sanpin:ytivi{Down}{Down}{Down}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "yti 笔画 [一丨]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "袁",
+        "comment": "viviav~"
+      },
+      {
+        "text": "援",
+        "comment": "vivuoo~ vavuoo~"
+      },
+      {
+        "text": "垣",
+        "comment": "vivvia~"
+      },
+      {
+        "text": "芫",
+        "comment": "viivvu~ ivvivv~"
+      },
+      {
+        "text": "塬",
+        "comment": "vivvuu~ vivvuu~"
+      },
+      {
+        "text": "橼",
+        "comment": "viuoaa~"
+      }
+    ],
+    "selectedIndex": 3
   },
   "sanpin:{Control+j}bgxherf": {
     "commit": "",

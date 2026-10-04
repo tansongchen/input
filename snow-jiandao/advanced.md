@@ -1,18 +1,18 @@
 <script setup>
 import Window from '../components/Window.vue'
 
-const 输入定字一 = "sipin:xxrr";
-const 输入定字二 = "sipin:csuiai{Down}{Down}";
+const 输入定字一 = "jiandao:xxrr";
+const 输入定字二 = "jiandao:chww{Down}{Down}";
 
-const 输入反查一 = "sipin:azhe";
-const 输入反查二 = "sipin:ueiuoa";
+const 输入反查一 = "jiandao:azhe";
+const 输入反查二 = "jiandao:uviuoa";
 
-const 输入重复 = "sipin:yfu i";
+const 输入重复 = "jiandao:wyfj i";
 
-const 输入符号 = "sipin:ia";
+const 输入符号 = "jiandao:ia";
 
-const 输入脚本一 = "sipin:o123";
-const 输入脚本二 = "sipin:o1234*5678";
+const 输入脚本一 = "jiandao:o123";
+const 输入脚本二 = "jiandao:o1234*5678";
 </script>
 
 # 高级功能

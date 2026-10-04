@@ -1,5 +1,13 @@
 import { spawnSync } from "node:child_process";
-import { readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import {
+  mkdtempSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  symlinkSync,
+  writeFileSync,
+} from "node:fs";
+import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import type { Plugin } from "vite";
 import type { 候选框状态 } from "./utils";
@@ -31,24 +39,57 @@ const 日志正则 = /^[EF]\d{8} [\d:.]+ \S+ (.*)$/gm;
 /** 项目根目录，从这里递归扫描 Markdown */
 const 根目录 = process.cwd();
 
-/** 方案目录，作为 rime_api_console 的用户目录 */
+/** 方案目录，提供方案、词库与 lua */
 const 方案目录 = resolve(根目录, "../rime-snow-pinyin");
+
+/** 不链接进沙盒的条目：仓库元数据，以及 rime 自己会写出的可写文件 */
+const 不链接 = new Set([
+  ".git",
+  ".DS_Store",
+  "node_modules",
+  "user.yaml",
+  "installation.yaml",
+]);
+
+/** 本进程的沙盒目录，懒创建 */
+let 沙盒目录 = "";
 
 /** 模拟结果的输出路径 */
 const 输出路径 = resolve(根目录, "src/simulation.json");
 
 /**
- * 启动 rime_api_console，以方案目录为用户目录，选择方案后发送按键序列，
+ * rime_api_console 把工作目录同时当作共享目录和用户目录，会在其中写出用户词典，
+ * 而用户词典是独占锁：直接用方案目录，dev server、PDF 导出和手动模拟就会互相抢锁，
+ * 抢不到的那个会得到空候选。所以把方案目录的内容软链到进程私有的临时目录，让 rime
+ * 的写入都落在沙盒里。build 整体软链，以复用已经编译好的词库，省掉每次部署的重建。
+ */
+function 创建沙盒(): string {
+  if (沙盒目录) return 沙盒目录;
+  const 目录 = mkdtempSync(join(tmpdir(), "snow-simulation-"));
+  for (const 项 of readdirSync(方案目录)) {
+    if (不链接.has(项) || 项.endsWith(".userdb")) continue;
+    symlinkSync(join(方案目录, 项), join(目录, 项));
+  }
+  process.on("exit", () => rmSync(目录, { recursive: true, force: true }));
+  沙盒目录 = 目录;
+  return 目录;
+}
+
+/**
+ * 在沙盒里启动 rime_api_console，选择方案后发送按键序列，
  * 返回该按键序列执行后的上屏文字和候选框状态。
  */
 export function 模拟(方案: string, 按键序列: string[]): 候选框状态 {
-  // 清掉上一次模拟留下的用户数据，否则动态调频会让结果取决于模拟的顺序
-  const 用户词典 = readdirSync(方案目录).filter((项) => 项.endsWith(".userdb"));
-  for (const 项 of [...用户词典, "user.yaml", "installation.yaml"]) {
-    rmSync(join(方案目录, 项), { recursive: true, force: true });
+  const 沙盒 = 创建沙盒();
+  // 清掉上一次模拟留下的用户数据，否则动态调频会让结果取决于模拟的顺序。
+  // 沙盒里只有软链和 rime 写出的文件，因此非软链的条目都是上一次留下的
+  for (const 项 of readdirSync(沙盒, { withFileTypes: true })) {
+    if (!项.isSymbolicLink()) {
+      rmSync(join(沙盒, 项.name), { recursive: true, force: true });
+    }
   }
   const 进程 = spawnSync("rime_api_console", [], {
-    cwd: 方案目录,
+    cwd: 沙盒,
     input: [`select schema ${方案}`, ...按键序列, "exit", ""].join("\n"),
     encoding: "utf-8",
   });
@@ -62,9 +103,9 @@ export function 模拟(方案: string, 按键序列: string[]): 候选框状态 
   const 日志 = [...(进程.stderr ?? "").matchAll(日志正则)];
   const 错误 = [...new Set(日志.map((组) => 组[1].trim()))];
   if (错误.length) {
-    // 用户词典是独占锁，被输入法本体或残留的 rime_api_console 占着时整条模拟都不可信
+    // 用户词典是独占锁，抢不到时整条模拟都不可信；沙盒之后这里只剩同进程重复打开
     const 提示 = 错误.some((行) => 行.includes("LOCK"))
-      ? "\n用户词典被其他 rime 实例占用，关闭后重试"
+      ? "\n用户词典被其他 rime 实例占用"
       : "";
     throw new Error(`rime 报错：\n${错误.join("\n")}${提示}`);
   }

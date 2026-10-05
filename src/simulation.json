@@ -351,80 +351,6 @@
     ],
     "selectedIndex": 0
   },
-  "jiandao:jmdzio2{Control+j}bgxhjmdz": {
-    "commit": "键道",
-    "buffer": "冰雪",
-    "prompt": "jm dz",
-    "unused": "",
-    "candidates": [
-      {
-        "text": "键道",
-        "comment": "io"
-      },
-      {
-        "text": "见到",
-        "comment": "iv"
-      },
-      {
-        "text": "剪刀",
-        "comment": "oa"
-      },
-      {
-        "text": "捡到",
-        "comment": "iv"
-      },
-      {
-        "text": "减到",
-        "comment": "ov"
-      },
-      {
-        "text": "尖刀",
-        "comment": "ia"
-      }
-    ],
-    "selectedIndex": 0
-  },
-  "jiandao:jmdzio2{Control+j}bgxhjmdz ": {
-    "commit": "键道",
-    "buffer": "冰雪键道",
-    "prompt": "",
-    "unused": "",
-    "candidates": [],
-    "selectedIndex": -1
-  },
-  "jiandao:jmdzio2{Control+j}bgxhjmdz  bxjd": {
-    "commit": "键道冰雪键道",
-    "buffer": "",
-    "prompt": "b x j d",
-    "unused": "",
-    "candidates": [
-      {
-        "text": "冰雪键道",
-        "comment": "ov"
-      },
-      {
-        "text": "表现出对",
-        "comment": "vv"
-      },
-      {
-        "text": "不相交的",
-        "comment": "vv"
-      },
-      {
-        "text": "不安静的",
-        "comment": "vo"
-      },
-      {
-        "text": "巴尔金都",
-        "comment": "au"
-      },
-      {
-        "text": "办学场地",
-        "comment": "ao"
-      }
-    ],
-    "selectedIndex": 0
-  },
   "jiandao:jmdz{Control+semicolon}{Down}{Control+semicolon}{Up}": {
     "commit": "",
     "buffer": "",
@@ -935,6 +861,76 @@
     ],
     "selectedIndex": 0
   },
+  "jiandao:{Control+j}bgxherf": {
+    "commit": "",
+    "buffer": "冰雪",
+    "prompt": "e r f",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "输入法",
+        "comment": "vua"
+      },
+      {
+        "text": "受让方",
+        "comment": "uoo"
+      },
+      {
+        "text": "双人房",
+        "comment": "aio"
+      },
+      {
+        "text": "收入者",
+        "comment": "auu"
+      },
+      {
+        "text": "杀人犯",
+        "comment": "uiu"
+      },
+      {
+        "text": "杀人者",
+        "comment": "uiu"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:{Control+j}bgxherf ": {
+    "commit": "",
+    "buffer": "冰雪输入法",
+    "prompt": "",
+    "unused": "",
+    "candidates": [],
+    "selectedIndex": -1
+  },
+  "jiandao:{Control+j}bgxherf  bxero": {
+    "commit": "冰雪输入法",
+    "buffer": "",
+    "prompt": "b x e r 形 [o]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰雪输入法",
+        "comment": "ov"
+      },
+      {
+        "text": "必须输入",
+        "comment": "ou"
+      },
+      {
+        "text": "(biang1)生",
+        "comment": ""
+      },
+      {
+        "text": "𰻝",
+        "comment": ""
+      },
+      {
+        "text": "𰻞",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "jiandao:{Control+j}dlou lso xs2mr  dlxm": {
     "commit": "哆啦A梦",
     "buffer": "",
@@ -1095,72 +1091,6 @@
       },
       {
         "text": "兵马",
-        "comment": ""
-      }
-    ],
-    "selectedIndex": 0
-  },
-  "qingyun:cctv": {
-    "commit": "",
-    "buffer": "",
-    "prompt": "c c t v",
-    "unused": "",
-    "candidates": [
-      {
-        "text": "查处图案",
-        "comment": ""
-      },
-      {
-        "text": "村村通",
-        "comment": ""
-      },
-      {
-        "text": "从传统",
-        "comment": ""
-      },
-      {
-        "text": "茶餐厅",
-        "comment": ""
-      },
-      {
-        "text": "常春藤",
-        "comment": ""
-      },
-      {
-        "text": "尺寸图",
-        "comment": ""
-      }
-    ],
-    "selectedIndex": 0
-  },
-  "qingyun:cctv{Control+apostrophe}zgzyDST {Control+apostrophe}cctv": {
-    "commit": "中国中央电视台",
-    "buffer": "",
-    "prompt": "c c t v",
-    "unused": "",
-    "candidates": [
-      {
-        "text": "中国中央电视台",
-        "comment": "📍"
-      },
-      {
-        "text": "查处图案",
-        "comment": ""
-      },
-      {
-        "text": "村村通",
-        "comment": ""
-      },
-      {
-        "text": "从传统",
-        "comment": ""
-      },
-      {
-        "text": "茶餐厅",
-        "comment": ""
-      },
-      {
-        "text": "常春藤",
         "comment": ""
       }
     ],
@@ -2090,27 +2020,27 @@
     "candidates": [
       {
         "text": "着",
-        "comment": "qzv qzi qea fli"
+        "comment": "fzv fzi fea fli"
       },
       {
         "text": "这",
-        "comment": "qeo qwo"
+        "comment": "feo qwo"
       },
       {
         "text": "者",
-        "comment": "qeu"
+        "comment": "feu"
       },
       {
         "text": "折",
-        "comment": "eei qev qei"
+        "comment": "eei fev fei"
       },
       {
         "text": "遮",
-        "comment": "qev"
+        "comment": "fev"
       },
       {
         "text": "哲",
-        "comment": "qei"
+        "comment": "fei"
       }
     ],
     "selectedIndex": 0
@@ -3750,6 +3680,69 @@
       {
         "text": "1234*5678",
         "comment": "≈ 7006652.00 答案"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:orq": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "orq",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "2026年10月05日",
+        "comment": ""
+      },
+      {
+        "text": "2026-10-05",
+        "comment": ""
+      },
+      {
+        "text": "rq",
+        "comment": "表达式"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:ors": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "ors",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "2026年10月05日14时26分57秒",
+        "comment": ""
+      },
+      {
+        "text": "2026-10-05",
+        "comment": "14:26:57 "
+      },
+      {
+        "text": "rs",
+        "comment": "表达式"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "sipin:osj": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "osj",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "14时26分58秒",
+        "comment": ""
+      },
+      {
+        "text": "14:26:58",
+        "comment": ""
+      },
+      {
+        "text": "sj",
+        "comment": "表达式"
       }
     ],
     "selectedIndex": 0

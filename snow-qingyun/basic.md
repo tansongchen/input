@@ -107,7 +107,7 @@ const 输入后移二 = "qingyun:fmje{Control+bracketright}";
 
 有三点需要注意：一是缓冲模式下形码和拼音可以混用，例如一个字用形码另一个字用拼音；二是无论缓冲模式下用的是形码还是拼音，造词一律使用拼音；三是在缓冲模式下前缀码的上屏规则仍然有效，以韵码结束或长度大于等于 4 的编码不需要空格。
 
-下图中展示了输入 ppjgkvnagnpabw_ 再空格即造好「梦泽闲客」，下一次可以用 `mzxk` 输入。
+下图中展示了输入 `ppjgkvnagnpabw_` 再空格即造好「梦泽闲客」，下一次可以用 `mzxk` 输入。
 
 <Window input="qingyun:{Control+j}ppjg" />
 <Window input="qingyun:{Control+j}ppjgkvna" />

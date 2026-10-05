@@ -70,8 +70,8 @@ const 输入后移二 = "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}
 
 - 阿拉伯数字与相应中文数字（零～九）相同
 - 英文字母的音节码规定为
-    - `bpmfdtnlgkhjqxzcsrywe` 加后缀 `ja`，例如 b 的音节码是 `bja`
-    - `viuoa` 加前缀 `kk`，例如 a 的音节码是 `kka`
+    - bpmfdtnlgkhjqxzcsrywe 加后缀 `ja`，例如 b 的音节码是 `bja`
+    - viuoa 加前缀 `kk`，例如 a 的音节码是 `kka`
     - 所有大写字母固定在三码的首选，所有小写字母固定在三码的次选
 
 <!--@include: ../components/basic.md#alnum{3,}-->

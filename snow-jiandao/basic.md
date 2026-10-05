@@ -9,9 +9,9 @@ const 输入码长一 = "jiandao:ekek";
 const 输入码长二 = "jiandao:ekekio";
 const 输入码长三 = "jiandao:ekekioekek";
 
-const 输入缓冲造词一 = "jiandao:jmdzio2{Control+j}bgxhjmdz";
-const 输入缓冲造词二 = "jiandao:jmdzio2{Control+j}bgxhjmdz ";
-const 输入缓冲造词三 = "jiandao:jmdzio2{Control+j}bgxhjmdz  bxjd";
+const 输入缓冲造词一 = "jiandao:{Control+j}bgxherf";
+const 输入缓冲造词二 = "jiandao:{Control+j}bgxherf ";
+const 输入缓冲造词三 = "jiandao:{Control+j}bgxherf  bxero";
 
 const 输入英数一 = "jiandao:{Control+j}wjv2ge2tyxb  wgtx";
 const 输入英数二 = "jiandao:{Control+j}dlou lso xs2mr  dlxm";
@@ -84,8 +84,8 @@ const 输入后移二 = "jiandao:jmdz{Control+semicolon}{Down}{Control+semicolon
 
 - 阿拉伯数字与相应中文数字（零～九）相同
 - 英文字母的音节码规定为
-    - `bpmfdtnlgkhjqxzcsrywe` 加后缀 `e`，例如 b 的音节码是 `be`
-    - `viuoa` 的音节码是 `x` 加上对应的韵母：`i = xk`, `u = xj`, `o = xl`, `a = xs`, 而 `v` 因为已经被占用规定为 `xh`
+    - bpmfdtnlgkhjqxzcsrywe 加后缀 `e`，例如 b 的音节码是 `be`
+    - viuoa 的音节码是 `x` 加上对应的韵母：i → `xk`, u → `xj`, o → `xl`, a → `xs`, 而 `v` 因为已经被占用规定为 `xh`
     - 所有大写字母固定在二码的次选，所有小写字母固定在二​码的三选
 
 <!--@include: ../components/basic.md#alnum{3,}-->

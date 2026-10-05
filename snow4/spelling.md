@@ -116,9 +116,9 @@ const lingshengmu = Object.entries({
 
 | 声母 | 编码 |
 | ---- | ---- |
-| zh   | w    |
-| ch   | y    |
-| sh   | v    |
+| zh   | `w`    |
+| ch   | `y`    |
+| sh   | `v`    |
 
 ## 韵母
 
@@ -128,32 +128,32 @@ const lingshengmu = Object.entries({
 
 | 韵母      | 编码 |
 | ------------- | -------- |
-| a, ü          | a        |
-| o, io, uo, üe | o        |
-| e, ie         | e        |
-| i, ua, er     | i        |
-| u, ia         | u        |
-| ai            | ai       |
-| ei            | ei       |
-| uai           | ii       |
-| uei           | ui       |
-| ao            | au       |
-| ou, iou       | ou       |
-| iao           | uu       |
+| a, ü          | `a`        |
+| o, io, uo, üe | `o`        |
+| e, ie         | `e`        |
+| i, ua, er     | `i`        |
+| u, ia         | `u`        |
+| ai            | `ai`       |
+| ei            | `ei`       |
+| uai           | `ii`       |
+| uei           | `ui`       |
+| ao            | `au`       |
+| ou, iou       | `ou`       |
+| iao           | `uu`       |
 
 | 韵母   | 编码 |
 | ---------- | -------- |
-| an, ün     | ao       |
-| üan        | oo       |
-| en         | eo       |
-| in, uan    | io       |
-| uen, ian   | uo       |
-| ang        | ae       |
-| ong, iong  | oe       |
-| eng, ng    | ee       |
-| ing, uang  | ie       |
-| ueng, iang | ue       |
-| m          | ea       |
+| an, ün     | `ao`       |
+| üan        | `oo`       |
+| en         | `eo`       |
+| in, uan    | `io`       |
+| uen, ian   | `uo`       |
+| ang        | `ae`       |
+| ong, iong  | `oe`       |
+| eng, ng    | `ee`       |
+| ing, uang  | `ie`       |
+| ueng, iang | `ue`       |
+| m          | `ea`       |
 </div>
 
 观察表格，很容易发现其规律：
@@ -167,11 +167,11 @@ const lingshengmu = Object.entries({
 
 | 韵头              | 韵尾  | 编码 |
 | ----------------- | ----- | ---- |
-| a, ü              | -m    | a    |
-| o, io, uo, üa, üe | -n    | o    |
-| e, ie, ∅          | -ng   | e    |
-| i, ua, er         | -i    | i    |
-| u, ia, ue         | -u(o) | u    |
+| a, ü              | -m    | `a`    |
+| o, io, uo, üa, üe | -n    | `o`    |
+| e, ie, ∅          | -ng   | `e`    |
+| i, ua, er         | -i    | `i`    |
+| u, ia, ue         | -u(o) | `u`    |
 
 总之，您可以选择直接记忆韵母的双编码，也可以选择记忆韵头和韵尾的编码然后将它们拼合起来得到双编码。[附录中](#助记方法)也提供了一些助记方法帮助您更好地记忆。
 
@@ -181,11 +181,11 @@ const lingshengmu = Object.entries({
 
 | 声调   | 编码 |
 | ------ | ---- |
-| 去声 4 | a    |
-| 轻声 5 | o    |
-| 阳平 2 | e    |
-| 阴平 1 | i    |
-| 上声 3 | u    |
+| 去声 4 | `a`    |
+| 轻声 5 | `o`    |
+| 阳平 2 | `e`    |
+| 阴平 1 | `i`    |
+| 上声 3 | `u`    |
 
 ## 总结
 
@@ -193,12 +193,12 @@ const lingshengmu = Object.entries({
 
 | 音节       | 分解             | 编码 |
 | ---------- | ---------------- | ---- |
-| 白 bai2    | b + a + i + 2    | baie |
-| 狗 gou3    | g + o + u + 3    | gouu |
-| 声 sheng1  | sh + e + ng + 1  | veei |
-| 笔 bi3     | b + i + 3        | biu  |
-| 调 diao4   | d + ia + u + 4   | duua |
-| 庄 zhuang1 | zh + ua + ng + 1 | wiei |
+| 白 bai2    | b + a + i + 2    | `baie` |
+| 狗 gou3    | g + o + u + 3    | `gouu` |
+| 声 sheng1  | sh + e + ng + 1  | `veei` |
+| 笔 bi3     | b + i + 3        | `biu`  |
+| 调 diao4   | d + ia + u + 4   | `duua` |
+| 庄 zhuang1 | zh + ua + ng + 1 | `wiei` |
 
 并请您在下面的小游戏中练习声母、韵母和声调的键位。
 
@@ -219,11 +219,11 @@ const lingshengmu = Object.entries({
 
 | 音节    | 分解                | 编码 |
 | ------- | ------------------- | ---- |
-| 而 er2  | `r` 键 + er + 2     | rie  |
-| 我 wo3  | `s` 键 + uo + 3     | sou  |
-| 有 you3 | `f` 键 + io + u + 3 | fouu |
-| 月 yue4 | `k` 键 + üe + 4     | koa  |
-| 嗯 ng4  | `r` 键 + ∅ + ng + 4 | reea |
+| 而 er2  | `r` 键 + er + 2     | `rie`  |
+| 我 wo3  | `s` 键 + uo + 3     | `sou`  |
+| 有 you3 | `f` 键 + io + u + 3 | `fouu` |
+| 月 yue4 | `k` 键 + üe + 4     | `koa`  |
+| 嗯 ng4  | `r` 键 + ∅ + ng + 4 | `reea` |
 
 零声母音节的拼写是本规则的主要难点，请您在下面的小游戏中练习零声母音节的拼写：
 
@@ -266,41 +266,41 @@ patch:
 
 | 音节    | 引导 | 韵头 | 韵尾 | 拼写 |
 | ------- | ---- | ---- | ---- | ---- |
-| 啊 a    | r    | a    | 无   | ra   |
-| 哎 ai   | r    | a    | i    | rai  |
-| 安 an   | r    | a    | n    | rao  |
-| 昂 ang  | r    | a    | ng   | rae  |
-| 凹 ao   | r    | a    | u    | rau  |
-| 额 e    | r    | e    | 无   | re   |
-| 诶 ei   | r    | e    | i    | rei  |
-| 恩 en   | r    | e    | n    | reo  |
-| 鞥 eng  | r    | e    | ng   | ree  |
-| 而 er   | r    | er   | 无   | ri   |
-| 哦 o    | r    | o    | 无   | ro   |
-| 欧 ou   | r    | o    | u    | rou  |
-| 呒 m    | r    | ∅    | m    | rea  |
-| 嗯 ng   | r    | ∅    | ng   | ree  |
-| 挖 wa   | s    | ua   | 无   | si   |
-| 歪 wai  | s    | ua   | i    | sii  |
-| 弯 wan  | s    | ua   | n    | sio  |
-| 汪 wang | s    | ua   | ng   | sie  |
-| 微 wei  | s    | ue   | i    | sui  |
-| 温 wen  | s    | ue   | n    | suo  |
-| 翁 weng | s    | ue   | ng   | sue  |
-| 窝 wo   | s    | uo   | 无   | so   |
-| 乌 wu   | s    | u    | 无   | su   |
-| 压 ya   | f    | ia   | 无   | fu   |
-| 腰 yao  | f    | ia   | u    | fuu  |
-| 烟 yan  | f    | ia   | n    | fuo  |
-| 央 yang | f    | ia   | ng   | fue  |
-| 椰 ye   | f    | ie   | 无   | fe   |
-| 哟 yo   | f    | io   | 无   | fo   |
-| 优 you  | f    | io   | u    | fou  |
-| 庸 yong | f    | io   | ng   | foe  |
-| 一 yi   | f    | i    | 无   | fi   |
-| 因 yin  | f    | i    | n    | fio  |
-| 应 ying | f    | i    | ng   | fie  |
-| 迂 yu   | k    | ü    | 无   | ka   |
-| 晕 yun  | k    | ü    | n    | kao  |
-| 渊 yuan | k    | üa   | n    | koo  |
-| 约 yue  | k    | üe   | 无   | ko   |
+| 啊 a    | `r`    | a    | 无   | `ra`   |
+| 哎 ai   | `r`    | a    | i    | `rai`  |
+| 安 an   | `r`    | a    | n    | `rao`  |
+| 昂 ang  | `r`    | a    | ng   | `rae`  |
+| 凹 ao   | `r`    | a    | u    | `rau`  |
+| 额 e    | `r`    | e    | 无   | `re`   |
+| 诶 ei   | `r`    | e    | i    | `rei`  |
+| 恩 en   | `r`    | e    | n    | `reo`  |
+| 鞥 eng  | `r`    | e    | ng   | `ree`  |
+| 而 er   | `r`    | er   | 无   | `ri`   |
+| 哦 o    | `r`    | o    | 无   | `ro`   |
+| 欧 ou   | `r`    | o    | u    | `rou`  |
+| 呒 m    | `r`    | ∅    | m    | `rea`  |
+| 嗯 ng   | `r`    | ∅    | ng   | `ree`  |
+| 挖 wa   | `s`    | ua   | 无   | `si`   |
+| 歪 wai  | `s`    | ua   | i    | `sii`  |
+| 弯 wan  | `s`    | ua   | n    | `sio`  |
+| 汪 wang | `s`    | ua   | ng   | `sie`  |
+| 微 wei  | `s`    | ue   | i    | `sui`  |
+| 温 wen  | `s`    | ue   | n    | `suo`  |
+| 翁 weng | `s`    | ue   | ng   | `sue`  |
+| 窝 wo   | `s`    | uo   | 无   | `so`   |
+| 乌 wu   | `s`    | u    | 无   | `su`   |
+| 压 ya   | `f`    | ia   | 无   | `fu`   |
+| 腰 yao  | `f`    | ia   | u    | `fuu`  |
+| 烟 yan  | `f`    | ia   | n    | `fuo`  |
+| 央 yang | `f`    | ia   | ng   | `fue`  |
+| 椰 ye   | `f`    | ie   | 无   | `fe`   |
+| 哟 yo   | `f`    | io   | 无   | `fo`   |
+| 优 you  | `f`    | io   | u    | `fou`  |
+| 庸 yong | `f`    | io   | ng   | `foe`  |
+| 一 yi   | `f`    | i    | 无   | `fi`   |
+| 因 yin  | `f`    | i    | n    | `fio`  |
+| 应 ying | `f`    | i    | ng   | `fie`  |
+| 迂 yu   | `k`    | ü    | 无   | `ka`   |
+| 晕 yun  | `k`    | ü    | n    | `kao`  |
+| 渊 yuan | `k`    | üa   | n    | `koo`  |
+| 约 yue  | `k`    | üe   | 无   | `ko`   |

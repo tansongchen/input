@@ -79,8 +79,6 @@ export default defineConfig({
           link: "/snow1/",
           items: [
             { text: "拼写规则", link: "/snow1/spelling" },
-            { text: "顶功编码", link: "/snow1/basic" },
-            { text: "高级功能", link: "/snow1/advanced" },
           ],
         },
         {

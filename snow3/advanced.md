@@ -43,7 +43,13 @@ const 输入辅助码四 = "sanpin:xzi1e";
 
 ## 辅助码
 
-<!--@include: ../components/advanced.md#auxiliary-->
+### 笔画辅助码
+
+<!--@include: ../components/advanced.md#auxiliary-bihua -->
+
+### 部首辅助码
+
+<!--@include: ../components/advanced.md#auxiliary-bushou -->
 
 ## 附录：非成字部首的读音
 

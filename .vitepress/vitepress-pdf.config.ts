@@ -29,6 +29,6 @@ export default defineUserConfig({
   routePatterns: ["!/**", `/${目录}/*`],
   urlOrigin: "https://input.tansongchen.com",
   outDir: "pdf",
-  outFile: `${方案列表[目录]}.pdf`,
+  outFile: `${方案列表[目录]}教程.pdf`,
   sorter: (a, b) => 序号(a.path) - 序号(b.path) || a.path.localeCompare(b.path),
 });

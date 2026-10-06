@@ -8,12 +8,12 @@ const wasmPath = "node_modules/fcitx5-rime/dist/";
 
 // 各方案的变量，按目录注入到 frontmatter 中，供 components/ 下的公共片段引用
 const 方案变量: Record<string, Record<string, string>> = {
-  snow1: { 方案: "yipin", 横: "e" },
-  snow3: { 方案: "sanpin", 横: "v" },
-  snow4: { 方案: "sipin", 横: "e" },
-  "snow-jiandao": { 方案: "jiandao", 横: "v" },
-  "snow-qingyun": { 方案: "qingyun", 横: "e" },
-  "snow-feihua": { 方案: "feihua", 横: "e" },
+  snow1: { 方案: "yipin", 名称: "冰雪一拼", 横: "e" },
+  snow3: { 方案: "sanpin", 名称: "冰雪三拼", 横: "v" },
+  snow4: { 方案: "sipin", 名称: "冰雪四拼", 横: "e" },
+  "snow-jiandao": { 方案: "jiandao", 名称: "冰雪键道", 横: "v" },
+  "snow-qingyun": { 方案: "qingyun", 名称: "冰雪清韵", 横: "e" },
+  "snow-feihua": { 方案: "feihua", 名称: "冰雪飞花", 横: "e" },
 };
 
 // https://vitepress.dev/reference/site-config
@@ -72,7 +72,10 @@ export default defineConfig({
         {
           text: "冰雪二拼",
           link: "/snow2/",
-          items: [],
+          items: [
+            { text: "拼写规则", link: "/snow2/spelling" },
+            { text: "前缀编码", link: "/snow2/basic" },
+          ],
         },
         {
           text: "冰雪一拼",

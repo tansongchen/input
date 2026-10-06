@@ -4,6 +4,10 @@ next:
   link: ./spelling
 ---
 
+<script setup>
+import Input from '../components/Input.vue'
+</script>
+
 # 冰雪三拼
 
 ## 什么是冰雪三拼？
@@ -17,6 +21,18 @@ next:
 由于这些特性，它可以尽可能地智能匹配您的语言表达习惯，在您的日常输入中取得极其高效、流畅的输入体验。
 
 虽然冰雪三拼采用了星空键道双拼方案，但是本质上对双拼方案并无太多要求，用户如果已经掌握了除星空键道之外的双拼方案，可以通过拼写运算来定制拼写，不必重新学习。
+
+<div class="interactive">
+您也可以在下方的输入框体验使用冰雪三拼输入下面的这句话：
+
+> 充满希望的跋涉比到达目的地更能给人乐趣。
+>
+> wmxwod_bseebk_dzdsmdd_grnrgwrnleql.
+
+<ClientOnly>
+  <Input />
+</ClientOnly>
+</div>
 
 ## 如何学习冰雪三拼？
 

@@ -4,6 +4,10 @@ next:
   link: ./spelling
 ---
 
+<script setup>
+import Input from '../components/Input.vue'
+</script>
+
 # 冰雪清韵
 
 ## 什么是冰雪清韵？
@@ -13,6 +17,18 @@ next:
 1. 音码词语：词语由一系列音节构成，每个音节具有声母和韵母，通过输入音节的声母和韵母来检索词语；
 2. 形码单字：单字由一系列字根构成，每个字根具有声码和韵码，通过输入字根的声码和韵码来检索单字；
 3. 前缀码：上述两种编码的主体部分均为「前缀码」，使得其不需要空格上屏，提高了输入效率。
+
+<div class="interactive">
+您也可以在下方的输入框体验使用冰雪清韵输入下面的这句话：
+
+> 充满希望的跋涉比到达目的地更能给人乐趣。
+>
+> cmxwefmqgkmmhbekodzimdd_kr_y_ver.lxotzkv.
+
+<ClientOnly>
+  <Input />
+</ClientOnly>
+</div>
 
 ## 如何学习冰雪清韵？
 

@@ -21,9 +21,9 @@ const 输入取消固定一 = "jiandao:ybck{Control+semicolon}";
 const 输入取消固定二 = "jiandao:ybck";
 
 const 加词编码 = "kfc";
-const 加词 = "疯狂星期四";
+const 加词 = "疯狂星期四V我50";
 const 输入加词一 = "jiandao:kfc";
-const 输入加词二 = "jiandao:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc";
+const 输入加词二 = "jiandao:kfc{Control+apostrophe}fkxqS Vw 50{Control+apostrophe}kfc";
 
 const 加词冲突编码 = "gc";
 const 加词冲突 = "垃圾回收";

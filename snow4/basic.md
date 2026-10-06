@@ -34,9 +34,9 @@ const 输入取消固定一 = "sipin:fc";
 const 输入取消固定二 = "sipin:fc{Control+semicolon}";
 
 const 加词编码 = "kfc";
-const 加词 = "疯狂星期四";
+const 加词 = "疯狂星期四V我50";
 const 输入加词一 = "sipin:kfc";
-const 输入加词二 = "sipin:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc";
+const 输入加词二 = "sipin:kfc{Control+apostrophe}fkxqS Vs 50{Control+apostrophe}kfc";
 
 const 加词冲突编码 = "dna";
 const 加词冲突 = "脱氧核糖核酸";

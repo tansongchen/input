@@ -13,17 +13,17 @@ const 输入缓冲造词一 = "sanpin:{Control+j}bgxherf";
 const 输入缓冲造词二 = "sanpin:{Control+j}bgxherf ";
 const 输入缓冲造词三 = "sanpin:{Control+j}bgxherf  bxerF";
 
-const 输入英数一 = "sanpin:{Control+j}wjugjatyxb  wgtx";
-const 输入英数二 = "sanpin:{Control+j}dlvlsvikkamr  dlkm";
+const 输入英数一 = "sanpin:{Control+j}wju2geatyxb  wgtx";
+const 输入英数二 = "sanpin:{Control+j}dlvlsvixsamr  dlxm";
 
 const 输入固定 = "sanpin:bmms{Control+semicolon}";
 const 输入取消固定一 = "sanpin:ybck{Control+semicolon}";
 const 输入取消固定二 = "sanpin:ybck";
 
 const 加词编码 = "kfc";
-const 加词 = "疯狂星期四";
+const 加词 = "疯狂星期四V我50";
 const 输入加词一 = "sanpin:kfc";
-const 输入加词二 = "sanpin:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc";
+const 输入加词二 = "sanpin:kfc{Control+apostrophe}fkxqS Vw 50{Control+apostrophe}kfc";
 
 const 加词冲突编码 = "gc";
 const 加词冲突 = "垃圾回收";
@@ -70,8 +70,8 @@ const 输入后移二 = "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}
 
 - 阿拉伯数字与相应中文数字（零～九）相同
 - 英文字母的音节码规定为
-    - bpmfdtnlgkhjqxzcsrywe 加后缀 `ja`，例如 b 的音节码是 `bja`
-    - viuoa 加前缀 `kk`，例如 a 的音节码是 `kka`
+    - bpmfdtnlgkhjqxzcsrywe 加后缀 `ea`，例如 b 的音节码是 `bea`
+    - viuoa 的音节码是 `x` 加上对应的韵母再加轻声 `a`：i → `xka`, u → `xja`, o → `xla`, a → `xsa`, 而 `v` 因为已经被占用规定为 `xha`
     - 所有大写字母固定在三码的首选，所有小写字母固定在三码的次选
 
 <!--@include: ../components/basic.md#alnum{3,}-->

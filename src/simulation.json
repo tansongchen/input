@@ -218,6 +218,14 @@
       {
         "text": "铈",
         "comment": "ioov"
+      },
+      {
+        "text": "乭",
+        "comment": ""
+      },
+      {
+        "text": "塒",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -450,14 +458,14 @@
     ],
     "selectedIndex": 0
   },
-  "jiandao:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc": {
-    "commit": "疯狂星期四",
+  "jiandao:kfc{Control+apostrophe}fkxqS Vw 50{Control+apostrophe}kfc": {
+    "commit": "疯狂星期四我",
     "buffer": "",
     "prompt": "kfc",
     "unused": "",
     "candidates": [
       {
-        "text": "疯狂星期四",
+        "text": "疯狂星期四V我50",
         "comment": "📍 ou"
       },
       {
@@ -704,6 +712,26 @@
       {
         "text": "星",
         "comment": "oiuv"
+      },
+      {
+        "text": "垶",
+        "comment": ""
+      },
+      {
+        "text": "曐",
+        "comment": ""
+      },
+      {
+        "text": "狌",
+        "comment": ""
+      },
+      {
+        "text": "皨",
+        "comment": ""
+      },
+      {
+        "text": "箵",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -725,6 +753,18 @@
       {
         "text": "卯",
         "comment": "uaai"
+      },
+      {
+        "text": "乮",
+        "comment": ""
+      },
+      {
+        "text": "冇",
+        "comment": ""
+      },
+      {
+        "text": "夘",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -934,9 +974,13 @@
   "jiandao:{Control+j}dlou lso xs2mr  dlxm": {
     "commit": "哆啦A梦",
     "buffer": "",
-    "prompt": "dl xm",
+    "prompt": "d l x m",
     "unused": "",
     "candidates": [
+      {
+        "text": "哆啦A梦",
+        "comment": "oo"
+      },
       {
         "text": "多线",
         "comment": "ua"
@@ -956,10 +1000,6 @@
       {
         "text": "丢了性命",
         "comment": "ua"
-      },
-      {
-        "text": "独立选民",
-        "comment": "uo"
       }
     ],
     "selectedIndex": 0
@@ -970,6 +1010,10 @@
     "prompt": "w g t x",
     "unused": "",
     "candidates": [
+      {
+        "text": "5G通信",
+        "comment": ""
+      },
       {
         "text": "朝贡体系",
         "comment": "uv"
@@ -988,10 +1032,6 @@
       },
       {
         "text": "五个体系",
-        "comment": "vi"
-      },
-      {
-        "text": "车刚停下",
         "comment": "vi"
       }
     ],
@@ -1443,14 +1483,14 @@
     ],
     "selectedIndex": 0
   },
-  "qingyun:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc": {
-    "commit": "疯狂星期四",
+  "qingyun:kfc{Control+apostrophe}fkxqS Vo50{Control+apostrophe}kfc": {
+    "commit": "疯狂星期四我",
     "buffer": "",
     "prompt": "k f c",
     "unused": "",
     "candidates": [
       {
-        "text": "疯狂星期四",
+        "text": "疯狂星期四V我50",
         "comment": "📍"
       },
       {
@@ -2097,15 +2137,15 @@
         "comment": ""
       },
       {
-        "text": "白沟泄洪",
-        "comment": ""
-      },
-      {
-        "text": "不够喜欢",
-        "comment": ""
-      },
-      {
         "text": "并",
+        "comment": ""
+      },
+      {
+        "text": "病",
+        "comment": ""
+      },
+      {
+        "text": "冰",
         "comment": ""
       }
     ],
@@ -2221,10 +2261,6 @@
         "comment": ""
       },
       {
-        "text": "爽快爽快",
-        "comment": ""
-      },
-      {
         "text": "屎",
         "comment": ""
       },
@@ -2238,6 +2274,10 @@
       },
       {
         "text": "始",
+        "comment": ""
+      },
+      {
+        "text": "矢",
         "comment": ""
       }
     ],
@@ -2474,14 +2514,14 @@
     ],
     "selectedIndex": 0
   },
-  "sanpin:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc": {
-    "commit": "疯狂星期四",
+  "sanpin:kfc{Control+apostrophe}fkxqS Vw 50{Control+apostrophe}kfc": {
+    "commit": "疯狂星期四我",
     "buffer": "",
     "prompt": "kfc",
     "unused": "",
     "candidates": [
       {
-        "text": "疯狂星期四",
+        "text": "疯狂星期四V我50",
         "comment": "📍"
       },
       {
@@ -2863,45 +2903,49 @@
     ],
     "selectedIndex": 0
   },
-  "sanpin:{Control+j}dlvlsvikkamr  dlkm": {
+  "sanpin:{Control+j}dlvlsvixsamr  dlxm": {
     "commit": "哆啦A梦",
     "buffer": "",
-    "prompt": "dl km",
+    "prompt": "d l x m",
     "unused": "",
     "candidates": [
       {
-        "text": "夺眶",
+        "text": "哆啦A梦",
         "comment": ""
       },
       {
-        "text": "多",
+        "text": "多线",
         "comment": ""
       },
       {
-        "text": "躲",
+        "text": "多嫌",
         "comment": ""
       },
       {
-        "text": "哆",
+        "text": "电力项目",
         "comment": ""
       },
       {
-        "text": "朵",
+        "text": "道路相目",
         "comment": ""
       },
       {
-        "text": "剁",
+        "text": "丢了性命",
         "comment": ""
       }
     ],
     "selectedIndex": 0
   },
-  "sanpin:{Control+j}wjugjatyxb  wgtx": {
-    "commit": "五G通信",
+  "sanpin:{Control+j}wju2geatyxb  wgtx": {
+    "commit": "5G通信",
     "buffer": "",
     "prompt": "w g t x",
     "unused": "",
     "candidates": [
+      {
+        "text": "5G通信",
+        "comment": ""
+      },
       {
         "text": "朝贡体系",
         "comment": ""
@@ -2920,10 +2964,6 @@
       },
       {
         "text": "五个体系",
-        "comment": ""
-      },
-      {
-        "text": "车刚停下",
         "comment": ""
       }
     ],
@@ -3490,14 +3530,14 @@
     ],
     "selectedIndex": 0
   },
-  "sipin:kfc{Control+apostrophe}fkxqS  {Control+apostrophe}kfc": {
-    "commit": "疯狂星期四",
+  "sipin:kfc{Control+apostrophe}fkxqS Vs 50{Control+apostrophe}kfc": {
+    "commit": "疯狂星期四我",
     "buffer": "",
     "prompt": "kfc",
     "unused": "",
     "candidates": [
       {
-        "text": "疯狂星期四",
+        "text": "疯狂星期四V我50",
         "comment": "📍"
       },
       {
@@ -3691,11 +3731,11 @@
     "unused": "",
     "candidates": [
       {
-        "text": "2026年10月05日",
+        "text": "2026年10月06日",
         "comment": ""
       },
       {
-        "text": "2026-10-05",
+        "text": "2026-10-06",
         "comment": ""
       },
       {
@@ -3712,12 +3752,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "2026年10月05日14时26分57秒",
+        "text": "2026年10月06日10时55分17秒",
         "comment": ""
       },
       {
-        "text": "2026-10-05",
-        "comment": "14:26:57 "
+        "text": "2026-10-06",
+        "comment": "10:55:17 "
       },
       {
         "text": "rs",
@@ -3733,11 +3773,11 @@
     "unused": "",
     "candidates": [
       {
-        "text": "14时26分58秒",
+        "text": "10时55分18秒",
         "comment": ""
       },
       {
-        "text": "14:26:58",
+        "text": "10:55:18",
         "comment": ""
       },
       {
@@ -3886,16 +3926,16 @@
     "unused": "",
     "candidates": [
       {
-        "text": "熬",
-        "comment": "eeieau~ eieoea~"
+        "text": "鳌",
+        "comment": "eeieua~ eeieau~"
       },
       {
         "text": "獒",
         "comment": "eeieau~ eieoea~"
       },
       {
-        "text": "鳌",
-        "comment": "eeieua~ eeieau~"
+        "text": "熬",
+        "comment": "eeieau~ eieoea~"
       },
       {
         "text": "敖",

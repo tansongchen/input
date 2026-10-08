@@ -23,7 +23,7 @@ import Input from '../components/Input.vue'
 
 > 充满希望的跋涉比到达目的地更能给人乐趣。
 >
-> cmxwefmqgkmmhbekodzimdd_kr_y_ver.lxotzkv.
+> `cmxwefmqgkmmhbekodzimdd_kr_y_ver.lxotzkv.`
 
 <ClientOnly>
   <Input />

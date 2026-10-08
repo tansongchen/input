@@ -13,7 +13,7 @@ import Input from '../components/Input.vue'
 
 > 充满希望的跋涉比到达目的地更能给人乐趣。
 >
-> wmxwod_bseebk_dzdsmdd_grnrgwrnleql.
+> `wmxwod_bseebk_dzdsmdd_grnrgwrnleql.`
 
 <ClientOnly>
   <Input />

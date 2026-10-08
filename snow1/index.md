@@ -4,6 +4,10 @@ next:
   link: ./spelling
 ---
 
+<script setup>
+import Input from '../components/Input.vue'
+</script>
+
 # 冰雪一拼
 
 ## 什么是冰雪一拼？
@@ -16,6 +20,19 @@ next:
     - 音节码 + 辅助码：第一击左手声介右手韵调、第二击左手带空格或右手带空格追加辅助码，可由后续编码顶屏
 - 多音节词：首音节的音节码直接打，后续音节的音节码需要双手带空格并击
     - 最多只需要打前四个音节，后面的可以联想
+
+<div class="interactive">
+
+您也可以在下方的输入框体验使用冰雪一拼输入下面的这句话，其中每组按键需要同时按下，`_` 表示同时按下空格：
+
+> 充满希望的跋涉比到达目的地更能给人乐趣。
+>
+> `dvi` `cm,_` `r;_` `euo_` `f` `wul` `sh_` `sgl` `fkl` `ful_` `cj` `xcj_` `xcj_` `sfjk` `dgy_` `sfj,` `wr` `bh` `svj_` `k`
+
+<ClientOnly>
+  <Input />
+</ClientOnly>
+</div>
 
 ### 为什么要改编为顶功版本？
 

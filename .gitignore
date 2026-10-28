@@ -4,3 +4,4 @@ node_modules
 *.tgz
 *.zip
 pdf/
+.vitepress/.temp

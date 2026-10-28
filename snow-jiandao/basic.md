@@ -36,6 +36,19 @@ const 输入后移二 = "jiandao:jmdz{Control+semicolon}{Down}{Control+semicolon
 
 # 顶功编码
 
+## 选词与编辑
+
+本方案每页显示六个候选，使用普通数字键选重：
+
+| 操作 | 按键 |
+| --- | --- |
+| 确认首选 | 空格或 `1` |
+| 选择第 2～6 项 | `2`～`6` |
+| 下一页、上一页 | `Tab`、翻页后的 `Shift+Tab` |
+| 删除编码、取消当前输入 | `BackSpace`、`Escape` |
+
+本方案没有数字定位键，可以通过下文的选择造词或缓冲造词拆分输入。`[`、`]` 用于以词定字，拆分提示、其他编辑和模式切换见[高级功能](./advanced)。
+
 ## 音节码固态词典
 
 ### 构词规则
@@ -65,6 +78,10 @@ const 输入后移二 = "jiandao:jmdz{Control+semicolon}{Down}{Control+semicolon
 #### 缓冲造词
 
 <!--@include: ../components/basic.md#buffer-->
+
+也可以在没有编码时输入 `o`，选择“📝 开启缓冲”进入同一模式。选择此命令不会上屏文字；取消候选不会开启缓冲，再次选择只会保持开启。
+
+<Window input="jiandao:o" />
 
 注意，在拆分输入的过程中不能使用 630 简码（因为这些是特殊的简码，系统中没有这些简码对应的完整拼音，会导致造词失败）。
 
@@ -105,3 +122,29 @@ const 输入后移二 = "jiandao:jmdz{Control+semicolon}{Down}{Control+semicolon
 ## 方案码用户词典
 
 <!--@include: ../components/basic.md#schema-userdb-->
+
+## 词库设置
+
+以下设置写入本方案的 `snow_jiandao.custom.yaml`，修改后重新部署；多个设置合并到同一个 `patch` 下。补丁文件的位置见[使用补丁文件](/#使用补丁文件)。
+
+### 词库与读音
+
+<!--@include: ../components/configuration.md#word-sources-->
+
+### 批量加入词汇
+
+<!--@include: ../components/configuration.md#word-import-->
+
+<!--@include: ../components/configuration.md#import-jianpin-->
+
+### 裁剪词库
+
+<!--@include: ../components/configuration.md#packs-jianpin-->
+
+### 关闭调频与自动造词
+
+<!--@include: ../components/configuration.md#user-dict-jianpin-->
+
+### 每页候选数
+
+<!--@include: ../components/configuration.md#candidate-menu-->

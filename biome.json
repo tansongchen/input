@@ -18,6 +18,9 @@
     "includes": [
       "**",
       "!build/**",
+      "!.vitepress/.temp/**",
+      "!.vitepress/dist/**",
+      "!.vitepress/cache/**",
       "!public/**",
       "!bun.lock",
       "!src/simulation.json",

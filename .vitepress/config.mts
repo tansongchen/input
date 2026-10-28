@@ -20,7 +20,7 @@ const 方案变量: Record<string, Record<string, string>> = {
 export default defineConfig({
   title: "众妙斋 · 冰雪拼音",
   description: "冰雪拼音",
-  srcExclude: ["components/**"],
+  srcExclude: ["components/**", "README.md", "AGENTS.md"],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -82,6 +82,8 @@ export default defineConfig({
           link: "/snow1/",
           items: [
             { text: "拼写规则", link: "/snow1/spelling" },
+            { text: "顶功编码", link: "/snow1/basic" },
+            { text: "高级功能", link: "/snow1/advanced" },
           ],
         },
         {

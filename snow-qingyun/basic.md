@@ -36,6 +36,22 @@ const 输入后移二 = "qingyun:fmje{Control+bracketright}";
 
 上一节中您学习了冰雪清韵的拼写规则，能够输入词语中每个字的声母和韵母来检索词语，或者输入单字中每个字的声码和韵码来检索单字。本节中我们将声母韵母以及声码韵码重新组合成前缀码的格式，以进一步提高输入效率。
 
+## 选词与编辑
+
+本方案每页显示六个候选，选重键与一般拼音方案不同：
+
+| 操作 | 按键 |
+| --- | --- |
+| 确认首选 | 空格 |
+| 选择第 2～6 项 | `2`、`3`、`8`、`9`、`0` |
+| 下一页、上一页 | `Tab`、翻页后的 `Shift+Tab` |
+| 第一页切换字词／单字 | `Shift+Tab`，上屏后恢复默认 |
+| 定位第 1～4 个音节末尾 | `1`、`4`、`5`、`6` |
+| 回到最后一个音节末尾 | `7` |
+| 删除编码、取消当前输入 | `BackSpace`、`Escape` |
+
+定位后可以给相应片段补码并确认，用于拆分造词。`[`、`]` 用于以词定字；全息／前缀模式和其他编辑快捷键见[高级功能](./advanced#编辑与切换)。
+
 ## 音节码固态词典
 
 ### 词语的前缀编码
@@ -160,3 +176,31 @@ const 输入后移二 = "qingyun:fmje{Control+bracketright}";
 ## 方案码用户词典
 
 <!--@include: ../components/basic.md#schema-userdb-->
+
+## 词库设置
+
+以下设置写入本方案的 `snow_qingyun.custom.yaml`，修改后重新部署；多个设置合并到同一个 `patch` 下。补丁文件的位置见[使用补丁文件](/#使用补丁文件)。
+
+以下配置控制拼音词库，不改变本方案的形码词典。
+
+### 词库与读音
+
+<!--@include: ../components/configuration.md#word-sources-->
+
+### 批量加入词汇
+
+<!--@include: ../components/configuration.md#word-import-->
+
+<!--@include: ../components/configuration.md#import-single-->
+
+### 裁剪词库
+
+<!--@include: ../components/configuration.md#packs-single-->
+
+### 关闭调频与自动造词
+
+<!--@include: ../components/configuration.md#user-dict-single-->
+
+### 每页候选数
+
+<!--@include: ../components/configuration.md#candidate-menu-->

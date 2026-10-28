@@ -37,6 +37,19 @@ const 输入后移二 = "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}
 
 # 顶功编码
 
+## 选词与编辑
+
+本方案每页显示六个候选，使用普通数字键选重：
+
+| 操作 | 按键 |
+| --- | --- |
+| 确认首选 | 空格或 `1` |
+| 选择第 2～6 项 | `2`～`6` |
+| 下一页、上一页 | `Tab`、翻页后的 `Shift+Tab` |
+| 删除编码、取消当前输入 | `BackSpace`、`Escape` |
+
+本方案没有冰雪四拼的数字定位键，造词使用下文的缓冲方式。`[`、`]` 用于以词定字，其他编辑和模式切换见[高级功能](./advanced#编辑与切换)。
+
 ## 音节码固态词典
 
 下面的描述中，「全码」表示按照规则来编码得到的全部输入码，而「简码」表示输入全码的前几个字母即可的部分字词。下标 ₁、₂、₃、₄ 分别表示词语的第一、二、三和最后一个字。
@@ -62,6 +75,10 @@ const 输入后移二 = "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}
 
 <!--@include: ../components/basic.md#buffer-->
 
+也可以在没有编码时输入 `o`，选择“📝 开启缓冲”进入同一模式。选择此命令不会上屏文字；取消候选不会开启缓冲，再次选择只会保持开启。
+
+<Window input="sanpin:o" />
+
 值得注意的是，由于软件实现上的限制，本方案只支持缓冲造词这一种方式，不支持选择造词、定位造词等等。未来这一限制有可能会改善。
 
 ### 英数混输造词
@@ -80,7 +97,7 @@ const 输入后移二 = "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}
 
 <!--@include: ../components/basic.md#schema-static-->
 
-在本方案中，单音节词的一码、二码为固定内容。
+在本方案中，单音节词的一码、二码为固定内容，另外有按前两字声母输入的二简词，例如 `be`“表示”、`fg`“中国”、`gc`“刚才”。它们与下面的声调简码不同；这些只含声母的二码需用空格或选重键确认。
 
 此外，为提高输入速度，本方案在方案码固态词典中仿照冰雪键道加入了用两键或三键即可输入的多音节词。这些多音节词的规则为：
 
@@ -92,3 +109,29 @@ const 输入后移二 = "sanpin:jmdz{Control+semicolon}{Down}{Control+semicolon}
 ## 方案码用户词典
 
 <!--@include: ../components/basic.md#schema-userdb-->
+
+## 词库设置
+
+以下设置写入本方案的 `snow_sanpin.custom.yaml`，修改后重新部署；多个设置合并到同一个 `patch` 下。补丁文件的位置见[使用补丁文件](/#使用补丁文件)。
+
+### 词库与读音
+
+<!--@include: ../components/configuration.md#word-sources-->
+
+### 批量加入词汇
+
+<!--@include: ../components/configuration.md#word-import-->
+
+<!--@include: ../components/configuration.md#import-jianpin-->
+
+### 裁剪词库
+
+<!--@include: ../components/configuration.md#packs-jianpin-->
+
+### 关闭调频与自动造词
+
+<!--@include: ../components/configuration.md#user-dict-jianpin-->
+
+### 每页候选数
+
+<!--@include: ../components/configuration.md#candidate-menu-->

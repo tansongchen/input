@@ -19,7 +19,7 @@ const status =
 const { commit, buffer, prompt, unused, candidates, selectedIndex } = status;
 const labelsAlt = ["_", "2", "3", "8", "9", "0"];
 // biome-ignore lint/correctness/noUnusedVariables: vue
-const labels = /sipin|sanpin/.test(input)
+const labels = /^(sipin|qingyun):/.test(input)
   ? labelsAlt
   : range(6).map((x) => `${x + 1}`);
 </script>

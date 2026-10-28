@@ -6,12 +6,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "着",
-        "comment": "fz fz fe fl ouia 丶丿・丨乙"
+        "text": "这",
+        "comment": "fe qw qw ovoa 丶一・丶乙"
       },
       {
-        "text": "这",
-        "comment": "fe qw ovoa 丶一・丶乙"
+        "text": "着",
+        "comment": "fz fz fe qj fl ouia 丶丿・丨乙"
       },
       {
         "text": "者",
@@ -19,11 +19,11 @@
       },
       {
         "text": "折",
-        "comment": "ee fe fe iuuu 手・丿丿"
+        "comment": "ee tk fe fe iuuu 手・丿丿"
       },
       {
         "text": "遮",
-        "comment": "fe ovoa 丶一・丶乙"
+        "comment": "fe fe ovoa 丶一・丶乙"
       },
       {
         "text": "哲",
@@ -224,7 +224,7 @@
         "comment": ""
       },
       {
-        "text": "塒",
+        "text": "兙",
         "comment": ""
       }
     ],
@@ -541,6 +541,19 @@
     ],
     "selectedIndex": 0
   },
+  "jiandao:o": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "o",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "📝 开启缓冲",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "jiandao:o123": {
     "commit": "",
     "buffer": "",
@@ -560,16 +573,16 @@
         "comment": " 大寫"
       },
       {
+        "text": "ģ",
+        "comment": " U+0123 未知分区"
+      },
+      {
         "text": "123",
         "comment": "表达式"
       },
       {
         "text": "123",
         "comment": "= 123 等式"
-      },
-      {
-        "text": "123.00",
-        "comment": "答案"
       }
     ],
     "selectedIndex": 0
@@ -632,26 +645,26 @@
     "candidates": [
       {
         "text": "札",
-        "comment": "zha2"
+        "comment": "ya4 zha2"
       },
       {
         "text": "朰",
-        "comment": "mu4"
+        "comment": "wei4"
       },
       {
-        "text": "𣎷",
-        "comment": ""
+        "text": "𠀟",
+        "comment": "han4"
       },
       {
-        "text": "𣎸",
-        "comment": "liao3"
+        "text": "权",
+        "comment": "quan2 shu4"
+      },
+      {
+        "text": "杩",
+        "comment": "ma3 ma4"
       },
       {
         "text": "𣎹",
-        "comment": "~a"
-      },
-      {
-        "text": "朻",
         "comment": "jiu1"
       }
     ],
@@ -689,16 +702,16 @@
         "comment": "ai"
       },
       {
+        "text": "性感妹子",
+        "comment": "ov"
+      },
+      {
         "text": "修改名字",
         "comment": "ia"
       },
       {
         "text": "西沟满族乡",
         "comment": "va"
-      },
-      {
-        "text": "行",
-        "comment": "uuvv"
       }
     ],
     "selectedIndex": 0
@@ -718,19 +731,19 @@
         "comment": ""
       },
       {
+        "text": "嫈",
+        "comment": ""
+      },
+      {
+        "text": "嬹",
+        "comment": ""
+      },
+      {
         "text": "曐",
         "comment": ""
       },
       {
         "text": "狌",
-        "comment": ""
-      },
-      {
-        "text": "皨",
-        "comment": ""
-      },
-      {
-        "text": "箵",
         "comment": ""
       }
     ],
@@ -755,15 +768,15 @@
         "comment": "uaai"
       },
       {
+        "text": "丣",
+        "comment": ""
+      },
+      {
         "text": "乮",
         "comment": ""
       },
       {
         "text": "冇",
-        "comment": ""
-      },
-      {
-        "text": "夘",
         "comment": ""
       }
     ],
@@ -792,12 +805,12 @@
         "comment": "ai"
       },
       {
-        "text": "修改名字",
-        "comment": "ia"
+        "text": "性感妹子",
+        "comment": "ov"
       },
       {
-        "text": "西沟满族乡",
-        "comment": "va"
+        "text": "修改名字",
+        "comment": "ia"
       }
     ],
     "selectedIndex": 0
@@ -957,15 +970,19 @@
         "comment": "ou"
       },
       {
-        "text": "(biang1)生",
-        "comment": ""
-      },
-      {
         "text": "𰻝",
         "comment": ""
       },
       {
         "text": "𰻞",
+        "comment": ""
+      },
+      {
+        "text": "𱿗",
+        "comment": ""
+      },
+      {
+        "text": "𲁓",
         "comment": ""
       }
     ],
@@ -1052,20 +1069,20 @@
         "comment": ""
       },
       {
-        "text": "𣎷",
-        "comment": ""
+        "text": "𠀟",
+        "comment": "~a"
       },
       {
-        "text": "𣎸",
-        "comment": "~a"
+        "text": "权",
+        "comment": "~o pvo"
+      },
+      {
+        "text": "杩",
+        "comment": "~ae pma"
       },
       {
         "text": "𣎹",
         "comment": "~a"
-      },
-      {
-        "text": "朻",
-        "comment": "~i"
       }
     ],
     "selectedIndex": 0
@@ -1077,12 +1094,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "着",
-        "comment": "de dknm"
-      },
-      {
         "text": "这",
         "comment": "w wyzi"
+      },
+      {
+        "text": "着",
+        "comment": "de dknm"
       },
       {
         "text": "者",
@@ -1811,12 +1828,12 @@
         "comment": ""
       },
       {
-        "text": "虽然",
-        "comment": "sr;"
+        "text": "𠰫",
+        "comment": "chun1"
       },
       {
-        "text": "输入",
-        "comment": ""
+        "text": "虽然",
+        "comment": "sr;"
       }
     ],
     "selectedIndex": 1
@@ -1865,6 +1882,14 @@
         "comment": "📌 meng4"
       },
       {
+        "text": "𣡑",
+        "comment": "jue2"
+      },
+      {
+        "text": "𣡮",
+        "comment": "jue2"
+      },
+      {
         "text": "品牌机构",
         "comment": ""
       },
@@ -1874,14 +1899,6 @@
       },
       {
         "text": "品牌架构",
-        "comment": ""
-      },
-      {
-        "text": "品牌结构",
-        "comment": ""
-      },
-      {
-        "text": "翩翩佳公子",
         "comment": ""
       }
     ],
@@ -1898,6 +1915,10 @@
         "comment": "📌 ze2"
       },
       {
+        "text": "泽",
+        "comment": "📌 shi4"
+      },
+      {
         "text": "看按钮",
         "comment": ""
       },
@@ -1912,10 +1933,6 @@
       {
         "text": "汉",
         "comment": "han4"
-      },
-      {
-        "text": "可按",
-        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -1964,6 +1981,10 @@
         "comment": "📍 ke4"
       },
       {
+        "text": "客",
+        "comment": "📍 qia4"
+      },
+      {
         "text": "🈚️",
         "comment": ""
       },
@@ -1972,16 +1993,12 @@
         "comment": "bi4"
       },
       {
+        "text": "𡧄",
+        "comment": "gui3"
+      },
+      {
         "text": "𠕸",
         "comment": "sui3"
-      },
-      {
-        "text": "㝘",
-        "comment": "yong2"
-      },
-      {
-        "text": "㼰",
-        "comment": "pi2"
       }
     ],
     "selectedIndex": 0
@@ -2020,15 +2037,11 @@
     "selectedIndex": 0
   },
   "qingyun:{Control+j}wu2g.2lg lwo  wgtx": {
-    "commit": "5G通信",
+    "commit": "5问通信",
     "buffer": "",
     "prompt": "w g t x",
     "unused": "",
     "candidates": [
-      {
-        "text": "5G通信",
-        "comment": ""
-      },
       {
         "text": "网格体系",
         "comment": ""
@@ -2048,6 +2061,10 @@
       {
         "text": "韦格替蜥",
         "comment": ""
+      },
+      {
+        "text": "武功天下第一",
+        "comment": ""
       }
     ],
     "selectedIndex": 0
@@ -2059,12 +2076,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "着",
-        "comment": "fzv fzi fea fli"
+        "text": "这",
+        "comment": "feo qwv qwo"
       },
       {
-        "text": "这",
-        "comment": "feo qwo"
+        "text": "着",
+        "comment": "fzv fzi fea qjo fli"
       },
       {
         "text": "者",
@@ -2072,11 +2089,11 @@
       },
       {
         "text": "折",
-        "comment": "eei fev fei"
+        "comment": "eei tki fev fei"
       },
       {
         "text": "遮",
-        "comment": "fev"
+        "comment": "fev feu"
       },
       {
         "text": "哲",
@@ -2547,6 +2564,19 @@
     ],
     "selectedIndex": 0
   },
+  "sanpin:o": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "o",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "📝 开启缓冲",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sanpin:o123": {
     "commit": "",
     "buffer": "",
@@ -2566,16 +2596,16 @@
         "comment": " 大寫"
       },
       {
+        "text": "ģ",
+        "comment": " U+0123 未知分区"
+      },
+      {
         "text": "123",
         "comment": "表达式"
       },
       {
         "text": "123",
         "comment": "= 123 等式"
-      },
-      {
-        "text": "123.00",
-        "comment": "答案"
       }
     ],
     "selectedIndex": 0
@@ -2617,26 +2647,26 @@
     "candidates": [
       {
         "text": "札",
-        "comment": "zha2"
+        "comment": "ya4 zha2"
       },
       {
         "text": "朰",
-        "comment": "mu4"
+        "comment": "wei4"
       },
       {
-        "text": "𣎷",
-        "comment": ""
+        "text": "𠀟",
+        "comment": "han4"
       },
       {
-        "text": "𣎸",
-        "comment": "liao3"
+        "text": "权",
+        "comment": "quan2 shu4"
+      },
+      {
+        "text": "杩",
+        "comment": "ma3 ma4"
       },
       {
         "text": "𣎹",
-        "comment": "~a"
-      },
-      {
-        "text": "朻",
         "comment": "jiu1"
       }
     ],
@@ -2713,6 +2743,10 @@
       {
         "text": "磽",
         "comment": "eki 石"
+      },
+      {
+        "text": "礉",
+        "comment": "eki 石"
       }
     ],
     "selectedIndex": 0
@@ -2725,27 +2759,27 @@
     "candidates": [
       {
         "text": "鳌",
-        "comment": "vvivua~ vvivau~"
+        "comment": "vvivau~"
       },
       {
         "text": "獒",
-        "comment": "vvivau~ vivova~"
+        "comment": "vvivau~"
       },
       {
         "text": "熬",
-        "comment": "vvivau~ vivova~"
+        "comment": "vvivau~"
       },
       {
         "text": "敖",
-        "comment": "vvivau~ vivova~"
+        "comment": "vvivau~"
       },
       {
         "text": "螯",
-        "comment": "vvivau~ vivova~"
+        "comment": "vvivau~"
       },
       {
         "text": "璈",
-        "comment": "vvivvv~ vvivvi~"
+        "comment": "vvivvv~"
       }
     ],
     "selectedIndex": 0
@@ -2828,7 +2862,7 @@
       },
       {
         "text": "援",
-        "comment": "vivuoo~ vavuoo~"
+        "comment": "vivuoo~"
       },
       {
         "text": "垣",
@@ -2836,11 +2870,11 @@
       },
       {
         "text": "芫",
-        "comment": "viivvu~ ivvivv~"
+        "comment": "viivvu~"
       },
       {
         "text": "塬",
-        "comment": "vivvuu~ vivvuu~"
+        "comment": "vivvuu~"
       },
       {
         "text": "橼",
@@ -2976,12 +3010,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "着",
-        "comment": "waui waue weo woe"
+        "text": "这",
+        "comment": "wea weii weia"
       },
       {
-        "text": "这",
-        "comment": "wea weia"
+        "text": "着",
+        "comment": "waui waue weo wua woe"
       },
       {
         "text": "者",
@@ -2989,11 +3023,11 @@
       },
       {
         "text": "折",
-        "comment": "vee wei wee"
+        "comment": "vee tie wei wee"
       },
       {
         "text": "遮",
-        "comment": "wei"
+        "comment": "wei weu"
       },
       {
         "text": "哲",
@@ -3293,7 +3327,7 @@
         "comment": "siee 王"
       },
       {
-        "text": "繙",
+        "text": "紡",
         "comment": "sii 纟"
       }
     ],
@@ -3377,15 +3411,15 @@
       },
       {
         "text": "亦",
-        "comment": "oeuiuo oeuauo"
+        "comment": "oeuiuo"
       },
       {
         "text": "奕",
-        "comment": "oeuiuo~ oeuauo~"
+        "comment": "oeuiuo~"
       },
       {
         "text": "裔",
-        "comment": "oeuauo~ oeuauo~"
+        "comment": "oeuauo~"
       },
       {
         "text": "毅",
@@ -3393,7 +3427,7 @@
       },
       {
         "text": "翊",
-        "comment": "oeouea~ oeouea~"
+        "comment": "oeouea~"
       }
     ],
     "selectedIndex": 5
@@ -3575,7 +3609,7 @@
       },
       {
         "text": "援",
-        "comment": "eieuoo~ eaeuoo~"
+        "comment": "eieuoo~"
       },
       {
         "text": "垣",
@@ -3583,11 +3617,11 @@
       },
       {
         "text": "芫",
-        "comment": "eiieeu~ ieeiee~"
+        "comment": "eiieeu~"
       },
       {
         "text": "塬",
-        "comment": "eieeuu~ eieeuu~"
+        "comment": "eieeuu~"
       },
       {
         "text": "橼",
@@ -3608,7 +3642,7 @@
       },
       {
         "text": "原",
-        "comment": "📌 euui~ euui~"
+        "comment": "📌 euui~"
       },
       {
         "text": "猿",
@@ -3637,7 +3671,7 @@
     "candidates": [
       {
         "text": "原",
-        "comment": "📌 euui~ euui~"
+        "comment": "📌 euui~"
       },
       {
         "text": "圆",
@@ -3662,6 +3696,19 @@
     ],
     "selectedIndex": 1
   },
+  "sipin:o": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "o",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "📝 开启缓冲",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
   "sipin:o123": {
     "commit": "",
     "buffer": "",
@@ -3681,16 +3728,16 @@
         "comment": " 大寫"
       },
       {
+        "text": "ģ",
+        "comment": " U+0123 未知分区"
+      },
+      {
         "text": "123",
         "comment": "表达式"
       },
       {
         "text": "123",
         "comment": "= 123 等式"
-      },
-      {
-        "text": "123.00",
-        "comment": "答案"
       }
     ],
     "selectedIndex": 0
@@ -3731,11 +3778,11 @@
     "unused": "",
     "candidates": [
       {
-        "text": "2026年10月06日",
+        "text": "2026年10月28日",
         "comment": ""
       },
       {
-        "text": "2026-10-06",
+        "text": "2026-10-28",
         "comment": ""
       },
       {
@@ -3752,12 +3799,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "2026年10月06日10时55分17秒",
+        "text": "2026年10月28日09时55分44秒",
         "comment": ""
       },
       {
-        "text": "2026-10-06",
-        "comment": "10:55:17 "
+        "text": "2026-10-28",
+        "comment": "09:55:44 "
       },
       {
         "text": "rs",
@@ -3773,11 +3820,11 @@
     "unused": "",
     "candidates": [
       {
-        "text": "10时55分18秒",
+        "text": "09时55分45秒",
         "comment": ""
       },
       {
-        "text": "10:55:18",
+        "text": "09:55:45",
         "comment": ""
       },
       {
@@ -3927,27 +3974,27 @@
     "candidates": [
       {
         "text": "鳌",
-        "comment": "eeieua~ eeieau~"
+        "comment": "eeieau~"
       },
       {
         "text": "獒",
-        "comment": "eeieau~ eieoea~"
+        "comment": "eeieau~"
       },
       {
         "text": "熬",
-        "comment": "eeieau~ eieoea~"
+        "comment": "eeieau~"
       },
       {
         "text": "敖",
-        "comment": "eeieau~ eieoea~"
+        "comment": "eeieau~"
       },
       {
         "text": "螯",
-        "comment": "eeieau~ eieoea~"
+        "comment": "eeieau~"
       },
       {
         "text": "璈",
-        "comment": "eeieee~ eeieei~"
+        "comment": "eeieee~"
       }
     ],
     "selectedIndex": 0
@@ -4191,26 +4238,26 @@
     "candidates": [
       {
         "text": "札",
-        "comment": "zha2"
+        "comment": "ya4 zha2"
       },
       {
         "text": "朰",
-        "comment": "mu4"
+        "comment": "wei4"
       },
       {
-        "text": "𣎷",
-        "comment": ""
+        "text": "𠀟",
+        "comment": "han4"
       },
       {
-        "text": "𣎸",
-        "comment": "liao3"
+        "text": "权",
+        "comment": "quan2 shu4"
+      },
+      {
+        "text": "杩",
+        "comment": "ma3 ma4"
       },
       {
         "text": "𣎹",
-        "comment": "~a"
-      },
-      {
-        "text": "朻",
         "comment": "jiu1"
       }
     ],
@@ -4497,6 +4544,118 @@
       {
         "text": "大连湾牡蛎",
         "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "yipin:dj{Release+d}{Release+j}f {Release+f}{Release+space}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "yi4 [d]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "奕",
+        "comment": "d 大"
+      },
+      {
+        "text": "刈",
+        "comment": "d 刂"
+      },
+      {
+        "text": "殪",
+        "comment": "d 歹"
+      },
+      {
+        "text": "失",
+        "comment": "d 大"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "yipin:dj{Release+d}{Release+j}k {Release+k}{Release+space}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "yi4 [K]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "抑",
+        "comment": "K 扌"
+      },
+      {
+        "text": "挹",
+        "comment": "K 扌"
+      },
+      {
+        "text": "掖",
+        "comment": "K 扌"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "yipin:sgi{Release+s}{Release+g}{Release+i}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "bing1",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰",
+        "comment": "📌 sju 水"
+      },
+      {
+        "text": "兵",
+        "comment": "b 八"
+      },
+      {
+        "text": "并",
+        "comment": "b 丷"
+      },
+      {
+        "text": "槟",
+        "comment": "L 木"
+      },
+      {
+        "text": "仌",
+        "comment": " "
+      },
+      {
+        "text": "仒",
+        "comment": " "
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "yipin:sgi{Release+s}{Release+g}{Release+i}drm {Release+d}{Release+r}{Release+m}{Release+space}": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "bing1 xue3",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "冰雪",
+        "comment": " "
+      },
+      {
+        "text": "冰",
+        "comment": "sju 水"
+      },
+      {
+        "text": "兵",
+        "comment": "b 八"
+      },
+      {
+        "text": "并",
+        "comment": "b 丷"
+      },
+      {
+        "text": "槟",
+        "comment": "L 木"
+      },
+      {
+        "text": "仌",
+        "comment": " "
       }
     ],
     "selectedIndex": 0

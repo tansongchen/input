@@ -56,6 +56,21 @@ const 输入后移二 = "sipin:kooe{Control+semicolon}{Down}{Control+semicolon}{
 
 对于冰雪四拼来说，这意味着一个词的编码不再是每个音节的编码连起来打，而是应用了一套新的构词规则。初学者对于这套规则可能会感觉到颠三倒四，但是熟悉之后就会感觉到无比自然。
 
+## 选词与编辑
+
+本方案每页显示六个候选，选重键与一般拼音方案不同：
+
+| 操作 | 按键 |
+| --- | --- |
+| 确认首选 | 空格 |
+| 选择第 2～6 项 | `2`、`3`、`8`、`9`、`0` |
+| 下一页、上一页 | `Tab`、翻页后的 `Shift+Tab` |
+| 定位第 1～4 个音节末尾 | `1`、`4`、`5`、`6` |
+| 回到最后一个音节末尾 | `7` |
+| 删除编码、取消当前输入 | `BackSpace`、`Escape` |
+
+定位用于拆分和补码，具体过程见下文的[定位造词](#定位造词)。`[`、`]` 用于以词定字，其他编辑和模式切换见[高级功能](./advanced#编辑与切换)。
+
 ## 音节码固态词典
 
 ### 构词规则
@@ -68,7 +83,7 @@ const 输入后移二 = "sipin:kooe{Control+semicolon}{Down}{Control+semicolon}{
 
 1. 单音节词：「有」的编码为 `f`，「又」的编码为 `fo`，「由」的编码为 `fou`；
 2. 双音节词：「你好」的编码为 `nh`，「希望」的编码为 `xsi`，「手机」的编码为 `vjii`，「冰雪」的编码为 `bxoui`，「元气」的编码为 `kqiaoo`；
-3. 三音节词：「为什么」的编码为 `svm`，「变压器」的编码为 `bfqi`，「最低点」的编码为 `zdduo`；
+3. 三音节词：「为什么」的编码为 `svm`，「变压器」的编码为 `bfqi`，「最低点」可用 `zdduo` 在首页选取（该编码的初始首选为“再大点”）；
 4. 四音节词：「感同身受」的编码为 `gtvv`，「将计就计」的编码为 `jjjji`，「附庸风雅」的编码为 `ffffuu`；
 5. 以此类推，$n$ 音节词的编码可能为 $n$ 码到 $n+4$ 码不等。
 
@@ -109,6 +124,10 @@ const 输入后移二 = "sipin:kooe{Control+semicolon}{Down}{Control+semicolon}{
 #### 缓冲造词
 
 <!--@include: ../components/basic.md#buffer-->
+
+也可以在没有编码时输入 `o`，选择“📝 开启缓冲”进入同一模式。选择此命令不会上屏文字；取消候选不会开启缓冲，再次选择只会保持开启。
+
+<Window input="sipin:o" />
 
 ### 英数混输造词
 
@@ -151,7 +170,7 @@ nli	哪里
 
 在 `snow_sipin.fixed.txt` 中有很多像这样的语义集中的「区块」，看过一次之后就能留下比较深刻的印象。
 
-另外，「的」和「了」两个字因为频率非常高，所以分别采用 `;` 和 `/` 键输入，不占用常规固定候选词的位置。如果不喜欢这个设定，可以在固定候选词文件中自定义。作为替代，分号用 `|` 输入（即 Shift + `\`），顿号用 `\` 输入。
+另外，「的」和「了」两个字因为频率非常高，所以分别采用 `;` 和 `/` 键输入，不占用常规固定候选词的位置。如果希望改变这个设定，可在 `snow_sipin.custom.yaml` 中覆盖 `punctuator/half_shape` 对应按键的映射，重新部署后生效。作为替代，分号用 `|` 输入（即 Shift + `\`），顿号用 `\` 输入。
 
 ### 可选的无理音节
 
@@ -180,3 +199,29 @@ patch:
 ## 方案码用户词典
 
 <!--@include: ../components/basic.md#schema-userdb-->
+
+## 词库设置
+
+以下设置写入本方案的 `snow_sipin.custom.yaml`，修改后重新部署；多个设置合并到同一个 `patch` 下。补丁文件的位置见[使用补丁文件](/#使用补丁文件)。
+
+### 词库与读音
+
+<!--@include: ../components/configuration.md#word-sources-->
+
+### 批量加入词汇
+
+<!--@include: ../components/configuration.md#word-import-->
+
+<!--@include: ../components/configuration.md#import-single-->
+
+### 裁剪词库
+
+<!--@include: ../components/configuration.md#packs-single-->
+
+### 关闭调频与自动造词
+
+<!--@include: ../components/configuration.md#user-dict-single-->
+
+### 每页候选数
+
+<!--@include: ../components/configuration.md#candidate-menu-->

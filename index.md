@@ -58,7 +58,7 @@ features:
 - Windows：[小狼毫输入法](https://github.com/rime/weasel/releases)
 - macOS：[小企鹅输入法 macOS](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md)
 - Linux：[小企鹅输入法](https://fcitx-im.org/wiki/Install_Fcitx_5/zh-cn)
-- Android：[同文输入法](https://github.com/osfans/trime/releases)
+- Android：[元书输入法](https://ihsiao.com/apps/hamster/v3/docs/)或[同文输入法](https://github.com/osfans/trime/releases)
 - iOS：[元书输入法](https://apps.apple.com/us/app/%E5%85%83%E4%B9%A6%E8%BE%93%E5%85%A5%E6%B3%95/id6744464701?l=zh-Hans-CN)
 - HarmonyOS：[超越输入法](https://appgallery.huawei.com/app/detail?id=app.flytype.hmos.bim&channelId=SHARE)
 
@@ -104,12 +104,12 @@ patch:
 
 ## 手机皮肤
 
-同文输入法（Android）和元书输入法（iOS）提供相同的七组布局。请从[冰雪拼音发布页面](https://github.com/rimeinn/rime-snow-pinyin/releases/latest)按平台下载皮肤包：
+同文输入法（Android）和元书输入法（iOS、Android）提供相同的七组布局。请从[冰雪拼音发布页面](https://github.com/rimeinn/rime-snow-pinyin/releases/latest)按所用输入法下载皮肤包：
 
 | 前端 | 下载文件 | 使用的皮肤文件 |
 | --- | --- | --- |
 | 同文输入法（Android） | `snow-pinyin-skins-trime.zip` | `.trime.yaml` 主题文件 |
-| 元书输入法（iOS） | `snow-pinyin-skins-hamster.zip` | `.cskin` 皮肤包 |
+| 元书输入法（iOS、Android） | `snow-pinyin-skins-hamster.zip` | `.cskin` 皮肤包 |
 
 皮肤控制键盘外观与按键动作，输入方案仍需另外安装 `snow-pinyin.zip` 并重新部署。
 
@@ -125,7 +125,7 @@ patch:
 | 键道 35 键・无刻 | 同上，隐藏拼音键面文字 |
 | 直列 45 键 | 通用布局，保留完整字母、数字和常用标点 |
 
-两端每组皮肤均包含浅色和深色配色。元书皮肤文件夹中的 `demo.png` 提供亮暗并排预览；同文使用相同布局和七色配色，以文字和通用符号显示功能键。
+两款输入法的每组皮肤均包含浅色和深色配色，元书的 iOS 和 Android 版本使用同一份皮肤包。元书皮肤文件夹中的 `demo.png` 提供亮暗并排预览；同文使用相同布局和七色配色，以文字和通用符号显示功能键。
 
 冰雪三拼等方案可以根据编码需要选择通用或合适的布局；冰雪一拼需要多键同时按下并松开的并击操作，以上触屏布局没有提供专用的并击键盘。
 
@@ -135,13 +135,15 @@ patch:
 2. 在同文设置中确认当前使用的 Rime 用户文件夹，将所需的 `.trime.yaml` 文件复制到该文件夹根目录，与 `snow_*.schema.yaml` 放在同一级，不要放进 `build/` 或额外的子文件夹。
 3. 执行重新部署，然后在同文的主题设置中选择对应名称的主题，再通过 Rime 方案选单选中所用的冰雪方案。主题布局和输入方案应匹配。
 
-主题包含亮暗配色、上下滑动和长按动作；长按通常与上划执行同一动作。工具栏按所选布局提供“中文”“ABC”“123”或“符号”等入口，用于切换键盘；“选单”动作打开 Rime 方案选单。
+主题包含亮暗配色、上下滑动和长按动作；长按通常与上划执行同一动作。工具栏从左到右为菜单、常用语、剪贴板、编辑、中文、ABC、收起；菜单靠左，其余按钮靠右。长按菜单打开设置，“编辑”提供光标移动、选择、剪切、复制、粘贴和撤销等操作；数符入口随布局提供。工具栏默认七键各 50 dp，窄屏或悬浮键盘可按[皮肤生成说明](https://github.com/rimeinn/rime-snow-pinyin/blob/main/AGENTS.md#皮肤)调整总宽度。
 
 普通键盘的标点交给输入方案处理，字母键盘中的符号直接输入；标点和切换开关的具体行为见各方案文档。无刻布局隐藏键面文字，但保留按键与手势动作。
 
 这些主题使用同文的[新版主题工具栏配置](https://github.com/osfans/trime/wiki/Theme-Configuration-%28New%29#三工具栏区tool_bar)，需要支持该配置的同文版本。若主题没有出现在列表中，先检查文件是否以 `.trime.yaml` 结尾、是否放在当前用户文件夹根目录，并确认已经重新部署。
 
 ### 元书输入法导入与使用
+
+以下步骤适用于 iOS 和 Android，两平台均使用 `.cskin` 皮肤包。
 
 1. 解压 `snow-pinyin-skins-hamster.zip`，从中选择一份同名 `.cskin` 文件。
 2. 将 `.cskin` 文件通过系统分享或元书输入法的皮肤导入入口交给元书输入法，再在皮肤设置中启用。
@@ -151,7 +153,7 @@ patch:
 
 ### 更新皮肤
 
-下载对应平台的新版皮肤包：同文替换所用的 `.trime.yaml` 文件后重新部署并选择主题；元书重新导入所用的 `.cskin` 并启用。自己修改过的皮肤先另存备份。希望自行生成或修改布局的用户，可参考仓库的[皮肤生成说明](https://github.com/rimeinn/rime-snow-pinyin/blob/master/scripts/README.md#导出注音和皮肤)。
+下载对应输入法的新版皮肤包：同文替换所用的 `.trime.yaml` 文件后重新部署并选择主题；元书重新导入所用的 `.cskin` 并启用。自己修改过的皮肤先另存备份。希望自行生成或修改布局的用户，可参考仓库的[皮肤生成说明](https://github.com/rimeinn/rime-snow-pinyin/blob/main/AGENTS.md#皮肤)。
 
 ## 个性化与数据管理
 

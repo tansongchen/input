@@ -44,23 +44,23 @@
       },
       {
         "text": "白沟泄洪",
-        "comment": "ua"
+        "comment": "uaaa"
       },
       {
         "text": "包裹性好",
-        "comment": "uo"
+        "comment": "uooa"
       },
       {
         "text": "不够喜欢",
-        "comment": "vu"
+        "comment": "vuva"
       },
       {
         "text": "不过幸好",
-        "comment": "vv"
+        "comment": "vvva"
       },
       {
         "text": "包裹性和支撑性",
-        "comment": "uo"
+        "comment": "uoouuio"
       }
     ],
     "selectedIndex": 0
@@ -73,7 +73,7 @@
     "candidates": [
       {
         "text": "被关小黑屋",
-        "comment": "oo"
+        "comment": "ooiia"
       },
       {
         "text": "冰雪",
@@ -114,15 +114,15 @@
       },
       {
         "text": "避免磨损",
-        "comment": "au"
+        "comment": "auoi"
       },
       {
         "text": "表面磨损",
-        "comment": "vv"
+        "comment": "vvoi"
       },
       {
         "text": "吡美莫司",
-        "comment": "oo"
+        "comment": "ooia"
       },
       {
         "text": "变",
@@ -155,7 +155,7 @@
       },
       {
         "text": "策划威望",
-        "comment": "uv"
+        "comment": "uvvo"
       },
       {
         "text": "才",
@@ -163,6 +163,19 @@
       }
     ],
     "selectedIndex": 2
+  },
+  "jiandao:eJrJfS": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "eJ rJ fS",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "输入法",
+        "comment": "vua"
+      }
+    ],
+    "selectedIndex": 0
   },
   "jiandao:ekek": {
     "commit": "",
@@ -271,27 +284,60 @@
     "candidates": [
       {
         "text": "中华人民",
-        "comment": "ii"
+        "comment": "iiia"
       },
       {
         "text": "繁华如梦",
-        "comment": "ui"
+        "comment": "uiav"
       },
       {
         "text": "风和日美",
-        "comment": "uu"
+        "comment": "uuoo"
       },
       {
         "text": "中华人民共和国",
-        "comment": "ii"
+        "comment": "iiiavui"
       },
       {
         "text": "折合人民币",
-        "comment": "ii"
+        "comment": "iiiau"
       },
       {
         "text": "中华人民共和国主席",
-        "comment": "ii"
+        "comment": "iiiavuioo"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:fhrmiiiavui": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "f h r m 形 [iiiavui]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "中华人民共和国土地管理法",
+        "comment": "iiiavuivvuva"
+      },
+      {
+        "text": "中华人民共和国国务院",
+        "comment": "iiiavuiiua"
+      },
+      {
+        "text": "中华人民共和国道路交通安全法",
+        "comment": "iiiavuioooaoia"
+      },
+      {
+        "text": "中华人民共和国证券法",
+        "comment": "iiiavuiooa"
+      },
+      {
+        "text": "中华人民共和国主席",
+        "comment": "iiiavuioo"
+      },
+      {
+        "text": "中华人民共和国",
+        "comment": "iiiavui"
       }
     ],
     "selectedIndex": 0
@@ -321,7 +367,7 @@
       },
       {
         "text": "垃圾回收",
-        "comment": "📍 vv"
+        "comment": "📍 vvia"
       }
     ],
     "selectedIndex": 0
@@ -425,6 +471,23 @@
     ],
     "selectedIndex": 1
   },
+  "jiandao:kExHfSqG": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "kE xH fS q g",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "科学发展观",
+        "comment": "uoaaa"
+      },
+      {
+        "text": "科学发展观为指导",
+        "comment": "uoaaaoia"
+      }
+    ],
+    "selectedIndex": 0
+  },
   "jiandao:kfc": {
     "commit": "",
     "buffer": "",
@@ -466,7 +529,7 @@
     "candidates": [
       {
         "text": "疯狂星期四V我50",
-        "comment": "📍 ou"
+        "comment": "📍 ouoviu"
       },
       {
         "text": "控制层",
@@ -499,27 +562,27 @@
     "candidates": [
       {
         "text": "科学发展",
-        "comment": "uo"
+        "comment": "uoaa"
       },
       {
         "text": "科学执政",
-        "comment": "uo"
+        "comment": "uoiv"
       },
       {
         "text": "开学之前",
-        "comment": "vo"
+        "comment": "vooo"
       },
       {
         "text": "科学发展观",
-        "comment": "uo"
+        "comment": "uoaaa"
       },
       {
         "text": "科协副主席",
-        "comment": "uu"
+        "comment": "uuvoo"
       },
       {
         "text": "科学发展观为指导",
-        "comment": "uo"
+        "comment": "uoaaaoia"
       }
     ],
     "selectedIndex": 0
@@ -536,6 +599,39 @@
       },
       {
         "text": "科学发展观为指导",
+        "comment": ""
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:kxfquoaaa": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "k x f q 形 [uoaaa]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "科学发展观为指导",
+        "comment": "uoaaaoia"
+      },
+      {
+        "text": "科学发展观",
+        "comment": "uoaaa"
+      },
+      {
+        "text": "劻",
+        "comment": ""
+      },
+      {
+        "text": "匩",
+        "comment": ""
+      },
+      {
+        "text": "恇",
+        "comment": ""
+      },
+      {
+        "text": "硄",
         "comment": ""
       }
     ],
@@ -624,15 +720,28 @@
     "candidates": [
       {
         "text": "三下五除二",
-        "comment": "vv"
+        "comment": "vvvav"
       },
       {
         "text": "三二五九",
-        "comment": "vv"
+        "comment": "vvvu"
       },
       {
         "text": "三二五九年",
-        "comment": "vv"
+        "comment": "vvvuu"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:sxwjvvvav": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "s x w j 形 [vvvav]",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "三下五除二",
+        "comment": "vvvav"
       }
     ],
     "selectedIndex": 0
@@ -703,15 +812,15 @@
       },
       {
         "text": "性感妹子",
-        "comment": "ov"
+        "comment": "ovaa"
       },
       {
         "text": "修改名字",
-        "comment": "ia"
+        "comment": "iauo"
       },
       {
         "text": "西沟满族乡",
-        "comment": "va"
+        "comment": "vaaoa"
       }
     ],
     "selectedIndex": 0
@@ -806,11 +915,11 @@
       },
       {
         "text": "性感妹子",
-        "comment": "ov"
+        "comment": "ovaa"
       },
       {
         "text": "修改名字",
-        "comment": "ia"
+        "comment": "iauo"
       }
     ],
     "selectedIndex": 0
@@ -823,27 +932,27 @@
     "candidates": [
       {
         "text": "熙熙攘攘",
-        "comment": "vv"
+        "comment": "vvii"
       },
       {
         "text": "熙熙融融",
-        "comment": "vv"
+        "comment": "vvvv"
       },
       {
         "text": "喧嚣扰攘",
-        "comment": "oo"
+        "comment": "ooii"
       },
       {
         "text": "细细软软",
-        "comment": "aa"
+        "comment": "aavv"
       },
       {
         "text": "纤细柔弱",
-        "comment": "aa"
+        "comment": "aaaa"
       },
       {
         "text": "香香软软",
-        "comment": "uu"
+        "comment": "uuvv"
       }
     ],
     "selectedIndex": 0
@@ -868,15 +977,15 @@
       },
       {
         "text": "一般参考",
-        "comment": "vu"
+        "comment": "vuau"
       },
       {
         "text": "一般存款",
-        "comment": "vu"
+        "comment": "vuvv"
       },
       {
         "text": "一般存款账户",
-        "comment": "vu"
+        "comment": "vuvvao"
       }
     ],
     "selectedIndex": 0
@@ -901,15 +1010,28 @@
       },
       {
         "text": "一般参考",
-        "comment": "vu"
+        "comment": "vuau"
       },
       {
         "text": "一般存款",
-        "comment": "vu"
+        "comment": "vuvv"
       },
       {
         "text": "一般存款账户",
-        "comment": "vu"
+        "comment": "vuvvao"
+      }
+    ],
+    "selectedIndex": 0
+  },
+  "jiandao:zKxGjE": {
+    "commit": "",
+    "buffer": "",
+    "prompt": "zK xG jE",
+    "unused": "",
+    "candidates": [
+      {
+        "text": "自行车",
+        "comment": "uuv"
       }
     ],
     "selectedIndex": 0
@@ -963,11 +1085,11 @@
     "candidates": [
       {
         "text": "冰雪输入法",
-        "comment": "ov"
+        "comment": "ovvua"
       },
       {
         "text": "必须输入",
-        "comment": "ou"
+        "comment": "ouvu"
       },
       {
         "text": "𰻝",
@@ -996,7 +1118,7 @@
     "candidates": [
       {
         "text": "哆啦A梦",
-        "comment": "oo"
+        "comment": "oov"
       },
       {
         "text": "多线",
@@ -1008,15 +1130,15 @@
       },
       {
         "text": "电力项目",
-        "comment": "ia"
+        "comment": "iavi"
       },
       {
         "text": "道路相目",
-        "comment": "oo"
+        "comment": "oovi"
       },
       {
         "text": "丢了性命",
-        "comment": "ua"
+        "comment": "uaoi"
       }
     ],
     "selectedIndex": 0
@@ -1029,27 +1151,27 @@
     "candidates": [
       {
         "text": "5G通信",
-        "comment": ""
+        "comment": "ai"
       },
       {
         "text": "朝贡体系",
-        "comment": "uv"
+        "comment": "uviu"
       },
       {
         "text": "传给他啊",
-        "comment": "ia"
+        "comment": "iaio"
       },
       {
         "text": "网格体系",
-        "comment": "iv"
+        "comment": "iviu"
       },
       {
         "text": "无感通行",
-        "comment": "vv"
+        "comment": "vvau"
       },
       {
         "text": "五个体系",
-        "comment": "vi"
+        "comment": "viiu"
       }
     ],
     "selectedIndex": 0
@@ -3778,11 +3900,11 @@
     "unused": "",
     "candidates": [
       {
-        "text": "2026年10月28日",
+        "text": "2026年10月30日",
         "comment": ""
       },
       {
-        "text": "2026-10-28",
+        "text": "2026-10-30",
         "comment": ""
       },
       {
@@ -3799,12 +3921,12 @@
     "unused": "",
     "candidates": [
       {
-        "text": "2026年10月28日09时55分44秒",
+        "text": "2026年10月30日14时52分33秒",
         "comment": ""
       },
       {
-        "text": "2026-10-28",
-        "comment": "09:55:44 "
+        "text": "2026-10-30",
+        "comment": "14:52:33 "
       },
       {
         "text": "rs",
@@ -3820,11 +3942,11 @@
     "unused": "",
     "candidates": [
       {
-        "text": "09时55分45秒",
+        "text": "14时52分35秒",
         "comment": ""
       },
       {
-        "text": "09:55:45",
+        "text": "14:52:35",
         "comment": ""
       },
       {
